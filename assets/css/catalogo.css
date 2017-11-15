@@ -1,0 +1,316 @@
+
+#form_login  table{
+	bordercolor: #999999;
+	border: 1px solid #666666;
+}
+#form_login  tr{
+	height: 12;
+
+	}
+#form_login  th{
+	background-color: #EC2E38;
+}
+#form_login input{
+	background-color: #FFF;
+	border-color: #CCC;
+	color: #000;
+	border-style: solid;
+	border-width: 1px;
+	font-size: xx-small;
+	height: 2.6ex;
+	padding: 0px 2px;
+	margin-left: 10px;
+	font-family: verdana;
+	
+	}
+	#submit {
+    background-color: #CCC;
+    border-color: #666;
+    color: #666;
+    font-size: xx-small;
+    font-weight: normal;
+    min-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    -moz-box-align: center;
+    box-sizing: border-box;
+}
+/* #form_login span { */
+/*     font-family: verdana; */
+/*     font-size: xx-small; */
+/*     font-style: normal; */
+/*     color: #666; */
+/*     font-weight: normal; */
+    
+/* } */
+
+#Bguardar{
+position:absolute;
+left:670px;
+top:680px;
+
+}
+
+#cerrarSession{
+color: red;
+
+}
+
+#guardar_dominio{
+position:absolute;
+left:300px;
+top:370px;
+}
+
+#tableEsti{
+width: 80%;
+}
+
+#consultar {
+	position: absolute;
+	width: 755px;
+	height: 234px;
+	z-index: 2;
+	left: 306px;
+	top: 213px;
+}
+/*th{
+	background-color:#03C;
+	color:#FFF;
+}*/
+
+.colrs{
+	color:#ECF8E0;
+}
+
+.format{
+	color:blue;
+}
+
+#subtitle{	
+	color: #DF0101;
+	
+}
+
+#comple_campos{
+	position: absolute;
+	color:#6E6E6E;
+	left:330px;
+	top:220px;
+	
+
+}
+
+.campo_obligatorio{
+	
+	color: #DF0101;
+	position: fixe;
+}
+
+#table_usu{
+	border-color: blue;
+	border: 1px;
+}
+
+#formulario {
+	position: absolute;
+	width: 724px;
+	height: 311px;
+	z-index: 2;
+	left: 328px;
+	top: 279px;
+}
+
+#cuad_sesion {
+	position: absolute;
+	width: 440px;
+	height: 346px;
+	z-index: 1;
+	left: 50%;
+	margin-left: -220px;
+	top: 186px;
+	background: url(../img/login.png);	
+}
+#bienvenido {
+	position: absolute;
+	width: 138px;
+	height: 37px;
+	z-index: 1;
+	left: 153px;
+	top: 54px;
+}
+#c_usua {
+	position: absolute;
+	width: 337px;
+	height: 44px;
+	z-index: 2;
+	left: 46px;
+	top: 102px;
+}
+#c_contras {
+	position: absolute;
+	width: 337px;
+	height: 46px;
+	z-index: 3;
+	left: 46px;
+	top: 182px;
+}
+#c_bot {
+	position: absolute;
+	width: 338px;
+	height: 42px;
+	z-index: 4;
+	left: 47px;
+	top: 278px;
+}
+#msjcata {
+	position: absolute;
+	width: 440px;
+	height: 40px;
+	z-index: 2;
+	left: 50%;
+	top: 146px;
+	margin-left:-220px;
+}
+
+#construccion{
+	position: absolute;
+	width: 280px;
+	height: 186px;
+	z-index: 1;
+	left: 60%;
+	margin-left: -220px;
+	top: 286px;
+	background: url(../img/construccion.jpg);	
+}
+
+#combo_select{
+	position: absolute;
+	width: 1000px;
+	height: 100px;
+	z-index: 1;
+	left:550px;
+	top: 250px;	
+
+}
+
+#modif{
+	position: absolute;
+	width: 1000px;
+	height: 100px;
+	left:500px;
+	top: 310px;	
+
+}
+
+#tb_consultar{
+	position: absolute;
+	left:25px;
+	top: 20px;
+
+}
+
+#bottomodificar{
+	position: absolute;
+	top:720px;
+	left:700px;
+}
+
+.success{
+	color:#009900;
+}
+.error{
+	color:#F33C21;
+}
+
+.username_avail_result{
+	
+	font-weight: bold;
+}
+
+#descrip_sist{
+	position: absolute;
+	left:320px;
+	top: 255px;
+
+}
+
+#ambient{
+	position: absolute;
+	left:750px;
+	top: 255px;
+
+}
+
+.logout {
+	 color: #666;
+	 font-size: small;
+}
+
+.menu_top a:link {
+    background-color: inherit;
+    border-right: 1px solid #A3A3A3;
+    color: #A3A3A3;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 88px;
+  }
+  
+.plus{
+    background-image: url("../img/ico12_treebranch_closed.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+}
+.minus{
+	background-image: url("../img/ico12_treebranch_open.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+}
+.urTrcTitBox {
+    color: #666;
+    font-size: xx-small;
+    font-weight: bold;
+    margin: 0 0 0 11px;
+}
+.urTxtEmph {
+    color: #666666;
+    font-family: verdana;
+    font-size: xx-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.urTxtStd {
+    color: #666666;
+    font-family: verdana;
+    font-size: xx-small;
+    font-style: normal;
+    font-weight: normal;
+}
+
+ .prev, .next { background-color:#b0232a; padding:5px 10px; color:#fff; text-decoration:none;}
+    .prev:hover, .next:hover { background-color:#000; text-decoration:none;}
+    .prev { float:left;}
+    .next { float:right;}
+    #steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
+    #steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+    #steps li span {font-size:11px; display:block;}
+    #steps li.current { color:#000;}
+  
+
+    .img-create{
+        height: 15px;
+        width: 10px;
+    }
+    
