@@ -11293,3 +11293,1813 @@ INFO - 2017-11-16 07:01:30 --> Model Class Initialized
 INFO - 2017-11-16 07:01:30 --> Model Class Initialized
 INFO - 2017-11-16 07:01:30 --> Final output sent to browser
 DEBUG - 2017-11-16 07:01:30 --> Total execution time: 0.0870
+INFO - 2017-11-16 18:02:21 --> Config Class Initialized
+INFO - 2017-11-16 18:02:21 --> Hooks Class Initialized
+DEBUG - 2017-11-16 18:02:21 --> UTF-8 Support Enabled
+INFO - 2017-11-16 18:02:21 --> Utf8 Class Initialized
+INFO - 2017-11-16 18:02:21 --> URI Class Initialized
+INFO - 2017-11-16 18:02:21 --> Router Class Initialized
+INFO - 2017-11-16 18:02:21 --> Output Class Initialized
+INFO - 2017-11-16 18:02:21 --> Security Class Initialized
+DEBUG - 2017-11-16 18:02:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 18:02:21 --> Input Class Initialized
+INFO - 2017-11-16 18:02:21 --> Language Class Initialized
+INFO - 2017-11-16 18:02:21 --> Loader Class Initialized
+INFO - 2017-11-16 18:02:21 --> Helper loaded: url_helper
+INFO - 2017-11-16 18:02:21 --> Helper loaded: form_helper
+INFO - 2017-11-16 18:02:21 --> Helper loaded: html_helper
+INFO - 2017-11-16 18:02:21 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 18:02:22 --> Database Driver Class Initialized
+ERROR - 2017-11-16 18:02:22 --> Severity: Warning --> mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) C:\xampp\htdocs\CatalogoServicios\system\database\drivers\mysql\mysql_driver.php 136
+ERROR - 2017-11-16 18:02:22 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given C:\xampp\htdocs\CatalogoServicios\system\database\drivers\mysql\mysql_driver.php 191
+ERROR - 2017-11-16 18:02:22 --> Unable to select database: catalogo_servicios_pic
+INFO - 2017-11-16 18:02:22 --> Language file loaded: language/english/db_lang.php
+INFO - 2017-11-16 18:02:47 --> Config Class Initialized
+INFO - 2017-11-16 18:02:47 --> Hooks Class Initialized
+DEBUG - 2017-11-16 18:02:47 --> UTF-8 Support Enabled
+INFO - 2017-11-16 18:02:47 --> Utf8 Class Initialized
+INFO - 2017-11-16 18:02:47 --> URI Class Initialized
+INFO - 2017-11-16 18:02:47 --> Router Class Initialized
+INFO - 2017-11-16 18:02:47 --> Output Class Initialized
+INFO - 2017-11-16 18:02:47 --> Security Class Initialized
+DEBUG - 2017-11-16 18:02:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 18:02:47 --> Input Class Initialized
+INFO - 2017-11-16 18:02:47 --> Language Class Initialized
+INFO - 2017-11-16 18:02:47 --> Loader Class Initialized
+INFO - 2017-11-16 18:02:47 --> Helper loaded: url_helper
+INFO - 2017-11-16 18:02:47 --> Helper loaded: form_helper
+INFO - 2017-11-16 18:02:47 --> Helper loaded: html_helper
+INFO - 2017-11-16 18:02:47 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 18:02:47 --> Database Driver Class Initialized
+ERROR - 2017-11-16 18:02:47 --> Severity: Warning --> mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) C:\xampp\htdocs\CatalogoServicios\system\database\drivers\mysql\mysql_driver.php 136
+ERROR - 2017-11-16 18:02:47 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given C:\xampp\htdocs\CatalogoServicios\system\database\drivers\mysql\mysql_driver.php 191
+ERROR - 2017-11-16 18:02:47 --> Unable to select database: catalogo_servicios_pic
+INFO - 2017-11-16 18:02:47 --> Language file loaded: language/english/db_lang.php
+INFO - 2017-11-16 18:54:49 --> Config Class Initialized
+INFO - 2017-11-16 18:54:49 --> Hooks Class Initialized
+DEBUG - 2017-11-16 18:54:49 --> UTF-8 Support Enabled
+INFO - 2017-11-16 18:54:49 --> Utf8 Class Initialized
+INFO - 2017-11-16 18:54:49 --> URI Class Initialized
+INFO - 2017-11-16 18:54:49 --> Router Class Initialized
+INFO - 2017-11-16 18:54:49 --> Output Class Initialized
+INFO - 2017-11-16 18:54:49 --> Security Class Initialized
+DEBUG - 2017-11-16 18:54:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 18:54:49 --> Input Class Initialized
+INFO - 2017-11-16 18:54:49 --> Language Class Initialized
+INFO - 2017-11-16 18:54:49 --> Loader Class Initialized
+INFO - 2017-11-16 18:54:49 --> Helper loaded: url_helper
+INFO - 2017-11-16 18:54:49 --> Helper loaded: form_helper
+INFO - 2017-11-16 18:54:49 --> Helper loaded: html_helper
+INFO - 2017-11-16 18:54:49 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 18:54:49 --> Database Driver Class Initialized
+ERROR - 2017-11-16 18:54:49 --> Severity: Warning --> mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) C:\xampp\htdocs\CatalogoServicios\system\database\drivers\mysql\mysql_driver.php 136
+ERROR - 2017-11-16 18:54:49 --> Severity: Warning --> mysql_select_db() expects parameter 2 to be resource, boolean given C:\xampp\htdocs\CatalogoServicios\system\database\drivers\mysql\mysql_driver.php 191
+ERROR - 2017-11-16 18:54:49 --> Unable to select database: catalogo_servicios_pic
+INFO - 2017-11-16 18:54:49 --> Language file loaded: language/english/db_lang.php
+INFO - 2017-11-16 18:55:22 --> Config Class Initialized
+INFO - 2017-11-16 18:55:22 --> Hooks Class Initialized
+DEBUG - 2017-11-16 18:55:22 --> UTF-8 Support Enabled
+INFO - 2017-11-16 18:55:22 --> Utf8 Class Initialized
+INFO - 2017-11-16 18:55:22 --> URI Class Initialized
+INFO - 2017-11-16 18:55:22 --> Router Class Initialized
+INFO - 2017-11-16 18:55:22 --> Output Class Initialized
+INFO - 2017-11-16 18:55:22 --> Security Class Initialized
+DEBUG - 2017-11-16 18:55:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 18:55:22 --> Input Class Initialized
+INFO - 2017-11-16 18:55:22 --> Language Class Initialized
+INFO - 2017-11-16 18:55:22 --> Loader Class Initialized
+INFO - 2017-11-16 18:55:22 --> Helper loaded: url_helper
+INFO - 2017-11-16 18:55:22 --> Helper loaded: form_helper
+INFO - 2017-11-16 18:55:22 --> Helper loaded: html_helper
+INFO - 2017-11-16 18:55:22 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 18:55:22 --> Database Driver Class Initialized
+INFO - 2017-11-16 18:55:22 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 18:55:22 --> Form Validation Class Initialized
+INFO - 2017-11-16 18:55:22 --> Table Class Initialized
+INFO - 2017-11-16 18:55:22 --> Parser Class Initialized
+INFO - 2017-11-16 18:55:22 --> Model Class Initialized
+INFO - 2017-11-16 18:55:22 --> Model Class Initialized
+INFO - 2017-11-16 18:55:22 --> Model Class Initialized
+INFO - 2017-11-16 18:55:22 --> Controller Class Initialized
+DEBUG - 2017-11-16 18:55:22 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 18:55:22 --> User Agent Class Initialized
+INFO - 2017-11-16 18:55:22 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 18:55:22 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 18:55:22 --> Model Class Initialized
+INFO - 2017-11-16 18:55:22 --> Model Class Initialized
+INFO - 2017-11-16 18:55:22 --> Model Class Initialized
+INFO - 2017-11-16 18:55:22 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> Config Class Initialized
+INFO - 2017-11-16 18:56:38 --> Hooks Class Initialized
+DEBUG - 2017-11-16 18:56:38 --> UTF-8 Support Enabled
+INFO - 2017-11-16 18:56:38 --> Utf8 Class Initialized
+INFO - 2017-11-16 18:56:38 --> URI Class Initialized
+INFO - 2017-11-16 18:56:38 --> Router Class Initialized
+INFO - 2017-11-16 18:56:38 --> Output Class Initialized
+INFO - 2017-11-16 18:56:38 --> Security Class Initialized
+DEBUG - 2017-11-16 18:56:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 18:56:38 --> Input Class Initialized
+INFO - 2017-11-16 18:56:38 --> Language Class Initialized
+INFO - 2017-11-16 18:56:38 --> Loader Class Initialized
+INFO - 2017-11-16 18:56:38 --> Helper loaded: url_helper
+INFO - 2017-11-16 18:56:38 --> Helper loaded: form_helper
+INFO - 2017-11-16 18:56:38 --> Helper loaded: html_helper
+INFO - 2017-11-16 18:56:38 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 18:56:38 --> Database Driver Class Initialized
+INFO - 2017-11-16 18:56:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 18:56:38 --> Form Validation Class Initialized
+INFO - 2017-11-16 18:56:38 --> Table Class Initialized
+INFO - 2017-11-16 18:56:38 --> Parser Class Initialized
+INFO - 2017-11-16 18:56:38 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> Controller Class Initialized
+INFO - 2017-11-16 18:56:38 --> User Agent Class Initialized
+DEBUG - 2017-11-16 18:56:38 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 18:56:38 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 18:56:38 --> Helper loaded: date_helper
+INFO - 2017-11-16 18:56:38 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> Model Class Initialized
+INFO - 2017-11-16 18:56:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 18:56:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\login/login.php
+INFO - 2017-11-16 18:56:38 --> Final output sent to browser
+DEBUG - 2017-11-16 18:56:38 --> Total execution time: 0.2256
+INFO - 2017-11-16 19:00:23 --> Config Class Initialized
+INFO - 2017-11-16 19:00:23 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:00:23 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:00:23 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:00:23 --> URI Class Initialized
+INFO - 2017-11-16 19:00:23 --> Router Class Initialized
+INFO - 2017-11-16 19:00:23 --> Output Class Initialized
+INFO - 2017-11-16 19:00:23 --> Security Class Initialized
+DEBUG - 2017-11-16 19:00:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:00:23 --> Input Class Initialized
+INFO - 2017-11-16 19:00:23 --> Language Class Initialized
+INFO - 2017-11-16 19:00:23 --> Loader Class Initialized
+INFO - 2017-11-16 19:00:23 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:00:23 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:00:23 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:00:23 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:00:23 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:00:23 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:00:23 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:00:23 --> Table Class Initialized
+INFO - 2017-11-16 19:00:23 --> Parser Class Initialized
+INFO - 2017-11-16 19:00:23 --> Model Class Initialized
+INFO - 2017-11-16 19:00:23 --> Model Class Initialized
+INFO - 2017-11-16 19:00:23 --> Model Class Initialized
+INFO - 2017-11-16 19:00:23 --> Controller Class Initialized
+INFO - 2017-11-16 19:00:23 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:00:23 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:00:23 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:00:23 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:00:23 --> Model Class Initialized
+INFO - 2017-11-16 19:00:23 --> Model Class Initialized
+INFO - 2017-11-16 19:00:23 --> Model Class Initialized
+INFO - 2017-11-16 19:00:23 --> Model Class Initialized
+INFO - 2017-11-16 19:00:23 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:00:23 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\login/login.php
+INFO - 2017-11-16 19:00:23 --> Final output sent to browser
+DEBUG - 2017-11-16 19:00:23 --> Total execution time: 0.0753
+INFO - 2017-11-16 19:11:23 --> Config Class Initialized
+INFO - 2017-11-16 19:11:23 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:11:23 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:11:23 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:11:23 --> URI Class Initialized
+INFO - 2017-11-16 19:11:23 --> Router Class Initialized
+INFO - 2017-11-16 19:11:23 --> Output Class Initialized
+INFO - 2017-11-16 19:11:23 --> Security Class Initialized
+DEBUG - 2017-11-16 19:11:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:11:23 --> Input Class Initialized
+INFO - 2017-11-16 19:11:23 --> Language Class Initialized
+INFO - 2017-11-16 19:11:23 --> Loader Class Initialized
+INFO - 2017-11-16 19:11:23 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:11:23 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:11:23 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:11:23 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:11:24 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:11:24 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:11:24 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:11:24 --> Table Class Initialized
+INFO - 2017-11-16 19:11:24 --> Parser Class Initialized
+INFO - 2017-11-16 19:11:24 --> Model Class Initialized
+INFO - 2017-11-16 19:11:24 --> Model Class Initialized
+INFO - 2017-11-16 19:11:24 --> Model Class Initialized
+INFO - 2017-11-16 19:11:24 --> Controller Class Initialized
+INFO - 2017-11-16 19:11:24 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:11:24 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:11:24 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:11:24 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:11:24 --> Model Class Initialized
+INFO - 2017-11-16 19:11:24 --> Model Class Initialized
+INFO - 2017-11-16 19:11:24 --> Model Class Initialized
+INFO - 2017-11-16 19:11:24 --> Model Class Initialized
+INFO - 2017-11-16 19:11:24 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-11-16 19:11:24 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:11:24 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/menu.php
+INFO - 2017-11-16 19:11:24 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/default_visitante.php
+INFO - 2017-11-16 19:11:24 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/principal_catalogo.php
+INFO - 2017-11-16 19:11:24 --> Final output sent to browser
+DEBUG - 2017-11-16 19:11:24 --> Total execution time: 0.2326
+INFO - 2017-11-16 19:11:30 --> Config Class Initialized
+INFO - 2017-11-16 19:11:30 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:11:30 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:11:30 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:11:30 --> URI Class Initialized
+INFO - 2017-11-16 19:11:30 --> Router Class Initialized
+INFO - 2017-11-16 19:11:30 --> Output Class Initialized
+INFO - 2017-11-16 19:11:30 --> Security Class Initialized
+DEBUG - 2017-11-16 19:11:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:11:30 --> Input Class Initialized
+INFO - 2017-11-16 19:11:30 --> Language Class Initialized
+INFO - 2017-11-16 19:11:30 --> Loader Class Initialized
+INFO - 2017-11-16 19:11:30 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:11:30 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:11:30 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:11:30 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:11:30 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:11:30 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:11:30 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:11:30 --> Table Class Initialized
+INFO - 2017-11-16 19:11:30 --> Parser Class Initialized
+INFO - 2017-11-16 19:11:30 --> Model Class Initialized
+INFO - 2017-11-16 19:11:30 --> Model Class Initialized
+INFO - 2017-11-16 19:11:30 --> Model Class Initialized
+INFO - 2017-11-16 19:11:30 --> Controller Class Initialized
+INFO - 2017-11-16 19:11:30 --> Model Class Initialized
+INFO - 2017-11-16 19:11:30 --> Model Class Initialized
+INFO - 2017-11-16 19:11:31 --> Model Class Initialized
+INFO - 2017-11-16 19:11:31 --> Model Class Initialized
+INFO - 2017-11-16 19:11:31 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:11:31 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\consultas/default.php
+INFO - 2017-11-16 19:11:31 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:11:31 --> Final output sent to browser
+DEBUG - 2017-11-16 19:11:31 --> Total execution time: 0.1471
+INFO - 2017-11-16 19:11:32 --> Config Class Initialized
+INFO - 2017-11-16 19:11:32 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:11:32 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:11:32 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:11:32 --> URI Class Initialized
+INFO - 2017-11-16 19:11:32 --> Router Class Initialized
+INFO - 2017-11-16 19:11:32 --> Output Class Initialized
+INFO - 2017-11-16 19:11:32 --> Security Class Initialized
+DEBUG - 2017-11-16 19:11:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:11:32 --> Input Class Initialized
+INFO - 2017-11-16 19:11:32 --> Language Class Initialized
+INFO - 2017-11-16 19:11:32 --> Loader Class Initialized
+INFO - 2017-11-16 19:11:32 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:11:32 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:11:32 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:11:32 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:11:32 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:11:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:11:32 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:11:32 --> Table Class Initialized
+INFO - 2017-11-16 19:11:32 --> Parser Class Initialized
+INFO - 2017-11-16 19:11:32 --> Model Class Initialized
+INFO - 2017-11-16 19:11:32 --> Model Class Initialized
+INFO - 2017-11-16 19:11:32 --> Model Class Initialized
+INFO - 2017-11-16 19:11:32 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:11:32 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:11:32 --> User Agent Class Initialized
+INFO - 2017-11-16 19:11:32 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:11:32 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:11:32 --> Model Class Initialized
+INFO - 2017-11-16 19:11:32 --> Model Class Initialized
+INFO - 2017-11-16 19:11:32 --> Model Class Initialized
+INFO - 2017-11-16 19:11:32 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> Config Class Initialized
+INFO - 2017-11-16 19:11:36 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:11:36 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:11:36 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:11:36 --> URI Class Initialized
+INFO - 2017-11-16 19:11:36 --> Router Class Initialized
+INFO - 2017-11-16 19:11:36 --> Output Class Initialized
+INFO - 2017-11-16 19:11:36 --> Security Class Initialized
+DEBUG - 2017-11-16 19:11:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:11:36 --> Input Class Initialized
+INFO - 2017-11-16 19:11:36 --> Language Class Initialized
+INFO - 2017-11-16 19:11:36 --> Loader Class Initialized
+INFO - 2017-11-16 19:11:36 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:11:36 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:11:36 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:11:36 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:11:36 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:11:36 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:11:36 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:11:36 --> Table Class Initialized
+INFO - 2017-11-16 19:11:36 --> Parser Class Initialized
+INFO - 2017-11-16 19:11:36 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> Controller Class Initialized
+INFO - 2017-11-16 19:11:36 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> Model Class Initialized
+INFO - 2017-11-16 19:11:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:11:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\consultas/default.php
+INFO - 2017-11-16 19:11:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:11:36 --> Final output sent to browser
+DEBUG - 2017-11-16 19:11:36 --> Total execution time: 0.0676
+INFO - 2017-11-16 19:11:37 --> Config Class Initialized
+INFO - 2017-11-16 19:11:37 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:11:37 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:11:37 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:11:37 --> URI Class Initialized
+INFO - 2017-11-16 19:11:37 --> Router Class Initialized
+INFO - 2017-11-16 19:11:37 --> Output Class Initialized
+INFO - 2017-11-16 19:11:37 --> Security Class Initialized
+DEBUG - 2017-11-16 19:11:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:11:37 --> Input Class Initialized
+INFO - 2017-11-16 19:11:37 --> Language Class Initialized
+INFO - 2017-11-16 19:11:37 --> Loader Class Initialized
+INFO - 2017-11-16 19:11:37 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:11:37 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:11:37 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:11:37 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:11:37 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:11:37 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:11:37 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:11:37 --> Table Class Initialized
+INFO - 2017-11-16 19:11:37 --> Parser Class Initialized
+INFO - 2017-11-16 19:11:37 --> Model Class Initialized
+INFO - 2017-11-16 19:11:37 --> Model Class Initialized
+INFO - 2017-11-16 19:11:37 --> Model Class Initialized
+INFO - 2017-11-16 19:11:37 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:11:37 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:11:37 --> User Agent Class Initialized
+INFO - 2017-11-16 19:11:37 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:11:37 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:11:37 --> Model Class Initialized
+INFO - 2017-11-16 19:11:37 --> Model Class Initialized
+INFO - 2017-11-16 19:11:37 --> Model Class Initialized
+INFO - 2017-11-16 19:11:37 --> Model Class Initialized
+INFO - 2017-11-16 19:12:08 --> Config Class Initialized
+INFO - 2017-11-16 19:12:08 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:12:08 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:12:08 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:12:08 --> URI Class Initialized
+INFO - 2017-11-16 19:12:08 --> Router Class Initialized
+INFO - 2017-11-16 19:12:08 --> Output Class Initialized
+INFO - 2017-11-16 19:12:08 --> Security Class Initialized
+DEBUG - 2017-11-16 19:12:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:12:08 --> Input Class Initialized
+INFO - 2017-11-16 19:12:08 --> Language Class Initialized
+INFO - 2017-11-16 19:12:08 --> Loader Class Initialized
+INFO - 2017-11-16 19:12:08 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:12:08 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:12:08 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:12:08 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:12:08 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:12:08 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:12:08 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:12:08 --> Table Class Initialized
+INFO - 2017-11-16 19:12:08 --> Parser Class Initialized
+INFO - 2017-11-16 19:12:08 --> Model Class Initialized
+INFO - 2017-11-16 19:12:08 --> Model Class Initialized
+INFO - 2017-11-16 19:12:08 --> Model Class Initialized
+INFO - 2017-11-16 19:12:08 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:12:08 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:12:08 --> User Agent Class Initialized
+INFO - 2017-11-16 19:12:08 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:12:08 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:12:08 --> Model Class Initialized
+INFO - 2017-11-16 19:12:08 --> Model Class Initialized
+INFO - 2017-11-16 19:12:08 --> Model Class Initialized
+INFO - 2017-11-16 19:12:08 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> Config Class Initialized
+INFO - 2017-11-16 19:12:32 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:12:32 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:12:32 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:12:32 --> URI Class Initialized
+INFO - 2017-11-16 19:12:32 --> Router Class Initialized
+INFO - 2017-11-16 19:12:32 --> Output Class Initialized
+INFO - 2017-11-16 19:12:32 --> Security Class Initialized
+DEBUG - 2017-11-16 19:12:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:12:32 --> Input Class Initialized
+INFO - 2017-11-16 19:12:32 --> Language Class Initialized
+INFO - 2017-11-16 19:12:32 --> Loader Class Initialized
+INFO - 2017-11-16 19:12:32 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:12:32 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:12:32 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:12:32 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:12:32 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:12:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:12:32 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:12:32 --> Table Class Initialized
+INFO - 2017-11-16 19:12:32 --> Parser Class Initialized
+INFO - 2017-11-16 19:12:32 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> Controller Class Initialized
+INFO - 2017-11-16 19:12:32 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> Model Class Initialized
+INFO - 2017-11-16 19:12:32 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:12:32 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\consultas/default.php
+INFO - 2017-11-16 19:12:32 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:12:32 --> Final output sent to browser
+DEBUG - 2017-11-16 19:12:32 --> Total execution time: 0.0801
+INFO - 2017-11-16 19:12:33 --> Config Class Initialized
+INFO - 2017-11-16 19:12:33 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:12:33 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:12:33 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:12:33 --> URI Class Initialized
+INFO - 2017-11-16 19:12:33 --> Router Class Initialized
+INFO - 2017-11-16 19:12:33 --> Output Class Initialized
+INFO - 2017-11-16 19:12:33 --> Security Class Initialized
+DEBUG - 2017-11-16 19:12:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:12:33 --> Input Class Initialized
+INFO - 2017-11-16 19:12:33 --> Language Class Initialized
+INFO - 2017-11-16 19:12:33 --> Loader Class Initialized
+INFO - 2017-11-16 19:12:33 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:12:33 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:12:33 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:12:33 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:12:33 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:12:33 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:12:33 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:12:33 --> Table Class Initialized
+INFO - 2017-11-16 19:12:33 --> Parser Class Initialized
+INFO - 2017-11-16 19:12:33 --> Model Class Initialized
+INFO - 2017-11-16 19:12:33 --> Model Class Initialized
+INFO - 2017-11-16 19:12:33 --> Model Class Initialized
+INFO - 2017-11-16 19:12:33 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:12:33 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:12:33 --> User Agent Class Initialized
+INFO - 2017-11-16 19:12:33 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:12:33 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:12:33 --> Model Class Initialized
+INFO - 2017-11-16 19:12:33 --> Model Class Initialized
+INFO - 2017-11-16 19:12:33 --> Model Class Initialized
+INFO - 2017-11-16 19:12:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Config Class Initialized
+INFO - 2017-11-16 19:13:14 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:14 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:14 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:14 --> URI Class Initialized
+INFO - 2017-11-16 19:13:14 --> Router Class Initialized
+INFO - 2017-11-16 19:13:14 --> Output Class Initialized
+INFO - 2017-11-16 19:13:14 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:14 --> Input Class Initialized
+INFO - 2017-11-16 19:13:14 --> Language Class Initialized
+INFO - 2017-11-16 19:13:14 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:14 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:14 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:14 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:14 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:14 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:14 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:14 --> Table Class Initialized
+INFO - 2017-11-16 19:13:14 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:14 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:14 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:13:14 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:13:14 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:13:14 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:13:14 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Model Class Initialized
+INFO - 2017-11-16 19:13:14 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-11-16 19:13:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:13:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/menu.php
+INFO - 2017-11-16 19:13:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/default_administrador.php
+INFO - 2017-11-16 19:13:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/principal_catalogo.php
+INFO - 2017-11-16 19:13:14 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:14 --> Total execution time: 0.1203
+INFO - 2017-11-16 19:13:27 --> Config Class Initialized
+INFO - 2017-11-16 19:13:27 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:27 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:27 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:27 --> URI Class Initialized
+INFO - 2017-11-16 19:13:27 --> Router Class Initialized
+INFO - 2017-11-16 19:13:27 --> Output Class Initialized
+INFO - 2017-11-16 19:13:27 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:27 --> Input Class Initialized
+INFO - 2017-11-16 19:13:27 --> Language Class Initialized
+INFO - 2017-11-16 19:13:27 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:27 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:27 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:27 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:27 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:27 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:27 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:27 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:27 --> Table Class Initialized
+INFO - 2017-11-16 19:13:27 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:27 --> Model Class Initialized
+INFO - 2017-11-16 19:13:27 --> Model Class Initialized
+INFO - 2017-11-16 19:13:27 --> Model Class Initialized
+INFO - 2017-11-16 19:13:27 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:27 --> Model Class Initialized
+INFO - 2017-11-16 19:13:27 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:13:27 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\administracion/default.php
+INFO - 2017-11-16 19:13:27 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:13:27 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:27 --> Total execution time: 0.1271
+INFO - 2017-11-16 19:13:28 --> Config Class Initialized
+INFO - 2017-11-16 19:13:28 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:28 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:28 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:28 --> URI Class Initialized
+INFO - 2017-11-16 19:13:28 --> Router Class Initialized
+INFO - 2017-11-16 19:13:28 --> Output Class Initialized
+INFO - 2017-11-16 19:13:28 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:28 --> Input Class Initialized
+INFO - 2017-11-16 19:13:28 --> Language Class Initialized
+INFO - 2017-11-16 19:13:28 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:28 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:28 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:28 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:28 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:28 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:28 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:28 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:28 --> Table Class Initialized
+INFO - 2017-11-16 19:13:28 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:28 --> Model Class Initialized
+INFO - 2017-11-16 19:13:28 --> Model Class Initialized
+INFO - 2017-11-16 19:13:28 --> Model Class Initialized
+INFO - 2017-11-16 19:13:28 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:13:28 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:13:28 --> User Agent Class Initialized
+INFO - 2017-11-16 19:13:28 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:13:28 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:13:28 --> Model Class Initialized
+INFO - 2017-11-16 19:13:28 --> Model Class Initialized
+INFO - 2017-11-16 19:13:28 --> Model Class Initialized
+INFO - 2017-11-16 19:13:28 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> Config Class Initialized
+INFO - 2017-11-16 19:13:31 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:31 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:31 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:31 --> URI Class Initialized
+INFO - 2017-11-16 19:13:31 --> Router Class Initialized
+INFO - 2017-11-16 19:13:31 --> Output Class Initialized
+INFO - 2017-11-16 19:13:31 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:31 --> Input Class Initialized
+INFO - 2017-11-16 19:13:31 --> Language Class Initialized
+INFO - 2017-11-16 19:13:31 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:31 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:31 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:31 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:31 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:31 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:31 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:31 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:31 --> Table Class Initialized
+INFO - 2017-11-16 19:13:31 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:31 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:31 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> Model Class Initialized
+INFO - 2017-11-16 19:13:31 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:13:32 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:13:32 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:13:32 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:32 --> Total execution time: 0.1129
+INFO - 2017-11-16 19:13:32 --> Config Class Initialized
+INFO - 2017-11-16 19:13:32 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:32 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:32 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:32 --> URI Class Initialized
+INFO - 2017-11-16 19:13:32 --> Router Class Initialized
+INFO - 2017-11-16 19:13:32 --> Output Class Initialized
+INFO - 2017-11-16 19:13:32 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:32 --> Input Class Initialized
+INFO - 2017-11-16 19:13:32 --> Language Class Initialized
+INFO - 2017-11-16 19:13:32 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:32 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:32 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:32 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:32 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:32 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:32 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:32 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:32 --> Table Class Initialized
+INFO - 2017-11-16 19:13:32 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:32 --> Model Class Initialized
+INFO - 2017-11-16 19:13:32 --> Model Class Initialized
+INFO - 2017-11-16 19:13:32 --> Model Class Initialized
+INFO - 2017-11-16 19:13:32 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:13:32 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:13:32 --> User Agent Class Initialized
+INFO - 2017-11-16 19:13:32 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:13:32 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:13:32 --> Model Class Initialized
+INFO - 2017-11-16 19:13:32 --> Model Class Initialized
+INFO - 2017-11-16 19:13:32 --> Model Class Initialized
+INFO - 2017-11-16 19:13:32 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Config Class Initialized
+INFO - 2017-11-16 19:13:33 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:33 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:33 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:33 --> URI Class Initialized
+INFO - 2017-11-16 19:13:33 --> Router Class Initialized
+INFO - 2017-11-16 19:13:33 --> Output Class Initialized
+INFO - 2017-11-16 19:13:33 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:33 --> Input Class Initialized
+INFO - 2017-11-16 19:13:33 --> Language Class Initialized
+INFO - 2017-11-16 19:13:33 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:33 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:33 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:33 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:33 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:33 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:33 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:33 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:33 --> Table Class Initialized
+INFO - 2017-11-16 19:13:33 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:13:33 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\administracion/default.php
+INFO - 2017-11-16 19:13:33 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:13:33 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:33 --> Total execution time: 0.0781
+INFO - 2017-11-16 19:13:33 --> Config Class Initialized
+INFO - 2017-11-16 19:13:33 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:33 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:33 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:33 --> URI Class Initialized
+INFO - 2017-11-16 19:13:33 --> Router Class Initialized
+INFO - 2017-11-16 19:13:33 --> Output Class Initialized
+INFO - 2017-11-16 19:13:33 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:33 --> Input Class Initialized
+INFO - 2017-11-16 19:13:33 --> Language Class Initialized
+INFO - 2017-11-16 19:13:33 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:33 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:33 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:33 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:33 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:33 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:33 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:33 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:33 --> Table Class Initialized
+INFO - 2017-11-16 19:13:33 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:13:33 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:13:33 --> User Agent Class Initialized
+INFO - 2017-11-16 19:13:33 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:13:33 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:33 --> Model Class Initialized
+INFO - 2017-11-16 19:13:34 --> Config Class Initialized
+INFO - 2017-11-16 19:13:34 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:34 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:34 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:34 --> URI Class Initialized
+INFO - 2017-11-16 19:13:34 --> Router Class Initialized
+INFO - 2017-11-16 19:13:34 --> Output Class Initialized
+INFO - 2017-11-16 19:13:34 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:34 --> Input Class Initialized
+INFO - 2017-11-16 19:13:34 --> Language Class Initialized
+INFO - 2017-11-16 19:13:34 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:34 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:34 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:34 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:34 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:34 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:34 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:34 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:34 --> Table Class Initialized
+INFO - 2017-11-16 19:13:34 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:34 --> Model Class Initialized
+INFO - 2017-11-16 19:13:34 --> Model Class Initialized
+INFO - 2017-11-16 19:13:34 --> Model Class Initialized
+INFO - 2017-11-16 19:13:34 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:34 --> Model Class Initialized
+INFO - 2017-11-16 19:13:34 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:13:34 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\administracion/default.php
+INFO - 2017-11-16 19:13:34 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:13:34 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:34 --> Total execution time: 0.0678
+INFO - 2017-11-16 19:13:35 --> Config Class Initialized
+INFO - 2017-11-16 19:13:35 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:35 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:35 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:35 --> URI Class Initialized
+INFO - 2017-11-16 19:13:35 --> Router Class Initialized
+INFO - 2017-11-16 19:13:35 --> Output Class Initialized
+INFO - 2017-11-16 19:13:35 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:35 --> Input Class Initialized
+INFO - 2017-11-16 19:13:35 --> Language Class Initialized
+INFO - 2017-11-16 19:13:35 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:35 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:35 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:35 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:35 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:35 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:35 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:35 --> Table Class Initialized
+INFO - 2017-11-16 19:13:35 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:35 --> Model Class Initialized
+INFO - 2017-11-16 19:13:35 --> Model Class Initialized
+INFO - 2017-11-16 19:13:35 --> Model Class Initialized
+INFO - 2017-11-16 19:13:35 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:35 --> Model Class Initialized
+INFO - 2017-11-16 19:13:35 --> Model Class Initialized
+INFO - 2017-11-16 19:13:35 --> Model Class Initialized
+INFO - 2017-11-16 19:13:35 --> Model Class Initialized
+INFO - 2017-11-16 19:13:35 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:13:35 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:13:35 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:13:35 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:35 --> Total execution time: 0.0831
+INFO - 2017-11-16 19:13:35 --> Config Class Initialized
+INFO - 2017-11-16 19:13:35 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:35 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:35 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:35 --> URI Class Initialized
+INFO - 2017-11-16 19:13:35 --> Router Class Initialized
+INFO - 2017-11-16 19:13:35 --> Output Class Initialized
+INFO - 2017-11-16 19:13:35 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:35 --> Input Class Initialized
+INFO - 2017-11-16 19:13:35 --> Language Class Initialized
+INFO - 2017-11-16 19:13:35 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:35 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:35 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:35 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:35 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:35 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:35 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:35 --> Table Class Initialized
+INFO - 2017-11-16 19:13:35 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Controller Class Initialized
+DEBUG - 2017-11-16 19:13:36 --> AuthLDAP initialization commencing...
+INFO - 2017-11-16 19:13:36 --> User Agent Class Initialized
+INFO - 2017-11-16 19:13:36 --> Helper loaded: array_helper
+DEBUG - 2017-11-16 19:13:36 --> Config file loaded: C:\xampp\htdocs\CatalogoServicios\application\config/authldap.php
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Config Class Initialized
+INFO - 2017-11-16 19:13:36 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:36 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:36 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:36 --> URI Class Initialized
+INFO - 2017-11-16 19:13:36 --> Router Class Initialized
+INFO - 2017-11-16 19:13:36 --> Output Class Initialized
+INFO - 2017-11-16 19:13:36 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:36 --> Input Class Initialized
+INFO - 2017-11-16 19:13:36 --> Language Class Initialized
+INFO - 2017-11-16 19:13:36 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:36 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:36 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:36 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:36 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:36 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:36 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:36 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:36 --> Table Class Initialized
+INFO - 2017-11-16 19:13:36 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:36 --> Model Class Initialized
+INFO - 2017-11-16 19:13:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:13:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\administracion/default.php
+INFO - 2017-11-16 19:13:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:13:36 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:36 --> Total execution time: 0.0722
+INFO - 2017-11-16 19:13:39 --> Config Class Initialized
+INFO - 2017-11-16 19:13:39 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:39 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:39 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:39 --> URI Class Initialized
+INFO - 2017-11-16 19:13:39 --> Router Class Initialized
+INFO - 2017-11-16 19:13:39 --> Output Class Initialized
+INFO - 2017-11-16 19:13:39 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:39 --> Input Class Initialized
+INFO - 2017-11-16 19:13:39 --> Language Class Initialized
+INFO - 2017-11-16 19:13:39 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:39 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:39 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:39 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:39 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:39 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:39 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:39 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:39 --> Table Class Initialized
+INFO - 2017-11-16 19:13:39 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:39 --> Model Class Initialized
+INFO - 2017-11-16 19:13:39 --> Model Class Initialized
+INFO - 2017-11-16 19:13:39 --> Model Class Initialized
+INFO - 2017-11-16 19:13:39 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:39 --> Model Class Initialized
+INFO - 2017-11-16 19:13:39 --> Model Class Initialized
+INFO - 2017-11-16 19:13:39 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\usuarios/create_update.php
+INFO - 2017-11-16 19:13:39 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:39 --> Total execution time: 0.2276
+INFO - 2017-11-16 19:13:53 --> Config Class Initialized
+INFO - 2017-11-16 19:13:53 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:53 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:53 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:53 --> URI Class Initialized
+INFO - 2017-11-16 19:13:53 --> Router Class Initialized
+INFO - 2017-11-16 19:13:53 --> Output Class Initialized
+INFO - 2017-11-16 19:13:53 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:53 --> Input Class Initialized
+INFO - 2017-11-16 19:13:53 --> Language Class Initialized
+INFO - 2017-11-16 19:13:53 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:53 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:54 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:54 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:54 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:54 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:54 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:54 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:54 --> Table Class Initialized
+INFO - 2017-11-16 19:13:54 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:54 --> Model Class Initialized
+INFO - 2017-11-16 19:13:54 --> Model Class Initialized
+INFO - 2017-11-16 19:13:54 --> Model Class Initialized
+INFO - 2017-11-16 19:13:54 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:54 --> Model Class Initialized
+INFO - 2017-11-16 19:13:54 --> Model Class Initialized
+INFO - 2017-11-16 19:13:54 --> Model Class Initialized
+INFO - 2017-11-16 19:13:54 --> Model Class Initialized
+INFO - 2017-11-16 19:13:54 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:13:54 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:13:54 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:13:54 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:54 --> Total execution time: 0.0926
+INFO - 2017-11-16 19:13:57 --> Config Class Initialized
+INFO - 2017-11-16 19:13:57 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:57 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:57 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:58 --> URI Class Initialized
+INFO - 2017-11-16 19:13:58 --> Router Class Initialized
+INFO - 2017-11-16 19:13:58 --> Output Class Initialized
+INFO - 2017-11-16 19:13:58 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:58 --> Input Class Initialized
+INFO - 2017-11-16 19:13:58 --> Language Class Initialized
+INFO - 2017-11-16 19:13:58 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:58 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:58 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:58 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:58 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:58 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:58 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:58 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:58 --> Table Class Initialized
+INFO - 2017-11-16 19:13:58 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/documentos_ftp.php
+INFO - 2017-11-16 19:13:58 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:58 --> Total execution time: 0.1037
+INFO - 2017-11-16 19:13:58 --> Config Class Initialized
+INFO - 2017-11-16 19:13:58 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:13:58 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:13:58 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:13:58 --> URI Class Initialized
+INFO - 2017-11-16 19:13:58 --> Router Class Initialized
+INFO - 2017-11-16 19:13:58 --> Output Class Initialized
+INFO - 2017-11-16 19:13:58 --> Security Class Initialized
+DEBUG - 2017-11-16 19:13:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:13:58 --> Input Class Initialized
+INFO - 2017-11-16 19:13:58 --> Language Class Initialized
+INFO - 2017-11-16 19:13:58 --> Loader Class Initialized
+INFO - 2017-11-16 19:13:58 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:13:58 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:13:58 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:13:58 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:13:58 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:13:58 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:13:58 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:13:58 --> Table Class Initialized
+INFO - 2017-11-16 19:13:58 --> Parser Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Controller Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Model Class Initialized
+INFO - 2017-11-16 19:13:58 --> Final output sent to browser
+DEBUG - 2017-11-16 19:13:58 --> Total execution time: 0.1493
+INFO - 2017-11-16 19:15:12 --> Config Class Initialized
+INFO - 2017-11-16 19:15:12 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:15:12 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:15:12 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:15:12 --> URI Class Initialized
+INFO - 2017-11-16 19:15:12 --> Router Class Initialized
+INFO - 2017-11-16 19:15:12 --> Output Class Initialized
+INFO - 2017-11-16 19:15:12 --> Security Class Initialized
+DEBUG - 2017-11-16 19:15:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:15:12 --> Input Class Initialized
+INFO - 2017-11-16 19:15:12 --> Language Class Initialized
+INFO - 2017-11-16 19:15:12 --> Loader Class Initialized
+INFO - 2017-11-16 19:15:12 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:15:12 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:15:12 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:15:12 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:15:12 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:15:12 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:15:12 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:15:12 --> Table Class Initialized
+INFO - 2017-11-16 19:15:12 --> Parser Class Initialized
+INFO - 2017-11-16 19:15:12 --> Model Class Initialized
+INFO - 2017-11-16 19:15:12 --> Model Class Initialized
+INFO - 2017-11-16 19:15:12 --> Model Class Initialized
+INFO - 2017-11-16 19:15:12 --> Controller Class Initialized
+INFO - 2017-11-16 19:15:12 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:15:12 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:15:12 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:15:12 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:15:12 --> Model Class Initialized
+INFO - 2017-11-16 19:15:12 --> Model Class Initialized
+INFO - 2017-11-16 19:15:12 --> Model Class Initialized
+INFO - 2017-11-16 19:15:12 --> Model Class Initialized
+INFO - 2017-11-16 19:15:12 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-11-16 19:15:12 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:15:12 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/menu.php
+INFO - 2017-11-16 19:15:12 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/default_administrador.php
+INFO - 2017-11-16 19:15:12 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/principal_catalogo.php
+INFO - 2017-11-16 19:15:12 --> Final output sent to browser
+DEBUG - 2017-11-16 19:15:12 --> Total execution time: 0.1022
+INFO - 2017-11-16 19:15:14 --> Config Class Initialized
+INFO - 2017-11-16 19:15:14 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:15:14 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:15:14 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:15:14 --> URI Class Initialized
+INFO - 2017-11-16 19:15:14 --> Router Class Initialized
+INFO - 2017-11-16 19:15:14 --> Output Class Initialized
+INFO - 2017-11-16 19:15:14 --> Security Class Initialized
+DEBUG - 2017-11-16 19:15:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:15:14 --> Input Class Initialized
+INFO - 2017-11-16 19:15:14 --> Language Class Initialized
+INFO - 2017-11-16 19:15:14 --> Loader Class Initialized
+INFO - 2017-11-16 19:15:14 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:15:14 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:15:14 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:15:14 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:15:14 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:15:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:15:14 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:15:14 --> Table Class Initialized
+INFO - 2017-11-16 19:15:14 --> Parser Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Controller Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:15:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\administracion/default.php
+INFO - 2017-11-16 19:15:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:15:14 --> Final output sent to browser
+DEBUG - 2017-11-16 19:15:14 --> Total execution time: 0.0974
+INFO - 2017-11-16 19:15:14 --> Config Class Initialized
+INFO - 2017-11-16 19:15:14 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:15:14 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:15:14 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:15:14 --> URI Class Initialized
+INFO - 2017-11-16 19:15:14 --> Router Class Initialized
+INFO - 2017-11-16 19:15:14 --> Output Class Initialized
+INFO - 2017-11-16 19:15:14 --> Security Class Initialized
+DEBUG - 2017-11-16 19:15:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:15:14 --> Input Class Initialized
+INFO - 2017-11-16 19:15:14 --> Language Class Initialized
+INFO - 2017-11-16 19:15:14 --> Loader Class Initialized
+INFO - 2017-11-16 19:15:14 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:15:14 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:15:14 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:15:14 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:15:14 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:15:14 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:15:14 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:15:14 --> Table Class Initialized
+INFO - 2017-11-16 19:15:14 --> Parser Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Controller Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> Model Class Initialized
+INFO - 2017-11-16 19:15:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:15:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:15:14 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:15:14 --> Final output sent to browser
+DEBUG - 2017-11-16 19:15:14 --> Total execution time: 0.0791
+INFO - 2017-11-16 19:15:16 --> Config Class Initialized
+INFO - 2017-11-16 19:15:16 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:15:16 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:15:16 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:15:16 --> URI Class Initialized
+INFO - 2017-11-16 19:15:16 --> Router Class Initialized
+INFO - 2017-11-16 19:15:16 --> Output Class Initialized
+INFO - 2017-11-16 19:15:16 --> Security Class Initialized
+DEBUG - 2017-11-16 19:15:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:15:16 --> Input Class Initialized
+INFO - 2017-11-16 19:15:16 --> Language Class Initialized
+INFO - 2017-11-16 19:15:16 --> Loader Class Initialized
+INFO - 2017-11-16 19:15:16 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:15:16 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:15:16 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:15:16 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:15:16 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:15:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:15:16 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:15:16 --> Table Class Initialized
+INFO - 2017-11-16 19:15:16 --> Parser Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Controller Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/documentos_ftp.php
+INFO - 2017-11-16 19:15:16 --> Final output sent to browser
+DEBUG - 2017-11-16 19:15:16 --> Total execution time: 0.0724
+INFO - 2017-11-16 19:15:16 --> Config Class Initialized
+INFO - 2017-11-16 19:15:16 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:15:16 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:15:16 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:15:16 --> URI Class Initialized
+INFO - 2017-11-16 19:15:16 --> Router Class Initialized
+INFO - 2017-11-16 19:15:16 --> Output Class Initialized
+INFO - 2017-11-16 19:15:16 --> Security Class Initialized
+DEBUG - 2017-11-16 19:15:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:15:16 --> Input Class Initialized
+INFO - 2017-11-16 19:15:16 --> Language Class Initialized
+INFO - 2017-11-16 19:15:16 --> Loader Class Initialized
+INFO - 2017-11-16 19:15:16 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:15:16 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:15:16 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:15:16 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:15:16 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:15:16 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:15:16 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:15:16 --> Table Class Initialized
+INFO - 2017-11-16 19:15:16 --> Parser Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Controller Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Model Class Initialized
+INFO - 2017-11-16 19:15:16 --> Final output sent to browser
+DEBUG - 2017-11-16 19:15:16 --> Total execution time: 0.0863
+INFO - 2017-11-16 19:16:02 --> Config Class Initialized
+INFO - 2017-11-16 19:16:02 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:16:02 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:16:02 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:16:02 --> URI Class Initialized
+INFO - 2017-11-16 19:16:02 --> Router Class Initialized
+INFO - 2017-11-16 19:16:02 --> Output Class Initialized
+INFO - 2017-11-16 19:16:02 --> Security Class Initialized
+DEBUG - 2017-11-16 19:16:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:16:02 --> Input Class Initialized
+INFO - 2017-11-16 19:16:02 --> Language Class Initialized
+INFO - 2017-11-16 19:16:03 --> Loader Class Initialized
+INFO - 2017-11-16 19:16:03 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:16:03 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:16:03 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:16:03 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:16:03 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:16:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:16:03 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:16:03 --> Table Class Initialized
+INFO - 2017-11-16 19:16:03 --> Parser Class Initialized
+INFO - 2017-11-16 19:16:03 --> Model Class Initialized
+INFO - 2017-11-16 19:16:03 --> Model Class Initialized
+INFO - 2017-11-16 19:16:03 --> Model Class Initialized
+INFO - 2017-11-16 19:16:03 --> Controller Class Initialized
+INFO - 2017-11-16 19:16:03 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:16:03 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:16:03 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:16:03 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:16:03 --> Model Class Initialized
+INFO - 2017-11-16 19:16:03 --> Model Class Initialized
+INFO - 2017-11-16 19:16:03 --> Model Class Initialized
+INFO - 2017-11-16 19:16:03 --> Model Class Initialized
+INFO - 2017-11-16 19:16:03 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-11-16 19:16:03 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:16:03 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/menu.php
+INFO - 2017-11-16 19:16:03 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/default_administrador.php
+INFO - 2017-11-16 19:16:03 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/principal_catalogo.php
+INFO - 2017-11-16 19:16:03 --> Final output sent to browser
+DEBUG - 2017-11-16 19:16:03 --> Total execution time: 0.1099
+INFO - 2017-11-16 19:16:04 --> Config Class Initialized
+INFO - 2017-11-16 19:16:04 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:16:04 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:16:04 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:16:04 --> URI Class Initialized
+INFO - 2017-11-16 19:16:04 --> Router Class Initialized
+INFO - 2017-11-16 19:16:04 --> Output Class Initialized
+INFO - 2017-11-16 19:16:04 --> Security Class Initialized
+DEBUG - 2017-11-16 19:16:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:16:04 --> Input Class Initialized
+INFO - 2017-11-16 19:16:04 --> Language Class Initialized
+INFO - 2017-11-16 19:16:04 --> Loader Class Initialized
+INFO - 2017-11-16 19:16:04 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:16:04 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:16:04 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:16:04 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:16:04 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:16:04 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:16:04 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:16:04 --> Table Class Initialized
+INFO - 2017-11-16 19:16:04 --> Parser Class Initialized
+INFO - 2017-11-16 19:16:04 --> Model Class Initialized
+INFO - 2017-11-16 19:16:04 --> Model Class Initialized
+INFO - 2017-11-16 19:16:04 --> Model Class Initialized
+INFO - 2017-11-16 19:16:04 --> Controller Class Initialized
+INFO - 2017-11-16 19:16:04 --> Model Class Initialized
+INFO - 2017-11-16 19:16:04 --> Model Class Initialized
+INFO - 2017-11-16 19:16:04 --> Model Class Initialized
+INFO - 2017-11-16 19:16:04 --> Model Class Initialized
+INFO - 2017-11-16 19:16:04 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:16:04 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:16:04 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:16:04 --> Final output sent to browser
+DEBUG - 2017-11-16 19:16:04 --> Total execution time: 0.0794
+INFO - 2017-11-16 19:16:05 --> Config Class Initialized
+INFO - 2017-11-16 19:16:05 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:16:05 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:16:05 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:16:05 --> URI Class Initialized
+INFO - 2017-11-16 19:16:05 --> Router Class Initialized
+INFO - 2017-11-16 19:16:05 --> Output Class Initialized
+INFO - 2017-11-16 19:16:05 --> Security Class Initialized
+DEBUG - 2017-11-16 19:16:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:16:05 --> Input Class Initialized
+INFO - 2017-11-16 19:16:05 --> Language Class Initialized
+INFO - 2017-11-16 19:16:05 --> Loader Class Initialized
+INFO - 2017-11-16 19:16:05 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:16:05 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:16:05 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:16:05 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:16:05 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:16:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:16:05 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:16:05 --> Table Class Initialized
+INFO - 2017-11-16 19:16:05 --> Parser Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Controller Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/documentos_ftp.php
+INFO - 2017-11-16 19:16:05 --> Final output sent to browser
+DEBUG - 2017-11-16 19:16:05 --> Total execution time: 0.0825
+INFO - 2017-11-16 19:16:05 --> Config Class Initialized
+INFO - 2017-11-16 19:16:05 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:16:05 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:16:05 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:16:05 --> URI Class Initialized
+INFO - 2017-11-16 19:16:05 --> Router Class Initialized
+INFO - 2017-11-16 19:16:05 --> Output Class Initialized
+INFO - 2017-11-16 19:16:05 --> Security Class Initialized
+DEBUG - 2017-11-16 19:16:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:16:05 --> Input Class Initialized
+INFO - 2017-11-16 19:16:05 --> Language Class Initialized
+INFO - 2017-11-16 19:16:05 --> Loader Class Initialized
+INFO - 2017-11-16 19:16:05 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:16:05 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:16:05 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:16:05 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:16:05 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:16:05 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:16:05 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:16:05 --> Table Class Initialized
+INFO - 2017-11-16 19:16:05 --> Parser Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Controller Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Model Class Initialized
+INFO - 2017-11-16 19:16:05 --> Final output sent to browser
+DEBUG - 2017-11-16 19:16:05 --> Total execution time: 0.1000
+INFO - 2017-11-16 19:16:54 --> Config Class Initialized
+INFO - 2017-11-16 19:16:54 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:16:54 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:16:54 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:16:54 --> URI Class Initialized
+INFO - 2017-11-16 19:16:54 --> Router Class Initialized
+INFO - 2017-11-16 19:16:54 --> Output Class Initialized
+INFO - 2017-11-16 19:16:54 --> Security Class Initialized
+DEBUG - 2017-11-16 19:16:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:16:54 --> Input Class Initialized
+INFO - 2017-11-16 19:16:54 --> Language Class Initialized
+INFO - 2017-11-16 19:16:54 --> Loader Class Initialized
+INFO - 2017-11-16 19:16:54 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:16:54 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:16:54 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:16:54 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:16:54 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:16:54 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:16:54 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:16:54 --> Table Class Initialized
+INFO - 2017-11-16 19:16:54 --> Parser Class Initialized
+INFO - 2017-11-16 19:16:54 --> Model Class Initialized
+INFO - 2017-11-16 19:16:54 --> Model Class Initialized
+INFO - 2017-11-16 19:16:54 --> Model Class Initialized
+INFO - 2017-11-16 19:16:54 --> Controller Class Initialized
+INFO - 2017-11-16 19:16:54 --> Model Class Initialized
+INFO - 2017-11-16 19:16:54 --> Model Class Initialized
+INFO - 2017-11-16 19:16:54 --> Model Class Initialized
+INFO - 2017-11-16 19:16:54 --> Model Class Initialized
+INFO - 2017-11-16 19:16:54 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:16:54 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:16:54 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:16:54 --> Final output sent to browser
+DEBUG - 2017-11-16 19:16:54 --> Total execution time: 0.0772
+INFO - 2017-11-16 19:16:55 --> Config Class Initialized
+INFO - 2017-11-16 19:16:55 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:16:55 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:16:55 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:16:55 --> URI Class Initialized
+INFO - 2017-11-16 19:16:55 --> Router Class Initialized
+INFO - 2017-11-16 19:16:55 --> Output Class Initialized
+INFO - 2017-11-16 19:16:55 --> Security Class Initialized
+DEBUG - 2017-11-16 19:16:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:16:55 --> Input Class Initialized
+INFO - 2017-11-16 19:16:55 --> Language Class Initialized
+INFO - 2017-11-16 19:16:55 --> Loader Class Initialized
+INFO - 2017-11-16 19:16:55 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:16:55 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:16:55 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:16:55 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:16:55 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:16:55 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:16:55 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:16:55 --> Table Class Initialized
+INFO - 2017-11-16 19:16:55 --> Parser Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Controller Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/documentos_ftp.php
+INFO - 2017-11-16 19:16:55 --> Final output sent to browser
+DEBUG - 2017-11-16 19:16:55 --> Total execution time: 0.0750
+INFO - 2017-11-16 19:16:55 --> Config Class Initialized
+INFO - 2017-11-16 19:16:55 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:16:55 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:16:55 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:16:55 --> URI Class Initialized
+INFO - 2017-11-16 19:16:55 --> Router Class Initialized
+INFO - 2017-11-16 19:16:55 --> Output Class Initialized
+INFO - 2017-11-16 19:16:55 --> Security Class Initialized
+DEBUG - 2017-11-16 19:16:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:16:55 --> Input Class Initialized
+INFO - 2017-11-16 19:16:55 --> Language Class Initialized
+INFO - 2017-11-16 19:16:55 --> Loader Class Initialized
+INFO - 2017-11-16 19:16:55 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:16:55 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:16:55 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:16:55 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:16:55 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:16:55 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:16:55 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:16:55 --> Table Class Initialized
+INFO - 2017-11-16 19:16:55 --> Parser Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Controller Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Model Class Initialized
+INFO - 2017-11-16 19:16:55 --> Final output sent to browser
+DEBUG - 2017-11-16 19:16:55 --> Total execution time: 0.0738
+INFO - 2017-11-16 19:21:28 --> Config Class Initialized
+INFO - 2017-11-16 19:21:28 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:21:28 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:21:28 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:21:28 --> URI Class Initialized
+INFO - 2017-11-16 19:21:28 --> Router Class Initialized
+INFO - 2017-11-16 19:21:28 --> Output Class Initialized
+INFO - 2017-11-16 19:21:28 --> Security Class Initialized
+DEBUG - 2017-11-16 19:21:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:21:28 --> Input Class Initialized
+INFO - 2017-11-16 19:21:28 --> Language Class Initialized
+INFO - 2017-11-16 19:21:28 --> Loader Class Initialized
+INFO - 2017-11-16 19:21:28 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:21:28 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:21:28 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:21:28 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:21:28 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:21:28 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:21:28 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:21:28 --> Table Class Initialized
+INFO - 2017-11-16 19:21:28 --> Parser Class Initialized
+INFO - 2017-11-16 19:21:28 --> Model Class Initialized
+INFO - 2017-11-16 19:21:28 --> Model Class Initialized
+INFO - 2017-11-16 19:21:28 --> Model Class Initialized
+INFO - 2017-11-16 19:21:28 --> Controller Class Initialized
+INFO - 2017-11-16 19:21:28 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:21:28 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:21:28 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:21:28 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:21:28 --> Model Class Initialized
+INFO - 2017-11-16 19:21:28 --> Model Class Initialized
+INFO - 2017-11-16 19:21:28 --> Model Class Initialized
+INFO - 2017-11-16 19:21:28 --> Model Class Initialized
+INFO - 2017-11-16 19:21:28 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-11-16 19:21:28 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:21:28 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/menu.php
+INFO - 2017-11-16 19:21:28 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/default_administrador.php
+INFO - 2017-11-16 19:21:28 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/principal_catalogo.php
+INFO - 2017-11-16 19:21:28 --> Final output sent to browser
+DEBUG - 2017-11-16 19:21:28 --> Total execution time: 0.0984
+INFO - 2017-11-16 19:21:38 --> Config Class Initialized
+INFO - 2017-11-16 19:21:38 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:21:38 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:21:38 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:21:38 --> URI Class Initialized
+INFO - 2017-11-16 19:21:38 --> Router Class Initialized
+INFO - 2017-11-16 19:21:38 --> Output Class Initialized
+INFO - 2017-11-16 19:21:38 --> Security Class Initialized
+DEBUG - 2017-11-16 19:21:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:21:38 --> Input Class Initialized
+INFO - 2017-11-16 19:21:38 --> Language Class Initialized
+INFO - 2017-11-16 19:21:38 --> Loader Class Initialized
+INFO - 2017-11-16 19:21:38 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:21:38 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:21:38 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:21:38 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:21:38 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:21:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:21:38 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:21:38 --> Table Class Initialized
+INFO - 2017-11-16 19:21:38 --> Parser Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Controller Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:21:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\administracion/default.php
+INFO - 2017-11-16 19:21:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:21:38 --> Final output sent to browser
+DEBUG - 2017-11-16 19:21:38 --> Total execution time: 0.0999
+INFO - 2017-11-16 19:21:38 --> Config Class Initialized
+INFO - 2017-11-16 19:21:38 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:21:38 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:21:38 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:21:38 --> URI Class Initialized
+INFO - 2017-11-16 19:21:38 --> Router Class Initialized
+INFO - 2017-11-16 19:21:38 --> Output Class Initialized
+INFO - 2017-11-16 19:21:38 --> Security Class Initialized
+DEBUG - 2017-11-16 19:21:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:21:38 --> Input Class Initialized
+INFO - 2017-11-16 19:21:38 --> Language Class Initialized
+INFO - 2017-11-16 19:21:38 --> Loader Class Initialized
+INFO - 2017-11-16 19:21:38 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:21:38 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:21:38 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:21:38 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:21:38 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:21:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:21:38 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:21:38 --> Table Class Initialized
+INFO - 2017-11-16 19:21:38 --> Parser Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Controller Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> Model Class Initialized
+INFO - 2017-11-16 19:21:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:21:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:21:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:21:38 --> Final output sent to browser
+DEBUG - 2017-11-16 19:21:38 --> Total execution time: 0.0667
+INFO - 2017-11-16 19:21:40 --> Config Class Initialized
+INFO - 2017-11-16 19:21:40 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:21:40 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:21:40 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:21:40 --> URI Class Initialized
+INFO - 2017-11-16 19:21:40 --> Router Class Initialized
+INFO - 2017-11-16 19:21:40 --> Output Class Initialized
+INFO - 2017-11-16 19:21:40 --> Security Class Initialized
+DEBUG - 2017-11-16 19:21:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:21:40 --> Input Class Initialized
+INFO - 2017-11-16 19:21:40 --> Language Class Initialized
+INFO - 2017-11-16 19:21:40 --> Loader Class Initialized
+INFO - 2017-11-16 19:21:40 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:21:40 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:21:40 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:21:40 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:21:40 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:21:40 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:21:40 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:21:40 --> Table Class Initialized
+INFO - 2017-11-16 19:21:40 --> Parser Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Controller Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/documentos_ftp.php
+INFO - 2017-11-16 19:21:40 --> Final output sent to browser
+DEBUG - 2017-11-16 19:21:40 --> Total execution time: 0.0734
+INFO - 2017-11-16 19:21:40 --> Config Class Initialized
+INFO - 2017-11-16 19:21:40 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:21:40 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:21:40 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:21:40 --> URI Class Initialized
+INFO - 2017-11-16 19:21:40 --> Router Class Initialized
+INFO - 2017-11-16 19:21:40 --> Output Class Initialized
+INFO - 2017-11-16 19:21:40 --> Security Class Initialized
+DEBUG - 2017-11-16 19:21:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:21:40 --> Input Class Initialized
+INFO - 2017-11-16 19:21:40 --> Language Class Initialized
+INFO - 2017-11-16 19:21:40 --> Loader Class Initialized
+INFO - 2017-11-16 19:21:40 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:21:40 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:21:40 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:21:40 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:21:40 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:21:40 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:21:40 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:21:40 --> Table Class Initialized
+INFO - 2017-11-16 19:21:40 --> Parser Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Controller Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Model Class Initialized
+INFO - 2017-11-16 19:21:40 --> Final output sent to browser
+DEBUG - 2017-11-16 19:21:40 --> Total execution time: 0.0891
+INFO - 2017-11-16 19:22:36 --> Config Class Initialized
+INFO - 2017-11-16 19:22:36 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:22:36 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:22:36 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:22:36 --> URI Class Initialized
+INFO - 2017-11-16 19:22:36 --> Router Class Initialized
+INFO - 2017-11-16 19:22:36 --> Output Class Initialized
+INFO - 2017-11-16 19:22:36 --> Security Class Initialized
+DEBUG - 2017-11-16 19:22:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:22:36 --> Input Class Initialized
+INFO - 2017-11-16 19:22:36 --> Language Class Initialized
+INFO - 2017-11-16 19:22:36 --> Loader Class Initialized
+INFO - 2017-11-16 19:22:36 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:22:36 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:22:36 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:22:36 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:22:36 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:22:36 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:22:36 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:22:36 --> Table Class Initialized
+INFO - 2017-11-16 19:22:36 --> Parser Class Initialized
+INFO - 2017-11-16 19:22:36 --> Model Class Initialized
+INFO - 2017-11-16 19:22:36 --> Model Class Initialized
+INFO - 2017-11-16 19:22:36 --> Model Class Initialized
+INFO - 2017-11-16 19:22:36 --> Controller Class Initialized
+INFO - 2017-11-16 19:22:36 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:22:36 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:22:36 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:22:36 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:22:36 --> Model Class Initialized
+INFO - 2017-11-16 19:22:36 --> Model Class Initialized
+INFO - 2017-11-16 19:22:36 --> Model Class Initialized
+INFO - 2017-11-16 19:22:36 --> Model Class Initialized
+INFO - 2017-11-16 19:22:36 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-11-16 19:22:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:22:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/menu.php
+INFO - 2017-11-16 19:22:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/default_administrador.php
+INFO - 2017-11-16 19:22:36 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/principal_catalogo.php
+INFO - 2017-11-16 19:22:36 --> Final output sent to browser
+DEBUG - 2017-11-16 19:22:36 --> Total execution time: 0.0997
+INFO - 2017-11-16 19:22:38 --> Config Class Initialized
+INFO - 2017-11-16 19:22:38 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:22:38 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:22:38 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:22:38 --> URI Class Initialized
+INFO - 2017-11-16 19:22:38 --> Router Class Initialized
+INFO - 2017-11-16 19:22:38 --> Output Class Initialized
+INFO - 2017-11-16 19:22:38 --> Security Class Initialized
+DEBUG - 2017-11-16 19:22:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:22:38 --> Input Class Initialized
+INFO - 2017-11-16 19:22:38 --> Language Class Initialized
+INFO - 2017-11-16 19:22:38 --> Loader Class Initialized
+INFO - 2017-11-16 19:22:38 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:22:38 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:22:38 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:22:38 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:22:38 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:22:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:22:38 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:22:38 --> Table Class Initialized
+INFO - 2017-11-16 19:22:38 --> Parser Class Initialized
+INFO - 2017-11-16 19:22:38 --> Model Class Initialized
+INFO - 2017-11-16 19:22:38 --> Model Class Initialized
+INFO - 2017-11-16 19:22:38 --> Model Class Initialized
+INFO - 2017-11-16 19:22:38 --> Controller Class Initialized
+INFO - 2017-11-16 19:22:38 --> Model Class Initialized
+INFO - 2017-11-16 19:22:38 --> Model Class Initialized
+INFO - 2017-11-16 19:22:38 --> Model Class Initialized
+INFO - 2017-11-16 19:22:38 --> Model Class Initialized
+INFO - 2017-11-16 19:22:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:22:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:22:38 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:22:38 --> Final output sent to browser
+DEBUG - 2017-11-16 19:22:38 --> Total execution time: 0.0770
+INFO - 2017-11-16 19:22:39 --> Config Class Initialized
+INFO - 2017-11-16 19:22:39 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:22:39 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:22:39 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:22:39 --> URI Class Initialized
+INFO - 2017-11-16 19:22:39 --> Router Class Initialized
+INFO - 2017-11-16 19:22:39 --> Output Class Initialized
+INFO - 2017-11-16 19:22:39 --> Security Class Initialized
+DEBUG - 2017-11-16 19:22:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:22:39 --> Input Class Initialized
+INFO - 2017-11-16 19:22:39 --> Language Class Initialized
+INFO - 2017-11-16 19:22:39 --> Loader Class Initialized
+INFO - 2017-11-16 19:22:39 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:22:39 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:22:39 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:22:39 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:22:39 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:22:39 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:22:39 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:22:39 --> Table Class Initialized
+INFO - 2017-11-16 19:22:39 --> Parser Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Controller Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/documentos_ftp.php
+INFO - 2017-11-16 19:22:39 --> Final output sent to browser
+DEBUG - 2017-11-16 19:22:39 --> Total execution time: 0.0630
+INFO - 2017-11-16 19:22:39 --> Config Class Initialized
+INFO - 2017-11-16 19:22:39 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:22:39 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:22:39 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:22:39 --> URI Class Initialized
+INFO - 2017-11-16 19:22:39 --> Router Class Initialized
+INFO - 2017-11-16 19:22:39 --> Output Class Initialized
+INFO - 2017-11-16 19:22:39 --> Security Class Initialized
+DEBUG - 2017-11-16 19:22:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:22:39 --> Input Class Initialized
+INFO - 2017-11-16 19:22:39 --> Language Class Initialized
+INFO - 2017-11-16 19:22:39 --> Loader Class Initialized
+INFO - 2017-11-16 19:22:39 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:22:39 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:22:39 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:22:39 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:22:39 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:22:39 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:22:39 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:22:39 --> Table Class Initialized
+INFO - 2017-11-16 19:22:39 --> Parser Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Controller Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Model Class Initialized
+INFO - 2017-11-16 19:22:39 --> Final output sent to browser
+DEBUG - 2017-11-16 19:22:39 --> Total execution time: 0.0816
+INFO - 2017-11-16 19:32:59 --> Config Class Initialized
+INFO - 2017-11-16 19:32:59 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:32:59 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:32:59 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:32:59 --> URI Class Initialized
+INFO - 2017-11-16 19:32:59 --> Router Class Initialized
+INFO - 2017-11-16 19:32:59 --> Output Class Initialized
+INFO - 2017-11-16 19:32:59 --> Security Class Initialized
+DEBUG - 2017-11-16 19:32:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:32:59 --> Input Class Initialized
+INFO - 2017-11-16 19:32:59 --> Language Class Initialized
+INFO - 2017-11-16 19:32:59 --> Loader Class Initialized
+INFO - 2017-11-16 19:32:59 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:32:59 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:32:59 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:32:59 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:32:59 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:32:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:32:59 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:32:59 --> Table Class Initialized
+INFO - 2017-11-16 19:32:59 --> Parser Class Initialized
+INFO - 2017-11-16 19:32:59 --> Model Class Initialized
+INFO - 2017-11-16 19:32:59 --> Model Class Initialized
+INFO - 2017-11-16 19:32:59 --> Model Class Initialized
+INFO - 2017-11-16 19:32:59 --> Controller Class Initialized
+INFO - 2017-11-16 19:32:59 --> User Agent Class Initialized
+DEBUG - 2017-11-16 19:32:59 --> Parser class already loaded. Second attempt ignored.
+DEBUG - 2017-11-16 19:32:59 --> Table class already loaded. Second attempt ignored.
+INFO - 2017-11-16 19:32:59 --> Helper loaded: date_helper
+INFO - 2017-11-16 19:32:59 --> Model Class Initialized
+INFO - 2017-11-16 19:32:59 --> Model Class Initialized
+INFO - 2017-11-16 19:32:59 --> Model Class Initialized
+INFO - 2017-11-16 19:32:59 --> Model Class Initialized
+INFO - 2017-11-16 19:32:59 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2017-11-16 19:32:59 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/header.php
+INFO - 2017-11-16 19:32:59 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/menu.php
+INFO - 2017-11-16 19:32:59 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/default_administrador.php
+INFO - 2017-11-16 19:32:59 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\default/principal_catalogo.php
+INFO - 2017-11-16 19:32:59 --> Final output sent to browser
+DEBUG - 2017-11-16 19:32:59 --> Total execution time: 0.4100
+INFO - 2017-11-16 19:33:01 --> Config Class Initialized
+INFO - 2017-11-16 19:33:01 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:33:01 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:33:01 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:33:01 --> URI Class Initialized
+INFO - 2017-11-16 19:33:01 --> Router Class Initialized
+INFO - 2017-11-16 19:33:01 --> Output Class Initialized
+INFO - 2017-11-16 19:33:01 --> Security Class Initialized
+DEBUG - 2017-11-16 19:33:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:33:01 --> Input Class Initialized
+INFO - 2017-11-16 19:33:01 --> Language Class Initialized
+INFO - 2017-11-16 19:33:01 --> Loader Class Initialized
+INFO - 2017-11-16 19:33:01 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:33:01 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:33:01 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:33:01 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:33:01 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:33:01 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:33:01 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:33:01 --> Table Class Initialized
+INFO - 2017-11-16 19:33:01 --> Parser Class Initialized
+INFO - 2017-11-16 19:33:01 --> Model Class Initialized
+INFO - 2017-11-16 19:33:01 --> Model Class Initialized
+INFO - 2017-11-16 19:33:01 --> Model Class Initialized
+INFO - 2017-11-16 19:33:01 --> Controller Class Initialized
+INFO - 2017-11-16 19:33:01 --> Model Class Initialized
+INFO - 2017-11-16 19:33:01 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:33:01 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\administracion/default.php
+INFO - 2017-11-16 19:33:01 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:33:01 --> Final output sent to browser
+DEBUG - 2017-11-16 19:33:01 --> Total execution time: 0.0907
+INFO - 2017-11-16 19:33:02 --> Config Class Initialized
+INFO - 2017-11-16 19:33:02 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:33:02 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:33:02 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:33:02 --> URI Class Initialized
+INFO - 2017-11-16 19:33:02 --> Router Class Initialized
+INFO - 2017-11-16 19:33:02 --> Output Class Initialized
+INFO - 2017-11-16 19:33:02 --> Security Class Initialized
+DEBUG - 2017-11-16 19:33:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:33:02 --> Input Class Initialized
+INFO - 2017-11-16 19:33:02 --> Language Class Initialized
+INFO - 2017-11-16 19:33:02 --> Loader Class Initialized
+INFO - 2017-11-16 19:33:02 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:33:02 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:33:02 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:33:02 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:33:02 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:33:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:33:02 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:33:02 --> Table Class Initialized
+INFO - 2017-11-16 19:33:02 --> Parser Class Initialized
+INFO - 2017-11-16 19:33:02 --> Model Class Initialized
+INFO - 2017-11-16 19:33:02 --> Model Class Initialized
+INFO - 2017-11-16 19:33:02 --> Model Class Initialized
+INFO - 2017-11-16 19:33:02 --> Controller Class Initialized
+INFO - 2017-11-16 19:33:02 --> Model Class Initialized
+INFO - 2017-11-16 19:33:02 --> Model Class Initialized
+INFO - 2017-11-16 19:33:02 --> Model Class Initialized
+INFO - 2017-11-16 19:33:02 --> Model Class Initialized
+INFO - 2017-11-16 19:33:02 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/submenu.php
+INFO - 2017-11-16 19:33:02 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/default.php
+INFO - 2017-11-16 19:33:02 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\layout/layout_content.php
+INFO - 2017-11-16 19:33:02 --> Final output sent to browser
+DEBUG - 2017-11-16 19:33:02 --> Total execution time: 0.0960
+INFO - 2017-11-16 19:33:03 --> Config Class Initialized
+INFO - 2017-11-16 19:33:03 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:33:03 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:33:03 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:33:03 --> URI Class Initialized
+INFO - 2017-11-16 19:33:03 --> Router Class Initialized
+INFO - 2017-11-16 19:33:03 --> Output Class Initialized
+INFO - 2017-11-16 19:33:03 --> Security Class Initialized
+DEBUG - 2017-11-16 19:33:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:33:03 --> Input Class Initialized
+INFO - 2017-11-16 19:33:03 --> Language Class Initialized
+INFO - 2017-11-16 19:33:03 --> Loader Class Initialized
+INFO - 2017-11-16 19:33:03 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:33:03 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:33:03 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:33:03 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:33:03 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:33:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:33:03 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:33:03 --> Table Class Initialized
+INFO - 2017-11-16 19:33:03 --> Parser Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Controller Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> File loaded: C:\xampp\htdocs\CatalogoServicios\application\views\documentos/documentos_ftp.php
+INFO - 2017-11-16 19:33:03 --> Final output sent to browser
+DEBUG - 2017-11-16 19:33:03 --> Total execution time: 0.0810
+INFO - 2017-11-16 19:33:03 --> Config Class Initialized
+INFO - 2017-11-16 19:33:03 --> Hooks Class Initialized
+DEBUG - 2017-11-16 19:33:03 --> UTF-8 Support Enabled
+INFO - 2017-11-16 19:33:03 --> Utf8 Class Initialized
+INFO - 2017-11-16 19:33:03 --> URI Class Initialized
+INFO - 2017-11-16 19:33:03 --> Router Class Initialized
+INFO - 2017-11-16 19:33:03 --> Output Class Initialized
+INFO - 2017-11-16 19:33:03 --> Security Class Initialized
+DEBUG - 2017-11-16 19:33:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-11-16 19:33:03 --> Input Class Initialized
+INFO - 2017-11-16 19:33:03 --> Language Class Initialized
+INFO - 2017-11-16 19:33:03 --> Loader Class Initialized
+INFO - 2017-11-16 19:33:03 --> Helper loaded: url_helper
+INFO - 2017-11-16 19:33:03 --> Helper loaded: form_helper
+INFO - 2017-11-16 19:33:03 --> Helper loaded: html_helper
+INFO - 2017-11-16 19:33:03 --> Helper loaded: datatables_helper
+INFO - 2017-11-16 19:33:03 --> Database Driver Class Initialized
+INFO - 2017-11-16 19:33:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-11-16 19:33:03 --> Form Validation Class Initialized
+INFO - 2017-11-16 19:33:03 --> Table Class Initialized
+INFO - 2017-11-16 19:33:03 --> Parser Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Controller Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Model Class Initialized
+INFO - 2017-11-16 19:33:03 --> Final output sent to browser
+DEBUG - 2017-11-16 19:33:03 --> Total execution time: 0.0937

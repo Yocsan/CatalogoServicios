@@ -17,7 +17,7 @@ if (!defined('BASEPATH'))
     $tmpl = array ( 'table_open'  => '<table id="big_table" border="1" cellpadding="2" cellspacing="1" class="mytable">' );
     $this->table->set_template($tmpl); 
 
-    $this->table->set_heading('Nombre del servicio','Tipo','Requerimiento','Esquema','Vertical','Acciones');
+    $this->table->set_heading('Nombre del servicio','Tipo','Requerimiento','Esquema','Vertical','Imprimir documentos');
     echo $this->table->generate();
 ?>
 
