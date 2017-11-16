@@ -12,7 +12,7 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Consultas extends CI_Controller{ 
+class Documentos extends CI_Controller{ 
    function __construct() {
         parent::__construct();      
      
@@ -99,13 +99,13 @@ class Consultas extends CI_Controller{
     		 
     		case "1":
     
-    			$vista_config = $this->load->view('consultas/consultas_ftp',array(),TRUE);
+    			$vista_config = $this->load->view('documentos/documentos_ftp',array(),TRUE);
     			 
     			break;
     			 
     		case "2":
     			 
-    			$vista_config = $this->load->view('consultas/consultas_web',array(),TRUE);
+    			$vista_config = $this->load->view('documentos/documentos_web',array(),TRUE);
     
     			break;
     	}
@@ -128,6 +128,7 @@ class Consultas extends CI_Controller{
     	
     	$this->datatables->select ('id_servicio, nombre, tipos_necesidad.nombre_necesidad, necesidades.num_necesidad, esquemas.nombre_esquema, verticales.nombre_vertical')
 	    	->unset_column('id_servicio')
+	    	-> add_column('Acciones', get_buttons_print('$1','servicios'),'id_servicio')
 	    	-> from ('servicios')
 	    	-> join ('necesidades','necesidades.id_necesidad = servicios.necesidades_id_necesidad')
          -> join ('tipos_necesidad','necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad')
@@ -143,6 +144,7 @@ class Consultas extends CI_Controller{
     public function carga_tabla_web() {
     	$this->datatables-> select ('id_servicio, nombre, tipos_necesidad.nombre_necesidad, necesidades.num_necesidad, esquemas.nombre_esquema, verticales.nombre_vertical')
 	    	->unset_column('id_servicio')
+	    	-> add_column('Acciones', get_buttons_print('$1','servicios'),'id_servicio')
 	    	-> from ('servicios')
 	    	-> join ('necesidades','necesidades.id_necesidad = servicios.necesidades_id_necesidad')
          -> join ('tipos_necesidad','necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad')

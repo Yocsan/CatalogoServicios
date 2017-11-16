@@ -18,11 +18,11 @@ if (!defined('BASEPATH'))
 
 <!DOCTYPE html>
 
-<script type="text/javascript" src="<?php echo base_url('assets/js/helper/func_consultas.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/helper/func_documentos.js');?>"></script>
 
  <div class="row" >
     <p>
-	     Modulo de Administraci&oacute;n de Consultas<br>
+	     Modulo de Administraci&oacute;n de Documentos<br>
 	</p> 
          
 </div> 
