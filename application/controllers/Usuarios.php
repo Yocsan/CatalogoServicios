@@ -73,10 +73,10 @@ class Usuarios extends CI_Controller {
     	$search = $this->User_model->avalaible($identifier) ;
     
     	if($search){
-    		$resultado = '<span class="success">Disponible</span>';
+    		$resultado = '<span id="mensaje" class="success">Disponible</span>';
     		$codigo = FALSE;
     	}else{
-    		$resultado = '<span class="error">No Disponible</span>';
+    		$resultado = '<span id="mensaje" class="error">No Disponible</span>';
     		$codigo = TRUE;
     	}
     

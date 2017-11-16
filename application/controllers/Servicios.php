@@ -38,10 +38,10 @@ class Servicios extends CI_Controller{
     	$search = $this->Servicios_model->avalaible($identifier) ;
     
     	if($search){
-    		$resultado= '<span class="success">N&uacute;mero de requerimiento disponible</span>';
+    		$resultado= '<span id="mensaje" class="success">N&uacute;mero de requerimiento disponible</span>';
     		$codigo = FALSE;
     	}else{
-    		$resultado= '<span class="error">El n&uacute;mero de requerimiento no se encuentra disponible</span>';
+    		$resultado= '<span id="mensaje" class="error">El n&uacute;mero de requerimiento no se encuentra disponible</span>';
     		$codigo = TRUE;
     	}
     
@@ -62,10 +62,10 @@ class Servicios extends CI_Controller{
     	$search = $this->Servicios_model->avalaible_nombre_servicio($identifier) ;
     
     	if($search){
-    		$resultado= '<span class="success">Nombre disponible</span>';
+    		$resultado= '<span id="mensaje" class="success">Nombre disponible</span>';
     		$codigo = FALSE;
     	}else{
-    		$resultado= '<span class="error">El nombre del servicio no se encuentra disponible</span>';
+    		$resultado= '<span id="mensaje" class="error">El nombre del servicio no se encuentra disponible</span>';
     		$codigo = TRUE;
     	}
     

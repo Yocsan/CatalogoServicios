@@ -12,7 +12,7 @@ class Menu_model extends CI_Model {
 	//la tabla menu_has_roles es donde se encuentran los menus asociados a cada rol de usuario (Administrador, Arquitecto, Visitante)
 	public function get_menu($id_rol){
     	   
-            $this->db->select('menus.id_menu,menus.nombre,menus.vista')
+            $this->db->select('menus.id_menu,menus.nombre,menus.vista, menus.descripcion')
                         ->from('menus')
                         ->join('menus_has_roles','menus.id_menu = menus_has_roles.menus_id_menu')
                         ->where(array('menus_has_roles.roles_id_rol'=>$id_rol,

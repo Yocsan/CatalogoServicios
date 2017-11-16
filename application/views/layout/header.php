@@ -114,6 +114,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                             <div class="col-md-12" >	
                                                             	<p style="margin-bottom: 0px;" class="prtlHdrWelcome">Bienvenido: <span style="text-transform: uppercase;"><?= $name?></span></p>
                                                             </div>
+                                                            <div class="col-md-12" >	
+                                                            	<p style="margin-bottom: 0px;" class="prtlHdrWelcome">Rol: <span style="text-transform: uppercase;"><?= $role_name?></span></p>
+                                                            </div>
+                   
                                                     </div>
                                                     <div class="row" >								
                                                             <div class="col-md-12" >																		

@@ -27,7 +27,7 @@ $(document).ready(function(){
 	                dataType: 'json',
 	                success: function(data) {
 	                $('#msg_error').html(data.mensaje);                   
-	                $("span").fadeOut(3000);
+	                $("#mensaje").fadeOut(3000);
 	                $("input[type=submit]").prop("disabled",data.cod);
 	            },
 	            error: function(error){
