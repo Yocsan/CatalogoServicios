@@ -154,5 +154,24 @@ class Consultas extends CI_Controller{
     	
     	echo $this->datatables->generate();
     }
+   
+   public function carga_consulta() {
+      
+      $id_servicio = $this->input->post('identificador');
+
+      $datos['datos'] = $this->Servicios_model->get_info_servicio($id_servicio);
+
+      $resultado = $this->load->view('consultas/consulta', $datos , TRUE);
+
+      $response = array('mensaje' => $resultado);
+
+      $this->output
+         ->set_status_header(200)
+         ->set_content_type('application/json', 'utf-8')
+         ->set_output(json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES))
+         ->_display();
+      exit;
+      
+   }
  
 }
