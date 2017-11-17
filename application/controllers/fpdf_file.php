@@ -21,7 +21,7 @@ class fpdf_file extends CI_Controller {
 		$pdf->SetMargins(10, 10); 
 		
 		$pdf->SetFont('Arial');
-		$pdf->Image(base_url('assets/img/cabezal_bolivariano_nuevo.png'),60,50,-180);
+		$pdf->Image(base_url('assets/img/logo_etf.png'),60,50,-180);
 		
 		$miCabecera = array('Proceso:', 'Subproceso:','Nombre del Documento:','Proyecto,Preparado por:','Fecha diseño Funcional:', 'fecha diseño Técnico','ID Servicio','Servicio:');
 		$data = array('1', '2','3','4','5','6','7','8');

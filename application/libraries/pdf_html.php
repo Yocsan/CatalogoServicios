@@ -15,8 +15,7 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 	    function Header()
    {
 
-       //$this->Image('logo.png',10,8,33);
-
+      
       $this->SetFont('Arial','B',10);
 
       $this->Cell(0,10,utf8_decode('Especificación de servicios de integración CI Proyecto                   Fecha'),1,0,'C');
@@ -31,7 +30,8 @@ function Footer()
     $this->SetY(-25);
     // Select Arial italic 8
     $this->SetFont('Arial','I',8);
-    $image=$this->Image('http://www.cantv.com.ve/Portales/Cantv/Plantilla2007/logoCantv_portal.jpg',180,274,-1400);
+    $image=$this->Image(base_url('assets/img/logo_etf.png'),180,274,-1400);
+     //$imagen= $this->Image(base_url('assets/img/logo_etf.png'),10,8,33);
     $this->Cell(0,10,utf8_decode('Gerencia de Tecnología y Soluciones                 pagina '.$this->PageNo().'/{nb}'),1,1,'C');
     // Print current and total page numbers
     
