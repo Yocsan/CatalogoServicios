@@ -1,19 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
-/**
- * Description of verticales
- * AdministraciÃ³n de las verticales existentes en PIC
- 
- * @author Ing. AngÃ©lica Espinosa  <angelica1387@gmail.com>
- * @fecha_crecion 19/10/2015
- */
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 

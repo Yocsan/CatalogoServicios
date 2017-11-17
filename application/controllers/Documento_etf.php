@@ -1,13 +1,5 @@
 <?php 
 
-/**
- * Description of Consultas
- *  Funciones para la creación, actualización de los servicios del Catalogo
- *
- * @author TSU Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_crecion 26/10/2017
- */
-
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Documento_etf extends CI_Controller {

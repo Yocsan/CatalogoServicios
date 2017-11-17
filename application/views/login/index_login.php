@@ -4,9 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $html = "";
 $html = $html.'<div class="row" >	'.
 				'<div class="col-md-3 col-md-offset-4" >'.						
-						img(base_url("assets/img/formlogon_bienvenido2.gif"),FALSE,array('align'=>'left',
-	 																					'heigth'=>'15',
- 	 																				'width'=>'80')).
+						img(base_url("assets/img/formlogon_bienvenido2.gif"),FALSE,array('align'=>'left','heigth'=>'15','width'=>'80')).
  	 			'</div>'.
  	 		'</div>'.
  	 		'<div class="row" >	'.

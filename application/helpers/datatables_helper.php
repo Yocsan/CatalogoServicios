@@ -1,12 +1,8 @@
 <?php
 
-
-/**
- * @autor Ing. Angélica Espinosa  <angelica1387@gmail.com>
- * @fecha_creacion 23/05/2016
- */
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
+
 //id->id del registro que se carga de la BD
 //ruta->nombre del controlador
 function get_buttons($id)
@@ -18,12 +14,13 @@ function get_buttons($id)
   
     return $html;
 }
+
 //botones para generar ETF y F1
 function get_buttons_print($id)
 {
     $ci = & get_instance();
     $html='';
-    $html .=  '<button id="etf_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_etf">ETF</button>';
+    $html .=  '<button id="etf_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_etf">ETF</button>    ';
     $html .=  '<button id="f1_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_f1" >F1</button>';
   
     return $html;

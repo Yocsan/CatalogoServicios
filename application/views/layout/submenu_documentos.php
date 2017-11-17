@@ -24,7 +24,7 @@ defined("BASEPATH") OR exit("No direct script access allowed");
 	      				
 	      					      			 
 		   				<li style="padding-left: 15px;">
-		   				<!-- Aqui llamas la funcion de un controlador, dicha funcion se llama create. -->
+		   				<!-- se llama a la funcion "create del controller" -->
 		       			 	<a href="<?= base_url('{Vista}/create')?>"  name="sub_m_{Id_menu}_create" id="sub_m_{Id_menu}_create" >
 			           			<span><?= img(base_url("assets/img/ico12_treeleaf.gif"),FALSE)?> </span> 
 					           		Cambiar 

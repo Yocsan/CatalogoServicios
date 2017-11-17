@@ -1,16 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- * @autor Ing. Angélica Espinosa  <angelica1387@gmail.com>
- * @fecha_creacion 02/10/2015
- */
-
-
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Usuarios extends CI_Controller {
@@ -21,7 +10,8 @@ class Usuarios extends CI_Controller {
         $this->load->helper("datatables_helper");
         
     }
-    
+
+    //funcion que carga la vista para crear 
     public function create() {
     	
     	$datos['roles'] = $this->Rol_model->get_roles();
@@ -37,6 +27,7 @@ class Usuarios extends CI_Controller {
         
     }
     
+    //funcion que carga la vista para consultar
     public function search() {
     	
         $resultado =  $this->load->view('usuarios/search',array(),TRUE);
@@ -51,7 +42,7 @@ class Usuarios extends CI_Controller {
         
     }
     
-
+    //funcion que carga el datable con los parametros que se le pasa
     public function datatable() {
     	
     	$this->datatables->select  ('id_usuario, nombre, apellido, cedula, telefono, roles.nombre_rol')
@@ -65,7 +56,7 @@ class Usuarios extends CI_Controller {
     
     }
     
-
+    //Consulta si el nuevo nombre ya existe
     public function consultarNombreUsuario() {
     
     	$identifier = $this->input->post('usuario');
@@ -89,7 +80,7 @@ class Usuarios extends CI_Controller {
     	exit;
     }
     
-    
+    //funcion que inserta usuario
     public function insert_usuario() {
     	$data = array(
                 'nombre'=> $this->input->post('nombre'),
@@ -158,6 +149,7 @@ class Usuarios extends CI_Controller {
     	 
     }
 
+    //Función que elimina usuario
     public function delete_usuario(){
     
     	$user_id = $this->input->post('identificador');

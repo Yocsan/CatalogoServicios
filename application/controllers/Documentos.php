@@ -1,14 +1,5 @@
 <?php
 
-/**
- * Description of Servicios
- *  Funciones para la creación, actualización de los servicios del Catalogo
- * 
- * @author Ing. Angélica Espinosa  <angelica1387@gmail.com>
- * @fecha_crecion 11/11/2015
- */
-
-
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
@@ -90,6 +81,7 @@ class Documentos extends CI_Controller{
         return $prop_vista[0]->vista;
         
     }
+
    //se carga vista de servicios ftp o servicios web
    public function carga_tabla_servicios(){
     
@@ -123,7 +115,7 @@ class Documentos extends CI_Controller{
     
     }
 
-   //se carga contenido en la tabla servicio ftp
+   //carga contenido en la tabla servicio ftp
    public function carga_tabla_ftp() {
     	
     	$this->datatables->select ('id_servicio, nombre, tipos_necesidad.nombre_necesidad, necesidades.num_necesidad, esquemas.nombre_esquema, verticales.nombre_vertical')
@@ -139,8 +131,7 @@ class Documentos extends CI_Controller{
     	echo $this->datatables->generate();
     }
    
-   //se carga contenido en la tabla servicios web
-       
+   //carga contenido en la tabla servicios web
     public function carga_tabla_web() {
     	$this->datatables-> select ('id_servicio, nombre, tipos_necesidad.nombre_necesidad, necesidades.num_necesidad, esquemas.nombre_esquema, verticales.nombre_vertical')
 	    	->unset_column('id_servicio')

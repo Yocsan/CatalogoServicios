@@ -1,7 +1,4 @@
 <?php
-/*@author Jose Borges <josedavidborgesrangel@gmail.com>
- * @fecha_crecion 08/11/2016
-*/
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');

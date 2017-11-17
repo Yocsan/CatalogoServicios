@@ -1,14 +1,5 @@
 <?php
 
-/**
- * Description of Servicios
- *  Funciones para la creación, actualización de los servicios del Catalogo
- * 
- * @author Ing. Angélica Espinosa  <angelica1387@gmail.com>
- * @fecha_crecion 11/11/2015
- */
-
-
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
@@ -157,7 +148,7 @@ class Servicios extends CI_Controller{
     	
     	echo $this->datatables->generate();
     }
-    /*--------------------------------------se carga la vista de necesidades----------------------------------*/
+    /*carga la vista de necesidades*/
     public function create() {
 
          $data['necesidades'] = $this->Servicios_model->get_tipos_necesidades();
@@ -174,7 +165,7 @@ class Servicios extends CI_Controller{
         exit;
     }
     
-    /*---------------------------------------------se carga la vista de servicios----------------------------------------------------------*/
+    /*se carga la vista de servicios*/
     
     public function carga_formulario_servicios(){
        
@@ -223,8 +214,8 @@ class Servicios extends CI_Controller{
     	exit;
     }
        
-	/*---------------------------vista cuando se presiona el boton de anterior en el formulario de servicios--------------------------------------------*/
 
+	/*vista cuando se presiona el boton de anterior en el formulario de servicios*/
     public function carga_vista_anterior_1() {
        
       $id_necesidad = $this->Servicios_model->get_ultima_necesidad() ;
@@ -244,11 +235,11 @@ class Servicios extends CI_Controller{
        
     }   
     
-    /*---------------------------vista cuando se presiona el boton de siguiente en el formulario de servicios--------------------------------------------*/
+    /*vista cuando se presiona el boton de siguiente en el formulario de servicios*/
     
     public function carga_formulario_premisas() {
 
-    	/*----------------------------------carga de imagen-------------------------------*/
+    	/*carga de imagen*/
     	
     	$diagrama_uml = 'diagrama_uml';
     	$nombre_servicio = $this->input->post('nombre_servicio');
@@ -295,7 +286,7 @@ class Servicios extends CI_Controller{
 
     }
     
-    /*---------------------------vista cuando se presiona el boton de anterior en el formulario de servicios--------------------------------------------*/
+    /*vista cuando se presiona el boton de anterior en el formulario de servicios*/
     
     public function carga_vista_anterior_2() {
        
@@ -423,7 +414,7 @@ class Servicios extends CI_Controller{
 		
 		}
 		 	
-		/*--------------------------------datos que se cargan en la vista de configuracion ftp-------------------------------*/
+		/*datos que se cargan en la vista de configuracion ftp*/
 
     	$data['cantidad_sistemas_origen'] = $this->input->post('cantidad_sistemas_origen');
     	$data['cantidad_sistemas_destino'] = $this->input->post('cantidad_sistemas_destino');	
@@ -464,7 +455,7 @@ class Servicios extends CI_Controller{
 		$split = $this->input->post('split[]');
       
 		
-		/*-------------------Carga de la data configuracion ftp--------------------------*/
+		/*Carga de la data configuracion ftp*/
 		
 		for ($i=0; $i < count($sistema); $i++) {
 			
@@ -648,7 +639,7 @@ class Servicios extends CI_Controller{
     	 
     }
     
-/*--------------------funcion que elimina servicios web*/
+/*funcion que elimina servicios web*/
      public function delete_servicio_web(){
     
     	$id_servicio = $this->input->post('identificador');

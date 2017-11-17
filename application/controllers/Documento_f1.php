@@ -1,13 +1,5 @@
 <?php 
 
-/**
- * Description of Consultas
- *  Funciones para la creaciÃ³n, actualizaciÃ³n de los servicios del Catalogo
- *
- * @author TSU Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_crecion 26/10/2017
- */
-
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Documento_f1 extends CI_Controller {
@@ -36,9 +28,9 @@ class Documento_f1 extends CI_Controller {
     
     public function generar_documento() {
 
-    	// Create new PHPExcel object
+    	// Crea un objeto PHPExcel
     	$objPHPExcel = $this->phpexcel;
-    	// Set document properties
+    	// Propiedades del documento
     	$objPHPExcel->getProperties()->setCreator("Maarten Balliauw")
     	->setLastModifiedBy("Maarten Balliauw")
     	->setTitle("Office 2007 XLSX Test Document")
@@ -46,21 +38,21 @@ class Documento_f1 extends CI_Controller {
     	->setDescription("Test document for Office 2007 XLSX, generated using PHP classes.")
     	->setKeywords("office 2007 openxml php")
     	->setCategory("Test result file");
-    	// Add some data
+    	// Agrega la información a la tabla
     	$objPHPExcel->setActiveSheetIndex(0)
     	->setCellValue('A1', 'Hello')
     	->setCellValue('B2', 'world!')
     	->setCellValue('C1', 'Hello')
     	->setCellValue('D2', 'world!');
-    	// Miscellaneous glyphs, UTF-8
+    	// Escritos variados, UTF-8
     	$objPHPExcel->setActiveSheetIndex(0)
     	->setCellValue('A4', 'Miscellaneous glyphs')
     	->setCellValue('A5', 'éàèùâêîôûëïüÿäöüç');
-    	// Rename worksheet
+    	// Cambia el nombre a la hoja de calculo de excel
     	$objPHPExcel->getActiveSheet()->setTitle('Simple');
-    	// Set active sheet index to the first sheet, so Excel opens this as the first sheet
+    	// Se establece el índice de hoja activa en la primera hoja, para que Excel lo abra como la primera hoja
     	$objPHPExcel->setActiveSheetIndex(0);
-    	// Redirect output to a client’s web browser (OpenDocument)
+    	// Redirige la salida al navegador web de un cliente (OpenDocument)
     	header('Content-Type: application/vnd.oasis.opendocument.spreadsheet');
     	header('Content-Disposition: attachment;filename="01simple.ods"');
     	header('Cache-Control: max-age=0');

@@ -1,7 +1,3 @@
-/**
- * @author: Angelica Espinosa
- * 02/09/2015
- */
 
 
 $(document).ready(function()    {

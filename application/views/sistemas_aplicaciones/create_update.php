@@ -1,15 +1,5 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * @autor TSU. Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_creacion 06/10/2016
- */
 
 if (!defined('BASEPATH'))
 	exit('No direct script access allowed')

@@ -58,21 +58,22 @@ class Login_normal extends CI_Controller {
     
     		} elseif ( $consulta2 == TRUE ) {
     			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error" >La contrase&ntilde;a es incorrecta</p>';
-    			$this->load->view('layout/header',$datos);
-    			$this->load->view('login/login');
+    			$this->load->view('layout/header');
+    			$this->load->view('login/login',$datos);
     
     		} else {
-    			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error"> Usuario no encontrado</p>';
-    			$this->load->view('layout/header',$datos);
-    			$this->load->view('login/login');
+    			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error">Usuario no encontrado</p>';
+    			$this->load->view('layout/header');
+    			$this->load->view('login/login',$datos);
     		}
     
-    	} else {
-         $datos['mensaje'] = '<p style ="padding-left:10px;" class="error"> Usuario y Contrase&ntilde;a incorrecta</p>';
+    	}     else {
+                $datos['mensaje'] = '<p style ="padding-left:10px;" class="error"> Usuario y Contrase&ntilde;a incorrecta</p>';  
 
-    		$this->load->view('layout/header',$datos);
-    		$this->load->view('login/login');
-    	}
+    		    $this->load->view('layout/header');
+    		    $this->load->view('login/login',$datos); 
+    	   } 
+            
     	 
     }
     
@@ -80,7 +81,7 @@ class Login_normal extends CI_Controller {
  /*  
     public function login_without_ldap() {
             
-        $username='yburgo02';        
+        $username='mvegas';        
         //$this->User_model->__construct($username) ;
         $id = 1;//$this->User_model->get_id();
         $get_role_arg = 1;//$this->User_model->get_rol();

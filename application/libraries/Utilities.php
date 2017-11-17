@@ -1,10 +1,5 @@
 <?php
-/**
- * Description of Utilities
- *
- * @author Ing. Angélica Espinosa  <angelica1387@gmail.com>
- * @fecha_crecion 13/11/2015
- */
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
