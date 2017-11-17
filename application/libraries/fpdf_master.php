@@ -9,7 +9,7 @@ class Fpdf_master {
 		
 		$pdf = new FPDF();
 		$pdf->AddPage();
-		$pdf->SetMargins(10, 10); 
+		$pdf->SetMargins(20, 20); 
 		
 		$CI =& get_instance();
 		$CI->fpdf = $pdf;
