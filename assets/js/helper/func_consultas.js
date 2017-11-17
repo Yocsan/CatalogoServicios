@@ -52,7 +52,7 @@ $(document).ready(function(){
                   
                     $.ajax({
                     type: "POST",
-                    url: base_url+"",
+                    url: base_url+"/consultas/carga_consulta",
                     data: {'identificador':idEdit},
                     dataType: 'json',
                     success: function(data) {

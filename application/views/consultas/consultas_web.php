@@ -21,6 +21,27 @@ if (!defined('BASEPATH'))
     echo $this->table->generate();
 ?>
 
+ <script type="text/javascript" src="<?php echo base_url('assets/js/helper/func_consultas.js');?>"></script>
+
+<!-- Modal CONSULTA -->
+    <div id="modal_consulta" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Consulta Servicios</h4>
+                </div>
+               <div class="modal-body" id="consulta_servicio" >
+               </div>                    
+                <div class="modal-footer">    
+                              
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div> 
 
 
 <script type="text/javascript">

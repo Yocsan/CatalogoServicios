@@ -34,6 +34,16 @@ class Documento_etf extends CI_Controller {
     $pdf->AddPage();
       $pdf->SetFont('Arial','B',16);
       $pdf->Cell(40,10,'¡Mi primera página pdf con FPDF!');
+       
+            $pdf->Image(base_url('assets/img/cabezal_bolivariano.jpg'),10,8,22);
+            $pdf->SetFont('Arial','B',13);
+            $pdf->Cell(30);
+            $pdf->Cell(120,10,'ESCUELA X',0,0,'C');
+            $pdf->Ln('5');
+            $pdf->SetFont('Arial','B',8);
+            $pdf->Cell(30);
+            $pdf->Cell(120,10,'INFORMACION DE CONTACTO',0,0,'C');
+            $pdf->Ln(20); 
       return $pdf->Output();
       
       
