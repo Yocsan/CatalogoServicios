@@ -8,7 +8,7 @@ class Administracion extends CI_Controller {
        
     }
     
-    function index() { 
+    public function index() { 
         
         $id_menu_padre = filter_input(INPUT_POST, 'id_menu_superior'); 
         $name_menu = filter_input(INPUT_POST, 'menu_superior'); 

@@ -30,7 +30,7 @@ $(document).ready(function(){
 	                dataType: 'json',
 	                success: function(data) {
 	                $('#msg_error_nombre_sistema').html(data.mensaje);                   
-	                $("span").fadeOut(5000);
+	                $("#mensaje").fadeOut(5000);
 	                $("button[type=submit]").prop("disabled",data.cod);
 	            },
 	            error: function(error){

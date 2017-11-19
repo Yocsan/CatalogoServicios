@@ -28,7 +28,7 @@ $(document).ready(function(){
 	                dataType: 'json',
 	                success: function(data) {
 	                $('#msg_error_numero_requerimiento').html(data.mensaje);                   
-	                $("span").fadeOut(5000);
+	                $("#mensaje").fadeOut(5000);
 	                $("input[type=button]").prop("disabled",data.cod);
 	            },
 	            error: function(error){

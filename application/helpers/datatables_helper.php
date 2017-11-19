@@ -18,6 +18,16 @@ function get_buttons($id)
   
     return $html;
 }
+//genera dos impresoras
+function get_buttons_print($id)
+{
+    $ci = & get_instance();
+    $html='';
+    $html .=  '<span id="edit_'.$id. '" class="ui-icon ui-icon-print"  data-toggle="modal" data-target="#modal_edit"></span>';
+    $html .=  '<span id="delete_'.$id. '" class="ui-icon ui-icon-print" data-toggle="modal" data-target="#modal_delete" ></span>';
+  
+    return $html;
+}
 
 function get_buttons_4($id)
 {
@@ -55,6 +65,16 @@ function get_buttons_img($id)
 
 	return $html;
 }
+function get_buttons_1($id)
+{
+	$ci = & get_instance();
+	$html='';
+	$html .=  '<span id="consulta_'.$id. '" class="ui-icon  ui-icon-search"  data-toggle="modal" data-target="#modal_consulta"></span>';
+	
+	return $html;
+}
+
+
 
 
 

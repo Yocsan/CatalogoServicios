@@ -30,14 +30,15 @@ class Login_normal extends CI_Controller {
         parent::__construct();      
         
         //$this->load->library(array('AuthLDAP','user_agent','parser','table'));
+        $this->load->library(array('user_agent','parser','table'));
         $this->load->helper('date');
         $this->load->model(array('Rol_model','User_model','Menu_rol_model'));
         
       
     }
 
-    function index() {
-        $this->session->keep_flashdata('tried_to');
+    public function index() {
+        $this->session->keep_flashdata('tried_t');
         $this->login();
     }
 
@@ -61,7 +62,7 @@ class Login_normal extends CI_Controller {
     			$nombre = $consulta[0]->nombre.' '.$consulta[0]->apellido;
     			$id = $consulta[0]->id_usuario;
     			$get_role_arg = $consulta[0]->roles_id_rol;
-    
+            $rol = $consulta[0]->roles_id_rol;
     			$role_level = $this->Rol_model->get_rol($get_role_arg);
     
     
@@ -70,7 +71,7 @@ class Login_normal extends CI_Controller {
     					'user_id' => $id,
     					'name' => $nombre,
     					'role_name' => $role_level[0]->nombre_rol,
-    					'role_level' => 1,
+    					'role_level' => $rol,
     					//'user_agent' => $this->agent->agent_string(),
     					'default_view'=> $role_level[0]->vista
     			);
@@ -164,6 +165,7 @@ class Login_normal extends CI_Controller {
         $datos_header= array('id_usuario' => $this->session->userdata('user_id'),
                             'logged_in' => $this->session->userdata('logged_in'),
                             'name' => $this->session->userdata('name'),
+                             'role_name' => $this->session->userdata('role_name')
                                             );
         return $datos_header;
             

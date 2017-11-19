@@ -104,7 +104,7 @@ if (!defined('BASEPATH'))
                 "sPaginationType": "full_numbers",
                 "iDisplayStart ":20,
                 "oLanguage": {
-                    "sUrl":'<?php echo base_url(); ?>sistemas_aplicaciones/translate'
+                 //   "sUrl":'<?php echo base_url(); ?>sistemas_aplicaciones/translate'
 		},
                 "fnInitComplete": function() {
                 //oTable.fnAdjustColumnSizing();

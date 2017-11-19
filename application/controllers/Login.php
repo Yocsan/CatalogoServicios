@@ -29,7 +29,8 @@ class Login extends CI_Controller {
     function __construct() {
         parent::__construct();      
         
-        //$this->load->library(array('AuthLDAP','user_agent','parser','table'));
+       // $this->load->library(array('AuthLDAP','user_agent','parser','table'));
+        $this->load->library(array('AuthLDAP','user_agent','parser','table'));
         $this->load->helper('date');
         $this->load->model(array('Rol_model','User_model','Menu_rol_model'));
       
@@ -97,7 +98,7 @@ class Login extends CI_Controller {
                             'name' => 'Maria Fernanda ',
                             'role_name' => $role_level[0]->nombre_rol,
                             'role_level' => $get_role_arg,
-                            //'user_agent' => $this->agent->agent_string(),
+                            'user_agent' => $this->agent->agent_string(),
                             'default_view'=> $role_level[0]->vista
                              );
         $this->session->set_userdata($customdata);
@@ -186,3 +187,5 @@ class Login extends CI_Controller {
     }
   
 }
+
+

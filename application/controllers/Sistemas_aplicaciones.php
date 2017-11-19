@@ -80,10 +80,10 @@ class Sistemas_aplicaciones extends CI_Controller {
 		$search = $this->Sistemas_aplicaciones_model->avalaible($nombre_sistema) ;
 	
 		if($search) {
-			$resultado= '<span class="success">Disponible</span>';
+			$resultado= '<span id="mensaje" class="success">Disponible</span>';
 			$codigo = FALSE;
 		} else {
-			$resultado= '<span class="error">No Disponible</span>';
+			$resultado= '<span id="mensaje" class="error">No Disponible</span>';
 			$codigo = TRUE;
 		}
 	
