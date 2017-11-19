@@ -165,8 +165,8 @@ class Servicios extends CI_Controller{
         exit;
     }
     
-    /*se carga la vista de servicios*/
-    
+
+    /*carga la vista de servicios*/
     public function carga_formulario_servicios(){
        
       $id_necesidad = $this->input->post('id_necesidad');
@@ -235,8 +235,8 @@ class Servicios extends CI_Controller{
        
     }   
     
-    /*vista cuando se presiona el boton de siguiente en el formulario de servicios*/
     
+    /*vista cuando se presiona el boton de siguiente en el formulario de servicios*/
     public function carga_formulario_premisas() {
 
     	/*carga de imagen*/
@@ -267,7 +267,7 @@ class Servicios extends CI_Controller{
     	);
     	  	
     	$this->Servicios_model->insert_servicio($datos_servicio);
-	
+
     	$data['premisas'] = $this->input->post('numero_premisas');
     	$data['tipo_servicio'] = $this->input->post('tipo_servicio');
     	$data['cantidad_sistemas_origen'] = $this->input->post('cantidad_sistemas_origen');

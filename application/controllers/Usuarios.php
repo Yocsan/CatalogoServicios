@@ -8,6 +8,7 @@ class Usuarios extends CI_Controller {
         parent::__construct();
         $this->load->model(array('User_model','Rol_model'));        
         $this->load->helper("datatables_helper");
+       
         
     }
 

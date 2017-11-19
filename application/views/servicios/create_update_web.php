@@ -56,10 +56,10 @@ if (!defined('BASEPATH'))
 					         
             <div class="form-group col-xs-7">                       
                 <span class="campo_obligatorio">*</span>  
-                <label for="wsdl" class="format">WSDL de ambiente de desarrollo</label>
-                <input autofocus type="text" id="wsdl" name="wsdl[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="http://wsbusquedaclienteposventacdmades.movilnet.com.ve:7777/wsbasebusquedaclienteposventacdma/busquedaClientePosVentaCDMA "/>
+                <label for="wsdl_desarrollo" class="format">WSDL de ambiente de desarrollo</label>
+                <input autofocus type="text" id="wsdl_desarrollo" name="wsdl[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="http://wsbusquedaclienteposventacdmades.movilnet.com.ve:7777/wsbasebusquedaclienteposventacdma/busquedaClientePosVentaCDMA "/>
                 <input type="hidden" name="ambiente[]" value="3"> 
-                                               <div id="msg_error_wsdl"></div>
+                                               <div id="msg_error_wsdl_desarrollo"></div>
 
 				</div> 
 			 
@@ -69,10 +69,10 @@ if (!defined('BASEPATH'))
      							         
             <div class="form-group col-xs-7">                       
                 <span class="campo_obligatorio">*</span>  
-                <label for="wsdl" class="format">WSDL de ambiente de calidad</label>
-                <input type="text" id="wsdl" name="wsdl[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="http://wsbusquedaclienteposventagsmdes.movilnet.com.ve:7777/wsbasebusquedaclienteposventagsm/"/> 
+                <label for="wsdl_calidad" class="format">WSDL de ambiente de calidad</label>
+                <input type="text" id="wsdl_calidad" name="wsdl[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="http://wsbusquedaclienteposventagsmdes.movilnet.com.ve:7777/wsbasebusquedaclienteposventagsm/"/> 
                 <input type="hidden" name="ambiente[]" value="2"> 
-                                               <div id="msg_error_wsdl"></div>
+                                               <div id="msg_error_wsdl_calidad"></div>
 
 
 				</div> 
@@ -83,10 +83,10 @@ if (!defined('BASEPATH'))
 					         
             <div class="form-group col-xs-7">                       
                 <span class="campo_obligatorio">*</span>  
-                <label for="wsdl" class="format">WSDL de ambiente de producci&oacute;n</label>
-                <input type="text" id="wsdl" name="wsdl[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="http://192.168.210.105:7777/wsbasebusquedaclienteposventapospago/busquedaClientePosVentaPospago"/> 
+                <label for="wsdl_produccion" class="format">WSDL de ambiente de producci&oacute;n</label>
+                <input type="text" id="wsdl_produccion" name="wsdl[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="http://192.168.210.105:7777/wsbasebusquedaclienteposventapospago/busquedaClientePosVentaPospago"/> 
                <input type="hidden" name="ambiente[]" value="1"> 
-                                               <div id="msg_error_wsdl"></div>
+                                               <div id="msg_error_wsdl_produccion"></div>
 
 
 				</div> 

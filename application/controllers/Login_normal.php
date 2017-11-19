@@ -62,7 +62,7 @@ class Login_normal extends CI_Controller {
     			$this->load->view('login/login',$datos);
     
     		} else {
-    			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error">Usuario no encontrado</p>';
+    			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error">Usuario o contrase&ntilde;a incorrectos</p>';
     			$this->load->view('layout/header');
     			$this->load->view('login/login',$datos);
     		}
