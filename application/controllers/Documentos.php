@@ -153,8 +153,9 @@ class Documentos extends CI_Controller{
       //$id_documento = $this->input->post('id_documento');
       //'datos' es lo que la vista necesita para poder administrar la  información dentro del arreglo.
      // $id_documento=4;
-      $datos = $this->Servicios_model->get_documento_etf($id_documento);
-      	
+      $servicio = $this->Servicios_model->get_documento_servicio($id_documento);
+      $servicio_has_sistema = $this->Servicios_model->get_documento_servicio_has_sistema($id_documento);
+      
 		$pdf=new PDF_HTML();
 		$pdf->AddPage();
 		
@@ -190,20 +191,18 @@ class Documentos extends CI_Controller{
 		$data = array('1', '2 '..,'3 '.$this->session->userdata('name').,'4','5');
       */
       $miCabecera = array('Versión', 'Fecha','Elaborado Por');
-		$data = array('1', date('t/n/Y'),'3 '.$this->session->userdata('name'));
+		$data = array('1', date('t/n/Y'),$this->session->userdata('name'));
 		
 		$posy=$pdf->gety();
 		
 		$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,36);
 		$pdf->datosHorizontal($data,10,14+$posy,36);
-      /*
+      
 		$pdf->AddPage();
 		$pdf->SetAutoPageBreak(true, 30);
 		$pdf->SetFont('Arial','B',12);
 		$pdf->Cell(50,10,utf8_decode('TABLA DE CONTENIDOS'),0,1,'L');
-      
-      */
-      
+
 		$pdf->AddPage();
 		$pdf->Cell(50,10,utf8_decode('1.- Introduccion'),0,1,'L');
 
