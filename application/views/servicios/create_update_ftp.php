@@ -1,16 +1,5 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * @autor TSU. Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_creacion 06/10/2016
- */
-
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
@@ -34,7 +23,7 @@ if (!defined('BASEPATH'))
      	
      		<legend>Informaci&oacute;n del servicio FTP</legend>
 	
-     		<!--------------------------------------------------Origen------------------------------------------------------------------->
+     		<!--------------------------------------------------Origen------------------------------------------------------------------- -->
 	
      		<?php for ($i=1; $i <= $cantidad_sistemas_origen; $i++ ) { ?>
      		
@@ -168,19 +157,19 @@ if (!defined('BASEPATH'))
                
 				</div>	
 							
-	        <div class="form-group col-xs-3">                       
+	        <div class="form-group col-xs-3">        <!--nombre de archivo -->        
 	                <span class="campo_obligatorio">*</span>  
-	                <label for="nombre" class="format">Nombre del archivo</label>
-	                <input type="text" id="nombre" name="nombre[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="SPPSINTRA02"/> 
-                             <div id="msg_error_nombre"></div>
+	                <label for="nombre_destino" class="format">Nombre del archivo</label>
+	                <input type="text" id="nombre_destino" name="nombre[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="SPPSINTRA02"/> 
+                             <div id="msg_error_nombre_destino"></div>
 
 				</div>        
 				         
 	         	<div class="form-group col-xs-3">                       
 	                <span class="campo_obligatorio">*</span>  
-	                <label for="directorio" class="format">Directorio</label>
-	                <input type="text" id="directorio" name="directorio[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="Ej: 21"/> 
-                                 <div id="msg_error_directorio"></div>
+	                <label for="directorio_destino" class="format">Directorio</label>
+	                <input type="text" id="directorio_destino" name="directorio[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="Ej: 21"/> 
+                                 <div id="msg_error_directorio_destino"></div>
 
 				</div>   
 													   
@@ -200,17 +189,17 @@ if (!defined('BASEPATH'))
 							
 			 	<div class="form-group col-xs-3">                       
 	                <span class="campo_obligatorio">*</span>  
-	                <label for="volumen" class="format">Volumen</label>
-	                <input  type="text" id="volumen" name="volumen[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="SPPSINTRA02"/>
-                              <div id="msg_error_volumen"></div>
+	                <label for="volumen_destino" class="format">Volumen</label>
+	                <input  type="text" id="volumen_destino" name="volumen[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="SPPSINTRA02"/>
+                              <div id="msg_error_volumen_destino"></div>
 
 				</div>
 					         
             <div class="form-group col-xs-3">                       
                 <span class="campo_obligatorio">*</span>  
-                <label for="regla_transformacion" class="format">Regla de transformaci&oacute;n</label>
-            <input  type="text" id="regla_transformacion" name="regla_transformacion[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="SPPSINTRA02"/>
-                              <div id="msg_error_regla_transformacion"></div>
+                <label for="regla_transformacion_destino" class="format">Regla de transformaci&oacute;n</label>
+            <input  type="text" id="regla_transformacion_destino" name="regla_transformacion[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="SPPSINTRA02"/>
+                              <div id="msg_error_regla_transformacion_destino"></div>
    
            </div>
 			
@@ -231,9 +220,9 @@ if (!defined('BASEPATH'))
 				         
               <div class="form-group col-xs-3">                       
                       <span class="campo_obligatorio">*</span>  
-                      <label for="condicion_control_m" class="format">Condici&oacute;n control m</label>
-                      <input type="text" id="condicion_control_m" name="condicion_control_m[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="Ej: N/A"/> 
-                                <div id="msg_error_condicion_control_m"></div>
+                      <label for="condicion_control_m_destino" class="format">Condici&oacute;n control m</label>
+                      <input type="text" id="condicion_control_m_destino" name="condicion_control_m[]"  maxlength="200" class="form-control" value="<?php echo (isset($datos['Sistema_origen'])) ? $datos['Sistema_origen'] : ""; ?>" placeholder="Ej: N/A"/> 
+                                <div id="msg_error_condicion_control_m_destino"></div>
 
                </div>   
 

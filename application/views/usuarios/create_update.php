@@ -1,16 +1,5 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * @autor TSU. Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_creacion 06/10/2016
- */
-
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
@@ -35,7 +24,7 @@ if (!defined('BASEPATH'))
             <div class="form-group col-xs-5 ">                       
                 <span class="campo_obligatorio">*</span>  
                 <label for="nombre" class="format"> Nombres del Usuario</label>
-                <input type="text" required id="nombre" name="nombre"  maxlength="200"  class="form-control" value="<?php echo (isset($datos['nombre'])) ? $datos['nombre'] : ""; ?>" placeholder="Ej: Ricardo"/> 
+                <input type="text" required id="nombre" name="nombre"  maxlength="200"  class="form-control" value="<?php echo (isset($datos['nombre'])) ? $datos['nombre'] : ""; ?>" placeholder="Ej: Maria"/> 
             </div>
 
             <div class="form-group col-xs-5 ">                        
@@ -48,7 +37,7 @@ if (!defined('BASEPATH'))
             <div class="form-group col-xs-5 ">                       
                 <span class="campo_obligatorio">*</span>  
                 <label for="login" class="format"> Cuenta de Red</label>
-                <input type="text" required id="<?php echo (isset($datos)) ? "deshabilitar_login" : "login"; ?>" name="login" maxlength="25" size="30" class="form-control" value="<?php echo (isset($datos['usuario'])) ? $datos['usuario'] : ""; ?>" placeholder="Ej: rvegas" onpaste="return false" <?php echo (isset($datos)) ? "readonly" : ""; ?>/> 
+                <input type="text" required id="<?php echo (isset($datos)) ? "deshabilitar_login" : "login"; ?>" name="login" maxlength="25" size="30" class="form-control" value="<?php echo (isset($datos['usuario'])) ? $datos['usuario'] : ""; ?>" placeholder="Ej: mvegas" onpaste="return false" <?php echo (isset($datos)) ? "readonly" : ""; ?>/> 
            		<div id="msg_error"></div>
 			</div>
 			<div class="form-group col-xs-5 ">                       
@@ -62,7 +51,7 @@ if (!defined('BASEPATH'))
         	<div class="form-group col-xs-5">                       
 	            <span class="campo_obligatorio">*</span>  
 	            <label for="cedula" class="format">Cedula de Identidad</label>
-	            <input type="text" required id="cedula" name="cedula"  maxlength="11" class="form-control" value="<?php echo (isset($datos['cedula'])) ? $datos['cedula'] : ""; ?>" placeholder="Ej: 24896880"/> 
+	            <input type="text" required id="cedula" name="cedula"  maxlength="11" class="form-control" value="<?php echo (isset($datos['cedula'])) ? $datos['cedula'] : ""; ?>" placeholder="Ej: 24272522"/> 
          	</div>
          	
          	<div class="form-group col-xs-5">                       

@@ -1,17 +1,5 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * @autor TSU. Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_creacion 16/10/2017
- */
-
-
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 ?>
@@ -31,7 +19,7 @@ if (!defined('BASEPATH'))
  
 <div class="row">
      
-     <legend>Tipo de servicio</legend>
+     <legend>Seleccione el tipo de servicio del que quiere generar el documento</legend>
      		     	
      <form  id= "frm_tipo_servicio">
      

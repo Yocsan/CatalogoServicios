@@ -1,14 +1,4 @@
 <?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * @autor TSU. Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_creacion 16/10/2017
- */
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
@@ -17,7 +7,7 @@ if (!defined('BASEPATH'))
     $tmpl = array ( 'table_open'  => '<table id="big_table" border="1" cellpadding="2" cellspacing="1" class="mytable">' );
     $this->table->set_template($tmpl); 
 
-    $this->table->set_heading('Nombre del servicio','Tipo','Requerimiento','Esquema','Vertical','Acciones');
+    $this->table->set_heading('Nombre del servicio','Tipo','Requerimiento','Esquema','Vertical','Imprimir documentos');
     echo $this->table->generate();
 ?>
 

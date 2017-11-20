@@ -1,30 +1,7 @@
 <?php 
 	if (!defined('BASEPATH')) exit('No direct script access allowed');
-/*
- * This file is part of AuthLDAP.
 
-    AuthLDAP is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Lesser General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
 
-    AuthLDAP is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with AuthLDAP.  If not, see <http://www.gnu.org/licenses/>.
- * 
- */
-
-/**
- * @author      Greg Wojtak <gwojtak@techrockdo.com>
- * @copyright   Copyright © 2010-2013 by Greg Wojtak <gwojtak@techrockdo.com>
- * @package     AuthLDAP
- * @subpackage  auth demo
- * @license     GNU Lesser General Public License
- */
 class Login_normal extends CI_Controller {
     function __construct() {
         parent::__construct();      
@@ -41,7 +18,6 @@ class Login_normal extends CI_Controller {
         $this->session->keep_flashdata('tried_t');
         $this->login();
     }
-
 
 
     function login(){
@@ -82,21 +58,22 @@ class Login_normal extends CI_Controller {
     
     		} elseif ( $consulta2 == TRUE ) {
     			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error" >La contrase&ntilde;a es incorrecta</p>';
-    			$this->load->view('layout/header',$datos);
-    			$this->load->view('login/login');
+    			$this->load->view('layout/header');
+    			$this->load->view('login/login',$datos);
     
     		} else {
-    			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error"> Usuario no encontrado</p>';
-    			$this->load->view('layout/header',$datos);
-    			$this->load->view('login/login');
+    			$datos['mensaje'] = '<p style ="padding-left:10px;" class="error">Usuario o contrase&ntilde;a incorrectos</p>';
+    			$this->load->view('layout/header');
+    			$this->load->view('login/login',$datos);
     		}
     
-    	} else {
-         $datos['mensaje'] = '<p style ="padding-left:10px;" class="error"> Usuario y Contrase&ntilde;a incorrecta</p>';
+    	}     else {
+                $datos['mensaje'] = '<p style ="padding-left:10px;" class="error"> Usuario y Contrase&ntilde;a incorrecta</p>';  
 
-    		$this->load->view('layout/header',$datos);
-    		$this->load->view('login/login');
-    	}
+    		    $this->load->view('layout/header');
+    		    $this->load->view('login/login',$datos); 
+    	   } 
+            
     	 
     }
     
@@ -104,7 +81,7 @@ class Login_normal extends CI_Controller {
  /*  
     public function login_without_ldap() {
             
-        $username='yburgo02';        
+        $username='mvegas';        
         //$this->User_model->__construct($username) ;
         $id = 1;//$this->User_model->get_id();
         $get_role_arg = 1;//$this->User_model->get_rol();

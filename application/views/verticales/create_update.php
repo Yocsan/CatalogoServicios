@@ -1,14 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- * @autor Ing. AngÃ©lica Espinosa  <angelica1387@gmail.com>
- * @fecha_creacion 19/10/2015
- */
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 ?>
@@ -33,7 +24,7 @@ if (!defined('BASEPATH'))
 	            <span class="campo_obligatorio">*</span>              
 	            <label  for="identificador_vertical" class="format">Identificador de la Vertical</label>
 	            <input type="text" class="form-control" id="identificador_vertical" name="identificador_vertical" minlength="2" maxlength="10" value="<?php echo (isset($datos['identificador_vertical'])) ? $datos['identificador_vertical'] : ''; ?>" placeholder="Ej: AT" onpaste="return false" <?php echo (isset($datos)) ? "readonly" : ""; ?>/> 
-	            <div id="msg_error"></div>
+	            <div id="msg_error_identificador_vertical"></div>
         	</div>
 		</div>
         
@@ -42,6 +33,7 @@ if (!defined('BASEPATH'))
 	            <span class="campo_obligatorio">*</span>  
 	            <label for="nombre_vertical" class="format">Descripci&oacute;n de la Vertical</label>
 	            <input type="text" id="nombre_vertical" required name="nombre_vertical"  maxlength="100" class="form-control" value="<?php echo (isset($datos['nombre_vertical'])) ? $datos['nombre_vertical'] : ""; ?>"placeholder="Ej: Atencion total"/> 
+	             <div id="msg_error_descripcion_esquema"></div>
             </div> 
         </div>    
 		

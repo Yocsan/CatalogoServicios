@@ -1,13 +1,5 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 23/05/2016, 11:16:48 AM
-    Author     : Ing. Angélica Espinosa  <angelica1387@gmail.com>
-*/
-/*Datatables style*/
+
+/*Estilo del datatable*/
 #big_table_wrapper {background-color: #fff; }
 #big_table_wrapper .dataTables_length {float:left;}
 #big_table_wrapper .dataTables_filter {float:right;}

@@ -1,14 +1,5 @@
 
-        /* 
-         * To change this license header, choose License Headers in Project Properties.
-         * To change this template file, choose Tools | Templates
-         * and open the template in the editor.
-         */
 
-/**
- * @autor TSU. Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_creacion 14/09/2017
- */
 
 $(document).ready(function(){
 	
@@ -133,7 +124,7 @@ $(document).ready(function(){
            $('#msg_error_introduccion').html(''); 
        }
     });   
-   $('#descripcion_proceso').focusout(function() {
+   $('#evento_inicio_disparador').focusout(function() {
 
 	    var evento_inicio_disparador = $("#evento_inicio_disparador").val(); 
 	    if(evento_inicio_disparador == ''){
@@ -193,7 +184,7 @@ $(document).ready(function(){
            $('#msg_error_premisa').html(''); 
        }
     });   
-   $('#nombre').focusout(function() {
+   $('#nombre').focusout(function() {   //nombre de archivo origen
 
 	    var nombre = $("#nombre").val(); 
 	    if(nombre == ''){
@@ -205,7 +196,19 @@ $(document).ready(function(){
            $('#msg_error_nombre').html(''); 
        }
     });   
-   $('#directorio').focusout(function() {
+    $('#nombre_destino').focusout(function() {   //nombre de archivo destino
+
+	    var nombre_destino = $("#nombre_destino").val(); 
+	    if(nombre_destino == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_nombre_destino').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_nombre_destino').html(''); 
+       }
+    }); 
+   $('#directorio').focusout(function() {  //directorio en origen
 
 	    var directorio = $("#directorio").val(); 
 	    if(directorio == ''){
@@ -217,7 +220,20 @@ $(document).ready(function(){
            $('#msg_error_directorio').html(''); 
        }
     });   
-   $('#volumen').focusout(function() {
+ 	$('#directorio_destino').focusout(function() {  //directorio en destino
+
+	    var directorio_destino = $("#directorio_destino").val(); 
+	    if(directorio_destino == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_directorio_destino').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_directorio_destino').html(''); 
+       }
+    });  
+
+   $('#volumen').focusout(function() {   //volumen en origen
 
 	    var volumen = $("#volumen").val(); 
 	    if(volumen == ''){
@@ -229,6 +245,42 @@ $(document).ready(function(){
            $('#msg_error_volumen').html(''); 
        }
     });   
+   $('#volumen_destino').focusout(function() {  //volumen en destino
+
+	    var volumen_destino = $("#volumen_destino").val(); 
+	    if(volumen_destino == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_volumen_destino').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_volumen_destino').html(''); 
+       }
+    }); 
+ 	$('#regla_transformacion').focusout(function() {  //regla de transformacion en origen
+
+	    var regla_transformacion = $("#regla_transformacion").val(); 
+	    if(regla_transformacion == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_regla_transformacion').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_regla_transformacion').html(''); 
+       }
+    });
+	$('#regla_transformacion_destino').focusout(function() {  //regla de transformacion en destino
+
+	    var regla_transformacion_destino = $("#regla_transformacion_destino").val(); 
+	    if(regla_transformacion_destino == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_regla_transformacion_destino').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_regla_transformacion_destino').html(''); 
+       }
+    });
    $('#regla_transporte').focusout(function() {
 
 	    var regla_transporte = $("#regla_transporte").val(); 
@@ -241,7 +293,7 @@ $(document).ready(function(){
            $('#msg_error_regla_transporte').html(''); 
        }
     });   
-   $('#condicion_control_m').focusout(function() {
+   $('#condicion_control_m').focusout(function() {  //condicion_control_m en origen
 
 	    var condicion_control_m = $("#condicion_control_m").val(); 
 	    if(condicion_control_m == ''){
@@ -253,18 +305,55 @@ $(document).ready(function(){
            $('#msg_error_condicion_control_m').html(''); 
        }
     });   
-   $('#wsdl').focusout(function() {
+   $('#condicion_control_m_destino').focusout(function() { //condicion_control_m en destino
 
-	    var descripcion_proceso = $("#descripcion_proceso").val(); 
-	    if(descripcion_proceso == ''){
+
+	    var condicion_control_m_destino = $("#condicion_control_m_destino").val(); 
+	    if(condicion_control_m_destino == ''){
 	        $("input[type=button]").prop("disabled",true);
-           $('#msg_error_wsdl').html('<span class="error">Este campo es obligatorio</span>');  
+           $('#msg_error_condicion_control_m_destino').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
            $("input[type=button]").prop("disabled",false);
-           $('#msg_error_wsdl').html(''); 
+           $('#msg_error_condicion_control_m_destino').html(''); 
+       }
+    });  
+   $('#wsdl_desarrollo').focusout(function() {
+
+	    var wsdl_desarrollo = $("#wsdl_desarrollo").val(); 
+	    if(wsdl_desarrollo == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_wsdl_desarrollo').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_wsdl_desarrollo').html(''); 
        }
     });   
+   $('#wsdl_calidad').focusout(function() {
+
+	    var wsdl_calidad = $("#wsdl_calidad").val(); 
+	    if(wsdl_calidad == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_wsdl_calidad').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_wsdl_calidad').html(''); 
+       }
+    });  
+   $('#wsdl_produccion').focusout(function() {
+
+	    var wsdl_produccion = $("#wsdl_produccion").val(); 
+	    if(wsdl_produccion == ''){
+	        $("input[type=button]").prop("disabled",true);
+           $('#msg_error_wsdl_produccion').html('<span class="error">Este campo es obligatorio</span>');  
+          
+       }else{
+           $("input[type=button]").prop("disabled",false);
+           $('#msg_error_wsdl_produccion').html(''); 
+       }
+    });  
 
 	
 	/*-------------------------------------------------accion del primer boton siguiente---------------------------------------------------------------*/

@@ -1,11 +1,5 @@
 <?php 
-/**
- * Description of Consultas
- *  Funciones para la creación, actualización de los servicios del Catalogo
- *
- * @author TSU Yocsan Burgos  <yocsan19@gmail.com>
- * @fecha_crecion 26/10/2017
- */
+
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 class Documento_etf extends CI_Controller {
     function __construct() {
@@ -33,7 +27,7 @@ class Documento_etf extends CI_Controller {
     $pdf = new FPDF('P','mm','A4');
     $pdf->AddPage();
       $pdf->SetFont('Arial','B',16);
-      $pdf->Cell(40,10,'�Mi primera p�gina pdf con FPDF!');
+      $pdf->Cell(40,10,'¡Mi primera página pdf con FPDF!');
        
             $pdf->Image(base_url('assets/img/cabezal_bolivariano.jpg'),10,8,22);
             $pdf->SetFont('Arial','B',13);
