@@ -121,7 +121,7 @@ class fpdf_file extends CI_Controller {
 		$miCabecera = array('Nombre', 'Paso','Cliente','Proveedor','S�ncrono/ As�ncrono','Online/ Batch','Volumen','Tiempo de Respuesta');
 
 		$data = array('1', '2','3','4','5','6','7','8');
-	$posy=$pdf->gety();
+ 	   $posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
 	
@@ -205,140 +205,6 @@ class fpdf_file extends CI_Controller {
 
 		return $pdf->Output();
 
-		/*
-		$fpdf = new FPDF();
-		
-		$fpdf->SetFont('Arial','B',14);
-
-		//$fpdf->Image('logo.png',60,50,-180);
-		$fpdf->Ln(90);
-		$fpdf->Cell(0,20,utf8_decode('Documento de Especificaciones PIC para el Caso de uso'),1,1,'C');
-
-		$fpdf->AliasNbPages();
-		$fpdf->AddPage();
-		$fpdf->SetAutoPageBreak(true, 10);
-		$fpdf->SetFont('Arial','B',12);
-		$fpdf->Cell(60,10,utf8_decode('IDENTIFICACIÓN DEL PROYECTO'),0,1,'L');
-		$fpdf->Ln(10);
-
-		$fpdf->Cell(60,10,utf8_decode('HISTORIAL DE CAMBIOS:'),0,1,'L');
-		$fpdf->AddPage();
-		$fpdf->Cell(50,10,utf8_decode('TABLA DE CONTENIDOS'),0,1,'L');
-		$fpdf->AddPage();
-		$fpdf->Cell(50,10,utf8_decode('1.- Introduccion'),0,1,'L');
-
-		$fpdf->SetFont('Arial','',10);
-
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-		$fpdf->Ln(10);
-		$fpdf->SetX(30);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->Cell(0,10,utf8_decode('1.1- Premisas'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(30);
-
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',12);
-		$fpdf->SetX(20);
-
-		$fpdf->Cell(0,10,utf8_decode('2.-	Especificaciones Funcionales de Interfases'),0,1,'L');
-		$fpdf->Ln(5);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(30);
-
-		$fpdf->Cell(0,10,utf8_decode('2.1.-	Descripción del Proceso'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(30);
-
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-
-
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(30);
-		$fpdf->Cell(0,10,utf8_decode('2.2.-	Casos de Uso Identificados'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(30);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(45);
-
-		$fpdf->Cell(0,10,utf8_decode('2.2.1.-	Caso de Uso: Nombre de caso de uso'),0,1,'L');
-		$fpdf->SetX(50);
-		$fpdf->Cell(0,10,utf8_decode('2.2.1.1.-	Descripción Funcional'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(50);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(50);
-		$fpdf->Cell(0,10,utf8_decode('2.2.1.2	Eventos de Inicio/Disparadores'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(50);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(50);
-		$fpdf->Cell(0,10,utf8_decode('2.2.1.3	Excepciones'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(50);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(50);
-		$fpdf->Cell(0,10,utf8_decode('2.2.1.4	Servicio [respuestaDeFactibilidadyOS]'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(50);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-
-		$fpdf->SetFont('Arial','B',10);
-				$fpdf->Ln(10);
-
-		$fpdf->SetX(20);
-		$fpdf->Cell(0,10,utf8_decode('3.-	Especificaciones Técnicas Generales de Interfases'),0,1,'L');
-		$fpdf->SetX(30);
-
-		$fpdf->Cell(0,10,utf8_decode('3.1.-	Arquitectura del sistema con el que se conectará:'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(30);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(30);
-		$fpdf->Cell(0,10,utf8_decode('3.2.- Conectividad'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(30);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(30);
-		$fpdf->Cell(0,10,utf8_decode('3.3.- Protocolo'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-				$fpdf->SetX(30);
-
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(30);
-		$fpdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración:'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(30);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-
-		$fpdf->Ln(10);
-		$fpdf->SetFont('Arial','B',10);
-		$fpdf->SetX(30);
-		$fpdf->Cell(0,10,utf8_decode('3.5.-	Manejo de Errores.:'),0,1,'L');
-		$fpdf->SetFont('Arial','',10);
-		$fpdf->SetX(30);
-		$fpdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-
-		echo $fpdf->Output();// Name of PDF file
-		//Can change the type from D=Download the file
 	*/
 	}
 	

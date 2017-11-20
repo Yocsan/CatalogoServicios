@@ -20,7 +20,7 @@ function get_buttons_print($id)
 {
     $ci = & get_instance();
     $html='';
-    $html .=  '<button id="etf_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_etf">ETF</button>    ';
+    $html .=  '<a href="'.base_url('documentos/generar_documento_etf/'.$id).'"  target="_blank"><button id="etf_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_etf">ETF</button></a>    ';
     $html .=  '<button id="f1_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_f1" >F1</button>';
   
     return $html;

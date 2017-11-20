@@ -123,23 +123,20 @@
             $servicio = $this->db->get('servicios')->result_array();
             return $servicio[0];
            
-        }
-        
+        }    
                 
        public function get_info_servicio($id_servicio) {
            
             $this->db->where(array('status_servicio'=>1,
                                   'id_servicio'=>$id_servicio));
             $servicio = $this->db->get('servicios')->result_array();
-            return $servicio[0];
-           
+            return $servicio[0];       
         }
         
         //trae el id mayor de la tabla de necesidad
         public function get_ultima_necesidad() {	
             $necesidades = $this->db->query('SELECT MAX(id_necesidad) AS id FROM necesidades WHERE status_necesidad = 1');
             return $necesidades->result();
-
         }
         
         //trae el id mayor de la tabla de servicios
@@ -152,6 +149,29 @@
         public function get_ultima_config_ftp() {
             $id_servicio = $this->db->query('SELECT MAX(id_conf_ftp) AS id FROM conf_ftp');
             return $id_servicio->result();
+        }
+        
+        public function get_documento_etf($id_documento){
+            $documento = $this->db->query("SELECT * FROM servicios serv 
+            INNER JOIN procesamientos proc ON serv.procesamientos_id_procesamiento = proc.id_procesamiento
+            INNER JOIN necesidades necesid ON serv.necesidades_id_necesidad = necesid.id_necesidad
+            INNER JOIN esquemas esq ON serv.esquemas_id_esquema = esq.id_esquema
+            INNER JOIN prioridades prior ON serv.prioridades_id_prioridad = prior.id_prioridad
+            INNER JOIN verticales vert ON serv.verticales_id_vertical = vert.id_vertical
+            INNER JOIN frecuencias frec ON serv.frecuencias_id_frecuencia = frec.id_frecuencia
+            INNER JOIN tipos_servicios tipos_serv ON 
+            serv.tipos_servicios_id_tipo_servicio = tipos_serv.id_tipo_servicio
+            INNER JOIN premisas prem ON 
+            serv.id_servicio = prem.servicios_id_servicio
+            WHERE status_servicio = '1' AND id_servicio ='$id_documento'");
+                 /*                         
+            $documento->result();
+            var_dump($documento);
+            exit();
+            */
+            return $documento->result();
+            //return $documento[0];
+           
         }
         
         /*----------------------------------------------------------------------*/

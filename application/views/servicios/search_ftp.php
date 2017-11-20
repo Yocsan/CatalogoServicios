@@ -28,9 +28,7 @@ if (!defined('BASEPATH'))
     echo $this->table->generate();
 ?>
 
-
 <script type="text/javascript" src="<?php echo base_url('assets/js/helper/func_servicios.js');?>"></script>
-
 
 <!-- Modal CONSULTA -->
     <div id="modal_consulta" class="modal fade">
@@ -56,8 +54,8 @@ if (!defined('BASEPATH'))
                 </div>
                 <div class="modal-body" id="edit_ftp">                   
                </div>
-     	</div>
-     </div> 
+     	      </div>
+         </div> 
      </div>
      
      <!-- Modal IMAGEN -->

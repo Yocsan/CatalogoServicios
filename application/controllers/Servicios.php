@@ -197,7 +197,7 @@ class Servicios extends CI_Controller{
    	   
     	$data['tipos_servicio'] = $this->Servicios_model->get_tipos_servicio();
     	$data['verticales'] = $this->Vertical_model->get_verticales_desc();
-    	$data['esquemas'] = $this->Esquema_model->get_esquemas();
+    	$data['esquemas'] = $this->Esquema_model->get_esquemas_desc();
     	$data['procesamientos'] = $this->Servicios_model->get_procesamientos();
     	$data['prioridades'] = $this->Servicios_model->get_prioridades();
     	$data['frecuencias'] = $this->Servicios_model->get_frecuencias();
