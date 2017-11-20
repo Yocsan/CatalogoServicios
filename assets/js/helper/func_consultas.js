@@ -26,5 +26,37 @@ $(document).ready(function(){
     	return false;        
     });
    
+    
+    
+    
+    $("#modal_consulta").on('shown.bs.modal', function(event){
+        
+    	// Get span that triggered the modal
+                  var span = $(event.relatedTarget);
+	      
+        // Extract value from id attribut    
+	 	  var idInfo = span.attr('id');
+	 	  
+	 	  var partes = idInfo.split("_");
+	 	  var idEdit = partes[1];   
+                 
+                  
+                    $.ajax({
+                    type: "POST",
+                    url: base_url+"/consultas/carga_consulta",
+                    data: {'identificador':idEdit},
+                    dataType: 'json',
+                    success: function(data) {
+                        $('#consulta_servicio').html(data.mensaje);                   
+                    },
+                    error: function(error){
+                            $('#contenido').html('<div class="alert alert-warning alert-dismissible" role="alert">'+
+                        '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+                        '<strong>Error!!!</strong> Solicitud de AJAX no completada->'+error.status+'</div>'); 
+                    } 
+                });
+                
+   
+    });  
    
 });

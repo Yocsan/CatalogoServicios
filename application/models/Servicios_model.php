@@ -125,6 +125,16 @@
            
         }
         
+                
+       public function get_info_servicio($id_servicio) {
+           
+            $this->db->where(array('status_servicio'=>1,
+                                  'id_servicio'=>$id_servicio));
+            $servicio = $this->db->get('servicios')->result_array();
+            return $servicio[0];
+           
+        }
+        
         //trae el id mayor de la tabla de necesidad
         public function get_ultima_necesidad() {	
             $necesidades = $this->db->query('SELECT MAX(id_necesidad) AS id FROM necesidades WHERE status_necesidad = 1');

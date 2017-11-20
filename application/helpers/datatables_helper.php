@@ -62,6 +62,16 @@ function get_buttons_img($id)
 
 	return $html;
 }
+function get_buttons_1($id)
+{
+	$ci = & get_instance();
+	$html='';
+	$html .=  '<span id="consulta_'.$id. '" class="ui-icon  ui-icon-search"  data-toggle="modal" data-target="#modal_consulta"></span>';
+	
+	return $html;
+}
+
+
 
 
 

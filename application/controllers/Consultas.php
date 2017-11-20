@@ -121,11 +121,12 @@ class Consultas extends CI_Controller{
     	
     	$this->datatables->select ('id_servicio, nombre, tipos_necesidad.nombre_necesidad, necesidades.num_necesidad, esquemas.nombre_esquema, verticales.nombre_vertical')
 	    	->unset_column('id_servicio')
+	    	-> add_column('Acciones', get_buttons_1('$1','servicios'),'id_servicio')
 	    	-> from ('servicios')
 	    	-> join ('necesidades','necesidades.id_necesidad = servicios.necesidades_id_necesidad')
-         -> join ('tipos_necesidad','necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad')
-         -> join ('esquemas','esquemas.id_esquema = servicios.esquemas_id_esquema')
-         -> join ('verticales','verticales.id_vertical = servicios.verticales_id_vertical')
+	         -> join ('tipos_necesidad','necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad')
+	         -> join ('esquemas','esquemas.id_esquema = servicios.esquemas_id_esquema')
+	         -> join ('verticales','verticales.id_vertical = servicios.verticales_id_vertical')
 	    	->where(array('status_servicio'=>'1','tipos_servicios_id_tipo_servicio'=>'1'));
     	
     	echo $this->datatables->generate();
@@ -136,14 +137,34 @@ class Consultas extends CI_Controller{
     public function carga_tabla_web() {
     	$this->datatables-> select ('id_servicio, nombre, tipos_necesidad.nombre_necesidad, necesidades.num_necesidad, esquemas.nombre_esquema, verticales.nombre_vertical')
 	    	->unset_column('id_servicio')
+	    	-> add_column('Acciones', get_buttons_1('$1','servicios'),'id_servicio')
 	    	-> from ('servicios')
 	    	-> join ('necesidades','necesidades.id_necesidad = servicios.necesidades_id_necesidad')
-         -> join ('tipos_necesidad','necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad')
-         -> join ('esquemas','esquemas.id_esquema = servicios.esquemas_id_esquema')
-         -> join ('verticales','verticales.id_vertical = servicios.verticales_id_vertical')
+	         -> join ('tipos_necesidad','necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad')
+	         -> join ('esquemas','esquemas.id_esquema = servicios.esquemas_id_esquema')
+	         -> join ('verticales','verticales.id_vertical = servicios.verticales_id_vertical')
 	    	->where(array('status_servicio'=>'1','tipos_servicios_id_tipo_servicio'=>'2'));
     	
     	echo $this->datatables->generate();
     }
+   
+   public function carga_consulta() {
+      
+      $id_servicio = $this->input->post('identificador');
+
+      $datos['datos'] = $this->Servicios_model->get_info_servicio($id_servicio);
+
+      $resultado = $this->load->view('consultas/consulta', $datos , TRUE);
+
+      $response = array('mensaje' => $resultado);
+
+      $this->output
+         ->set_status_header(200)
+         ->set_content_type('application/json', 'utf-8')
+         ->set_output(json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES))
+         ->_display();
+      exit;
+      
+   }
  
 }

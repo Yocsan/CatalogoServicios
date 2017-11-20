@@ -6,10 +6,10 @@ defined("BASEPATH") OR exit("No direct script access allowed");
                 <input type="hidden" id="id_menu_superior" value="{id_menu_superior}"/>
                 <input type="hidden" id="vista" value="{vista}"/>
    		<li  class="active" id="0" role="tab" >
-                    <a href="<?= base_url('{vista}/load_default_content')?>" id="call_default">
+                 <!--   <a href="<?= base_url('{vista}/load_default_content')?>" id="call_default">
       			   	<span><?= img(base_url("assets/img/ico12_treeleaf.gif"),FALSE)?> </span>
            			  Acerca del M&oacute;dulo  {menu_superior}
-        			</a>  
+        			</a>  -->
                 </li>
    		{submenu}
                 <li class="panel" id="{id_menu}" >  		  			   		 			
