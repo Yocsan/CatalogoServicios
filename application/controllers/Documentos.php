@@ -154,10 +154,9 @@ class Documentos extends CI_Controller{
       $servicio_has_sistema = $this->Servicios_model->get_documento_servicio_has_sistema($id_documento);
       $premisas = $this->Servicios_model->get_premisas_documento($id_documento);
       $necesidades = $this->Servicios_model->get_necesidades_documento($id_documento);
-      //echo $premisas['descripcion_premisa'];
-      echo $necesidades['descripcion_necesidad'];
+
 /*
-      var_dump($necesidades);
+      var_dump($servicio_has_sistema);
       exit();
 */
 
@@ -171,8 +170,8 @@ class Documentos extends CI_Controller{
 		$pdf->SetFont('Arial');
 		$pdf->Image(base_url('assets/img/logo_etf.png'),60,50,-180);
 
-		$miCabecera = array('Proceso:', 'Subproceso:','Nombre del Documento:','Proyecto,Preparado por:','Fecha diseño Funcional:', 'fecha diseño Técnico','ID Servicio','Servicio:');
-		$data = array('1', '2','3','4','5','6','7','8');
+		$miCabecera = array('Proceso:', 'Subproceso:','Nombre del Documento:','Proyecto,Preparado por:', 'fecha diseño Técnico','Servicio:');
+		$data = array($servicio['nombre_vertical'],'2', $servicio['identificador_vertical'].$servicio['nombre'], $this->session->userdata('name'),date('t/n/Y'), $servicio['nombre']);
 
 		$pdf->Ln(90);
 		$pdf->Cell(0,20,utf8_decode('Documento de Especificaciones PIC para el Caso de uso '),1,1,'C');
@@ -215,15 +214,17 @@ class Documentos extends CI_Controller{
 
 		$pdf->SetFont('Arial','',10);
 
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->introduccion),0,'J',false);
+		$pdf->MultiCell(0,5, utf8_decode($servicio['introduccion']),0,'J',false);
 		$pdf->Ln(10);
 		$pdf->SetX(30);
 		$pdf->SetFont('Arial','B',10);
-		$pdf->Cell(0,10,utf8_decode('1.1- Premisas'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
-		$pdf->SetX(30);
+    $pdf->Cell(0,10,utf8_decode('1.1- Premisas'),0,1,'L');
 
-		$pdf->MultiCell(0,5, utf8_decode($premisas),0,'J',false);
+    foreach($premisas as $premisa){
+      $pdf->SetFont('Arial','',10);
+      $pdf->SetX(30);
+      $pdf->MultiCell(0,5, utf8_decode($premisa->descripcion_premisa),0,'J',false);
+    }
 
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
@@ -234,11 +235,17 @@ class Documentos extends CI_Controller{
 		$pdf->SetX(30);
 
 		$pdf->Cell(0,10,utf8_decode('Nombre del servicio'),0,1,'L');
-        $pdf->MultiCell(0,5, utf8_decode($servicio),0,'J',false);
+    $pdf->MultiCell(0,5, utf8_decode($servicio['nombre']),0,'J',false);
 
 		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño Archivo','Retorno');
 
-		$data = array('1', '2','3','4','5','6','7');
+		$data = array('1'.$servicio['nombre_procesamiento'], '2','3'.$servicio['nombre_procesamiento'],'4'.$servicio['nombre_frecuencia'],'5','6','7');
+
+    foreach($servicio_has_sistema as $sistema){
+          $sentido += $sistema->nombre_sistema;
+    }
+
+    $data[1] = $sentido;
 
 		$posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
@@ -256,7 +263,7 @@ class Documentos extends CI_Controller{
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
 
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->descripcion_proceso),0,'J',false);
+		$pdf->MultiCell(0,5, utf8_decode($servicio['descripcion_proceso']),0,'J',false);
 
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
@@ -270,7 +277,7 @@ class Documentos extends CI_Controller{
 
 		$miCabecera = array('Nombre', 'Paso','Cliente','Proveedor','Síncrono/ Asíncrono','Online/ Batch','Volumen','Tiempo de Respuesta');
 
-		$data = array('1'.$servicio[0]->nombre, '2'.count($servicio_has_sistema),'3','4','5'.$servicio,'6'.$servicio[0]->tipos_serv.nombre_tipo_servicio,'7'.$servicio_has_sistema[0]->conf_ftp.volumen,'8');
+		$data = array('1'.$servicio['nombre'], '2'.count($servicio_has_sistema),'3','4','5','6','7','8');
  	    $posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
@@ -283,17 +290,20 @@ class Documentos extends CI_Controller{
 
 		$pdf->Cell(0,10,utf8_decode('2.2.1.-	Caso de Uso: Nombre de caso de uso'),0,1,'L');
 		$pdf->SetX(50);
+    /*
 		$pdf->Cell(0,10,utf8_decode('2.2.1.1.-	Descripción Funcional'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
+
 		$pdf->SetX(50);
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->descripcion_proceso),0,'J',false);
+		$pdf->MultiCell(0,5, utf8_decode($servicio['descripcion_proceso']),0,'J',false);
+    */
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(50);
 		$pdf->Cell(0,10,utf8_decode('2.2.1.2	Eventos de Inicio/Disparadores'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(50);
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->evento_disparador),0,'J',false);
+		$pdf->MultiCell(0,5, utf8_decode($servicio['evento_disparador']),0,'J',false);
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(50);
@@ -308,11 +318,12 @@ class Documentos extends CI_Controller{
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(50);
+/*
 		$pdf->Cell(0,10,utf8_decode('2.2.1.4	Servicio [respuestaDeFactibilidadyOS]'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(50);
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->adaptador),0,'J',false);
-
+		$pdf->MultiCell(0,5, utf8_decode('ver que va aqui'),0,'J',false);
+*/
 		$pdf->SetFont('Arial','B',10);
 				$pdf->Ln(10);
 
@@ -323,23 +334,26 @@ class Documentos extends CI_Controller{
 		$pdf->Cell(0,10,utf8_decode('3.1.-	Arquitectura del sistema con el que se conectará:'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->arquitectura_sistema_conexion),0,'J',false);
+		$pdf->MultiCell(0,5, utf8_decode($servicio['arquitectura_sistema_conexion']),0,'J',false);
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
+    /*
 		$pdf->Cell(0,10,utf8_decode('3.2.- Conectividad'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->introduccion),0,'J',false);
-
+		$pdf->MultiCell(0,5, utf8_decode('ver que va aqui'),0,'J',false);
+*/
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
+    /*
 		$pdf->Cell(0,10,utf8_decode('3.3.- Protocolo'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
-				$pdf->SetX(30);
+		$pdf->SetX(30);
 
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->introduccion),0,'J',false);
+		$pdf->MultiCell(0,5, utf8_decode('ver que va aqui'),0,'J',false);
+*/
 
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
@@ -347,7 +361,7 @@ class Documentos extends CI_Controller{
 		$pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración:'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
-		$pdf->MultiCell(0,5, utf8_decode($servicio[0]->introduccion),0,'J',false);
+		$pdf->MultiCell(0,5, utf8_decode('colocar despues'),0,'J',false);
 
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
