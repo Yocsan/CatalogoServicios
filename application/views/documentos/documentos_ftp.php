@@ -13,32 +13,7 @@ if (!defined('BASEPATH'))
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/helper/func_documentos.js');?>"></script>
 
-     
-<!-- Modal generar documento ETF -->
-    <div class="modal fade" id="modal_etf" >
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                   <h4 class="modal-title">Documento ETF</h4>
-               	</div>
-   
-                   <div class="modal-body">
-                      <p>¿Esta seguro que desea generar este documento ETF?</p> 
-                      
-                      
-                   </div>
-                   <div class="modal-footer">
-                      <form action="documentos/generar_documento_etf" method="post">
-                         <input type="hidden" name="id_documento" id="id_documento">   
-                         <button data-dismiss="modal" type="button" class="btn btn-default" name="in_confirm_insert" id="btn_no_servicio" >No</button>
-                        <input data-dismiss="modal" type="submit" class="btn btn-danger" name="in_confirm_insert" value="Si">
-                     </form>
-                   </div>  
-              
-            </div>
-        </div>
-    </div>
+
 
 <script type="text/javascript">
     

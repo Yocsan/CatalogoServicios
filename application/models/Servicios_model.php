@@ -153,9 +153,8 @@
         
         public function get_documento_servicio($id_documento){
             $documento = $this->db->query("SELECT nombre, evento_disparador, introduccion, adaptador, descripcion_proceso, arquitectura_sistema_conexion, url_imagen,proc.nombre_procesamiento, esq.nombre_esquema, prior.nombre_prioridad, vert.nombre_vertical, frec.nombre_frecuencia, tipos_serv.nombre_tipo_servicio
-			FROM servicios serv 
+			   FROM servicios serv 
             INNER JOIN procesamientos proc ON serv.procesamientos_id_procesamiento = proc.id_procesamiento
-            INNER JOIN necesidades necesid ON serv.necesidades_id_necesidad = necesid.id_necesidad
             INNER JOIN esquemas esq ON serv.esquemas_id_esquema = esq.id_esquema
             INNER JOIN prioridades prior ON serv.prioridades_id_prioridad = prior.id_prioridad
             INNER JOIN verticales vert ON serv.verticales_id_vertical = vert.id_vertical
@@ -168,23 +167,59 @@
         }
         
         public function get_documento_servicio_has_sistema($id_documento){
-        	/*
-        	 *              
-            SELECT serv_sist.servicios_id_servicio,sist.nombre_sistema, sentido.nombre_sentido,conf_ftp.directorio,conf_ftp.nombre_archivo,modelo_datos.nombre_modelo_dato,conf_ftp.regla_transformacion,conf_ftp.condicion_control_m,conf_ftp.volumen,frecuencias_ftp.nombre_frecuencia_ftp,reglas_transporte.nombre_regla_transporte,conf_ftp.split
             
-			FROM servicios_has_sistemas serv_sist 
+            $documento = $this->db->query("SELECT serv_sist.servicios_id_servicio,sist.nombre_sistema, sentido.nombre_sentido,conf_ftp.directorio,conf_ftp.nombre_archivo,modelo_datos.nombre_modelo_dato,frecuencias_ftp.nombre_frecuencia_ftp,reglas_transporte.nombre_regla_transporte,conf_ftp.regla_transformacion,conf_ftp.volumen,conf_ftp.split
+            
+			   FROM servicios_has_sistemas serv_sist 
             
             INNER JOIN servicios serv ON serv_sist.servicios_id_servicio = serv.id_servicio
             INNER JOIN sistemas sist ON serv_sist.sistemas_id_sistema = sist.id_sistema 
             INNER JOIN sentidos sentido ON serv_sist.sentidos_id_sentido = sentido.id_sentido         
             INNER JOIN conf_ftp ON serv_sist.conf_ftp_id_conf_ftp = conf_ftp.id_conf_ftp
             INNER JOIN modelo_datos ON conf_ftp.modelo_datos_id_modelo_dato = modelo_datos.id_modelo_dato
-            INNER JOIN frecuencias_ftp ON conf_ftp.frecuencias_ftp_id_frecuencia_ftp = conf_ftp.id_conf_ftp
+            INNER JOIN frecuencias_ftp ON conf_ftp.frecuencias_ftp_id_frecuencia_ftp = frecuencias_ftp.id_frecuencia_ftp
             INNER JOIN reglas_transporte ON conf_ftp.reglas_transporte_id_regla_transporte = reglas_transporte.id_regla_transporte
 
-            WHERE status_servicio = '1' AND id_servicio ='4'
-        	 * 
-        	 * */     	
+            WHERE status_servicio = '1' 
+            AND serv.id_servicio ='4' 
+            AND serv_sist.servicios_id_servicio='$id_documento'
+            AND conf_ftp.modelo_datos_id_modelo_dato = modelo_datos.id_modelo_dato
+            AND conf_ftp.frecuencias_ftp_id_frecuencia_ftp = frecuencias_ftp.id_frecuencia_ftp
+            AND conf_ftp.reglas_transporte_id_regla_transporte = reglas_transporte.id_regla_transporte");
+           
+            return $documento->result();
+    	
+        }
+        
+        public function get_premisas_documento($id_documento) {
+           $documento = $this->db->query("SELECT premisas.descripcion_premisa
+            FROM premisas
+            INNER JOIN servicios ON premisas.servicios_id_servicio = servicios.id_servicio
+            WHERE servicios.status_servicio = '1' 
+            AND servicios.id_servicio = '$id_documento' 
+            AND servicios.id_servicio = premisas.servicios_id_servicio");
+           
+           if($documento->num_rows() > 0){
+               return $documento->result();   
+           } else {
+              $documento = 'N/A';
+               return $documento;
+           }
+     
+        }
+        
+        public function get_necesidades_documento($id_documento) {
+            $documento = $this->db->query("SELECT necesidades.num_necesidad, necesidades.descripcion_necesidad, tipos_necesidad.nombre_necesidad
+            FROM servicios 
+            INNER JOIN necesidades ON servicios.necesidades_id_necesidad = necesidades.id_necesidad
+            INNER JOIN tipos_necesidad ON necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad
+            WHERE status_servicio = '1' 
+            AND servicios.necesidades_id_necesidad = necesidades.id_necesidad 
+            AND servicios.id_servicio = '$id_documento' 
+            AND necesidades.tipos_necesidad_id_tipo_necesidad = tipos_necesidad.id_tipo_necesidad");
+           
+           return $documento->result();
+
         }
         
         /*----------------------------------------------------------------------*/

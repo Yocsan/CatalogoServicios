@@ -4,60 +4,7 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 class User_model extends CI_Model{
-    /*
-    private $user_name;
-    private $user_id;
-    private $user_apellidos;
-    private $user_login;
-    private $user_contact;
-    private $user_cedula;
-    private $user_rol;
-    private $user_status;
-    
-    var $table = 'usuarios';
-    var $column_order = array('nombre','user_id','apellidos','login','password','numero_contacto','cedula','tipo_rol','status_usuario',null); //set column field database for datatable orderable
-    var $column_search = array('user_id','cedula'); //set column field database for datatable searchable just user_id , cedula are searchable
-    var $order = array('id' => 'desc');
 
-    public function __construct($username="") {
-        parent::__construct($username);				
-		$this->user_name = $username;		
-		$this->_init();
-        $this->load->database();    
-    }
-    
-    private function _init(){
-			
-		if(!empty($this->user_name)){
-	            $this->db->select()
-	            ->from('usuarios')
-	            ->where('Usuario',$this->user_name);
-	            $query = $this->db->get();
-	            $user = $query->result();
-								
-	            if(!empty($user)){
-						
-	                $this->user_id = $user[0]->user_id;
-			$this->user_apellidos = $user[0]->apellidos;
-			$this->user_login = $user[0]->login;
-			$this->user_contact = $user[0]->numero_contacto;
-			$this->user_cedula = $user[0]->cedula;
-			$this->user_rol = $user[0]->tipo_rol;
-			$this->user_status	=	$user[0]->status_usuario;
-	            }
-	            else{
-			$this->user_id = 0;
-			$this->user_apellidos = "";
-			$this->user_login = "";
-			$this->user_contact = "";
-			$this->user_cedula = "";
-			$this->user_rol = 0;
-	                $this->user_status	= 0;
-			} 
-						
-		}
-    }
-   */ 
     public function login($usuario, $password) {
     	
     	$this->db->select()
