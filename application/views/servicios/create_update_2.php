@@ -211,7 +211,7 @@ if (!defined('BASEPATH'))
        		</div>
             -->
        		<div class="form-group col-xs-3">
-       			<input type="button" class="btn btn-default" name="siguiente_2" id="siguiente_2" value="Siguiente"/>	
+       			<button type="button" class="btn btn-default" name="siguiente_2" id="siguiente_2" value="Siguiente" disabled>Siguiente</button>	
        		</div>
        	</div>
      		

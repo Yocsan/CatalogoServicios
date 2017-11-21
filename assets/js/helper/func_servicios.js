@@ -5,9 +5,10 @@ $(document).ready(function(){
 	
 	var base = window.location.href.split('/');
 	var base_url = base[0]+'//'+base[2]+'/'+base[3];  
-	
+		
+		
 	//verifica si el numero de requerimiento ya existe
-	$('#numero_requerimiento').focusout(function() {
+	$('#numero_requerimiento').on('keyup',function() {
 
 	    var numero_requerimiento = $("#numero_requerimiento").val();
    
@@ -20,7 +21,7 @@ $(document).ready(function(){
 	                success: function(data) {
 	                $('#msg_error_numero_requerimiento').html(data.mensaje);                   
 	                $("#mensaje").fadeOut(5000);
-	                $("input[type=button]").prop("disabled",data.cod);
+	                $("#siguiente_1").prop("disabled",data.cod);
 	            },
 	            error: function(error){
 	            	$('#contenido').html('<div class="alert alert-warning alert-dismissible" role="alert">'+
@@ -28,12 +29,12 @@ $(document).ready(function(){
 	                '<strong>Error!!!</strong> Solicitud de AJAX no completada->'+error.status+'</div>'); 
 	            }              
 	        });
-	     }//end if        
+	     }//end if   
+	      
     }); 
-	
-	
+
 	//verifica si el numero de requerimiento ya existe
-	$('#nombre_servicio').focusout(function() {
+	$('#nombre_servicio').keyup(function() {
 
 	    var nombre_servicio = $("#nombre_servicio").val();
    
@@ -46,7 +47,7 @@ $(document).ready(function(){
 	                success: function(data) {
 	                $('#msg_error_nombre_servicio').html(data.mensaje);                   
 	                $("span").fadeOut(5000);
-	                $("input[type=button]").prop("disabled",data.cod);
+	                $("#siguiente_2").prop("disabled",data.cod);
 	            },
 	            error: function(error){
 	            	$('#contenido').html('<div class="alert alert-warning alert-dismissible" role="alert">'+
@@ -74,16 +75,17 @@ $(document).ready(function(){
 
 		}
 	});
-	/*--------------------------validaciones---------------------------------------------*/
+	/*---------------------------------------------------------validaciones------------------------------------------------------------------------*/
    $('#numero_requerimiento').focusout(function() {
 
 	    var numero_requerimiento = $("#numero_requerimiento").val(); 
+
 	    if(numero_requerimiento == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_1").prop("disabled",true);
            $('#msg_error_numero_requerimiento').html('<span class="error">Este campo es obligatorio</span>');  
           
-       }else{
-           $("input[type=button]").prop("disabled",false);
+       }else {
+           $("#siguiente_1").prop("disabled",false);
            $('#msg_error_numero_requerimiento').html(''); 
        }
     });  
@@ -96,7 +98,7 @@ $(document).ready(function(){
            $('#msg_error_descripcion_requerimiento').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+          // $("input[type=button]").prop("disabled",false);
            $('#msg_error_descripcion_requerimiento').html(''); 
        }
     });   

@@ -80,7 +80,7 @@ if (!defined('BASEPATH'))
 		
        	<div class="row">
        		<div class="form-group col-xs-12">
-       			<input type="button" class="btn btn-default" name="siguiente_1" id="siguiente_1" value="Siguiente"/>	
+       			<button type="button" class="btn btn-default" name="siguiente_1" id="siguiente_1" value="Siguiente" disabled>Siguiente</button>	
        		</div>
        	</div>
      		

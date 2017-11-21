@@ -27,10 +27,9 @@ $(document).ready(function(){
                 '<strong>Error!!!</strong> Solicitud de AJAX no completada->'+error.status+'</div>'); 
             }              
         }) ;
-        }        
+     }        
 	});  
-   
- 
+    
     $("#identificador_vertical").on("keypress", function(event){
         var soloLetras = /[A-Za-z]/g; 
         // Retrieving the key from the char code passed in event.which
@@ -38,10 +37,10 @@ $(document).ready(function(){
         // keyCode == 8  is backspace
         // keyCode == 37 is left arrow
         // keyCode == 39 is right arrow    
-                if (event.keyCode === 8 || event.keyCode === 37 || event.keyCode === 39 || soloLetras.test(key)) {
-                    return true;
-                }  
-            return false;
+        if (event.keyCode === 8 || event.keyCode === 37 || event.keyCode === 39 || soloLetras.test(key)) {
+            return true;
+        }  
+        return false;
     });
 
     $('#identificador_vertical').on("paste",function(e){        
@@ -78,7 +77,7 @@ $(document).ready(function(){
                      $('#msgs').html('<div class="alert alert-danger alert-dismissible" role="alert">'+
                      '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
                      '<strong>Error!</strong> Solicitud no completada</div>'); 
-                 } 
+              } 
 
               });
               $('#identificador_vertical').val('');
@@ -184,8 +183,8 @@ $(document).ready(function(){
 });    
 
 function mayuscula(campo){
-            $(campo).keyup(function() {
-                 $(this).val($(this).val().toUpperCase());
-            });
+    $(campo).keyup(function() {
+         $(this).val($(this).val().toUpperCase());
+    });
 }
 
