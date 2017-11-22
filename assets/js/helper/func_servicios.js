@@ -94,11 +94,11 @@ $(document).ready(function(){
 
 	    var descripcion_requerimiento = $("#descripcion_requerimiento").val(); 
 	    if(descripcion_requerimiento == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_").prop("disabled",true);
            $('#msg_error_descripcion_requerimiento').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-          // $("input[type=button]").prop("disabled",false);
+         $("#siguiente_2").prop("disabled",false);
            $('#msg_error_descripcion_requerimiento').html(''); 
        }
     });   
@@ -106,11 +106,11 @@ $(document).ready(function(){
 
 	    var nombre_servicio = $("#nombre_servicio").val(); 
 	    if(nombre_servicio == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_2").prop("disabled",true);
            $('#msg_error_nombre_servicio').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+           $("#siguiente_2").prop("disabled",false);
            $('#msg_error_nombre_servicio').html(''); 
        }
     });   
@@ -118,11 +118,11 @@ $(document).ready(function(){
 
 	    var introduccion = $("#introduccion").val(); 
 	    if(introduccion == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_2").prop("disabled",true);
            $('#msg_error_introduccion').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+           $("#siguiente_2").prop("disabled",false);
            $('#msg_error_introduccion').html(''); 
        }
     });   
@@ -130,11 +130,11 @@ $(document).ready(function(){
 
 	    var evento_inicio_disparador = $("#evento_inicio_disparador").val(); 
 	    if(evento_inicio_disparador == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_2").prop("disabled",true);
            $('#msg_error_evento_inicio_disparador').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+           $("#siguiente_2").prop("disabled",false);
            $('#msg_error_evento_inicio_disparador').html(''); 
        }
     });   
@@ -142,11 +142,11 @@ $(document).ready(function(){
 
 	    var adaptaciones = $("#adaptaciones").val(); 
 	    if(adaptaciones == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_2").prop("disabled",true);
            $('#msg_error_adaptaciones').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+           $("#siguiente_2").prop("disabled",false);
            $('#msg_error_adaptaciones').html(''); 
        }
     });   
@@ -154,11 +154,11 @@ $(document).ready(function(){
 
 	    var arquitectura = $("#arquitectura").val(); 
 	    if(arquitectura == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_2").prop("disabled",true);
            $('#msg_error_arquitectura').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+           $("#siguiente_2").prop("disabled",false);
            $('#msg_error_arquitectura').html(''); 
        }
     });   
@@ -166,11 +166,11 @@ $(document).ready(function(){
 
 	    var diagrama_uml = $("#diagrama_uml").val(); 
 	    if(diagrama_uml == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_2").prop("disabled",true);
            $('#msg_error_diagrama_uml').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+           $("#siguiente_2").prop("disabled",false);
            $('#msg_error_diagrama_uml').html(''); 
        }
     });   
@@ -178,11 +178,11 @@ $(document).ready(function(){
 
 	    var premisa = $("#premisa").val(); 
 	    if(premisa == ''){
-	        $("input[type=button]").prop("disabled",true);
+	        $("#siguiente_3").prop("disabled",true);
            $('#msg_error_premisa').html('<span class="error">Este campo es obligatorio</span>');  
           
        }else{
-           $("input[type=button]").prop("disabled",false);
+           $("#siguiente_3").prop("disabled",false);
            $('#msg_error_premisa').html(''); 
        }
     });   

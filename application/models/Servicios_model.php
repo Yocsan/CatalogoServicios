@@ -153,7 +153,7 @@
 
         public function get_documento_servicio($id_documento){
             $documento = $this->db->query("SELECT nombre, evento_disparador, introduccion, adaptador, descripcion_proceso, arquitectura_sistema_conexion, url_imagen,proc.nombre_procesamiento, esq.nombre_esquema, prior.nombre_prioridad, vert.nombre_vertical, vert.identificador_vertical, frec.nombre_frecuencia, tipos_serv.nombre_tipo_servicio
-			FROM servicios serv
+			   FROM servicios serv
             INNER JOIN procesamientos proc ON serv.procesamientos_id_procesamiento = proc.id_procesamiento
             INNER JOIN esquemas esq ON serv.esquemas_id_esquema = esq.id_esquema
             INNER JOIN prioridades prior ON serv.prioridades_id_prioridad = prior.id_prioridad

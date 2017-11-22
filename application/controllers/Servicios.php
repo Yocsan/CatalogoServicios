@@ -373,9 +373,9 @@ class Servicios extends CI_Controller{
     	$data['cantidad_sistemas_origen'] = $this->input->post('cantidad_sistemas_origen');
     	$data['cantidad_sistemas_destino'] = $this->input->post('cantidad_sistemas_destino');
     	$data['modelo_datos'] = $this->Servicios_model->get_modelo_datos();
-	    $data['sistemas'] = $this->Sistemas_aplicaciones_model->get_sistemas();
-	    $data['reglas_transporte'] = $this->Servicios_model->get_reglas_transporte();
-	    $data['frecuencias'] = $this->Servicios_model->get_frecuencias_ftp();
+       $data['sistemas'] = $this->Sistemas_aplicaciones_model->get_sistemas();
+       $data['reglas_transporte'] = $this->Servicios_model->get_reglas_transporte();
+       $data['frecuencias'] = $this->Servicios_model->get_frecuencias_ftp();
 
 		$resultado = $this->load->view('servicios/create_update_ftp', $data, TRUE);
 

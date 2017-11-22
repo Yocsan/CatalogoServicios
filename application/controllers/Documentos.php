@@ -170,8 +170,8 @@ class Documentos extends CI_Controller{
 		$pdf->SetFont('Arial');
 		$pdf->Image(base_url('assets/img/logo_etf.png'),60,50,-180);
 
-		$miCabecera = array('Proceso:', 'Subproceso:','Nombre del Documento:','Proyecto,Preparado por:', 'fecha diseño Técnico','Servicio:');
-		$data = array($servicio['nombre_vertical'],'2', $servicio['identificador_vertical'].$servicio['nombre'], $this->session->userdata('name'),date('t/n/Y'), $servicio['nombre']);
+		$miCabecera = array('Proceso:','Nombre del Documento:','Proyecto,Preparado por:', 'fecha diseño Técnico','Servicio:');
+		$data = array($servicio['nombre_vertical'], $servicio['identificador_vertical'].$servicio['nombre'], $this->session->userdata('name'),date('t/n/Y'), $servicio['nombre']);
 
 		$pdf->Ln(90);
 		$pdf->Cell(0,20,utf8_decode('Documento de Especificaciones PIC para el Caso de uso '),1,1,'C');
@@ -196,7 +196,7 @@ class Documentos extends CI_Controller{
 		$data = array('1', '2 '..,'3 '.$this->session->userdata('name').,'4','5');
       ----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-    $miCabecera = array('Versión', 'Fecha','Elaborado Por','Descripcion');
+    $miCabecera = array('Versión', 'Fecha','Elaborado Por','Descripción');
 		$data = array('1', date('t/n/Y'),$this->session->userdata('name'),$necesidades['descripcion_necesidad']);
 
 		$posy=$pdf->gety();
@@ -210,7 +210,7 @@ class Documentos extends CI_Controller{
 		$pdf->Cell(50,10,utf8_decode('TABLA DE CONTENIDOS'),0,1,'L');
 
 		$pdf->AddPage();
-		$pdf->Cell(50,10,utf8_decode('1.- Introduccion'),0,1,'L');
+		$pdf->Cell(50,10,utf8_decode('1.- Introducción'),0,1,'L');
 
 		$pdf->SetFont('Arial','',10);
 
@@ -218,7 +218,7 @@ class Documentos extends CI_Controller{
 		$pdf->Ln(10);
 		$pdf->SetX(30);
 		$pdf->SetFont('Arial','B',10);
-    $pdf->Cell(0,10,utf8_decode('1.1- Premisas'),0,1,'L');
+      $pdf->Cell(0,10,utf8_decode('1.1- Premisas'),0,1,'L');
 
     foreach($premisas as $premisa){
       $pdf->SetFont('Arial','',10);
@@ -235,17 +235,17 @@ class Documentos extends CI_Controller{
 		$pdf->SetX(30);
 
 		$pdf->Cell(0,10,utf8_decode('Nombre del servicio'),0,1,'L');
-    $pdf->MultiCell(0,5, utf8_decode($servicio['nombre']),0,'J',false);
+      $pdf->MultiCell(0,5, utf8_decode($servicio['nombre']),0,'J',false);
 
 		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño Archivo','Retorno');
 
 		$data = array('1'.$servicio['nombre_procesamiento'], '2','3'.$servicio['nombre_procesamiento'],'4'.$servicio['nombre_frecuencia'],'5','6','7');
-
+/*
     foreach($servicio_has_sistema as $sistema){
           $sentido += $sistema->nombre_sistema;
     }
-
-    $data[1] = $sentido;
+*/
+   // $data[1] = $sentido;
 
 		$posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
