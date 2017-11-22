@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+ï»¿<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 
 require_once APPPATH.'third_party/fpdf/fpdf.php';
@@ -17,7 +17,7 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 
       $this->SetFont('Arial','B',10);
 
-      $this->Cell(0,10,'Especificación de servicios de integración CI Proyecto                   Fecha: '.date('t/n/Y'),1,0,'C');
+      $this->Cell(0,10,utf8_decode('EspecificaciÃ³n de servicios de integraciÃ³n CI Proyecto                   Fecha: '.date('t/n/Y')),1,0,'C');
       $this->Ln(25);
     
 
@@ -31,7 +31,7 @@ function Footer()
     $this->SetFont('Arial','I',8);
     $image=$this->Image(base_url('assets/img/logo_etf.png'),180,274,-1400);
      //$imagen= $this->Image(base_url('assets/img/logo_etf.png'),10,8,33);
-    $this->Cell(0,10,'Gerencia de Tecnología y Soluciones                 pagina '.$this->PageNo().'/{nb}',1,1,'C');
+    $this->Cell(0,10,utf8_decode('Gerencia de TecnologÃ­a y Soluciones                 pagina '.$this->PageNo().'/{nb}'),1,1,'C');
     // Print current and total page numbers
     
 }
@@ -43,15 +43,15 @@ function cabeceraVertical($cabecera, $x, $y,$celly)
         $this->SetTextColor(240, 255, 240); //Letra color blanco
         foreach($cabecera as $columna)
         {
-            //Parámetro con valor 2, hace que la cabecera sea vertical
+            //Parï¿½metro con valor 2, hace que la cabecera sea vertical
             $this->Cell($celly,7, utf8_decode($columna),1, 2 , 'L' ,true);
         }
     }
  
     function datosVerticales($datos, $x, $y,$celly)
     {
-        $this->SetXY($x, $y); //40 = 10 posiciónX_anterior + 30ancho Celdas de cabecera
-        $this->SetFont('Arial','',10); //Fuente, Normal, tamaño
+        $this->SetXY($x, $y); //40 = 10 posiciï¿½nX_anterior + 30ancho Celdas de cabecera
+        $this->SetFont('Arial','',10); //Fuente, Normal, tamaï¿½o
         $this->SetFillColor(229, 229, 229); //Gris tenue de cada fila
         $this->SetTextColor(3, 3, 3); //Color del texto: Negro
         
@@ -60,34 +60,51 @@ function cabeceraVertical($cabecera, $x, $y,$celly)
             $this->Cell($celly,7, utf8_decode($columna),1, 2 , 'L' );
         }
     }
- 
-    function cabeceraHorizontal($cabecera, $x, $y,$celly)
+    function contar($cabecera){
+
+        for ($i=0; $i < count($cabecera) ; $i++) { 
+            $str[$i]=strlen($cabecera[$i])+15;
+         
+        }
+        return $str;
+    }
+
+    function cabeceraHorizontal($cabecera, $x, $y,$str)
     {
         $this->SetXY($x, $y);
         $this->SetFont('Arial','B',10);
         $this->SetFillColor(0,0,255);//Fondo verde de celda
         $this->SetTextColor(240, 255, 240); //Letra color blanco
-        foreach($cabecera as $fila)
+        /*foreach($cabecera as $fila)
         {
-            //Atención!! el parámetro valor 0, hace que sea horizontal
-            $this->Cell($celly,7, utf8_decode($fila),1, 0 , 'L',true );
+            //Atenciï¿½n!! el parï¿½metro valor 0, hace que sea horizontal
+            $str=strlen($fila)+15;
+         // echo $str."-";
+            $this->Cell($str,7, utf8_decode($fila),1, 0 , 'L',true );
+        }*/
+     
+        for ($i=0; $i < count($cabecera) ; $i++) { 
+          
+            $this->Cell($str[$i],7, utf8_decode($cabecera[$i]),1, 0 , 'L',true );
         }
+
+
     }
     
     
  
-    function datosHorizontal($datos, $x, $y,$celly)
+    function datosHorizontal($datos, $x, $y,$str)
     {
         $this->SetFillColor(229, 229, 229); //Gris tenue de cada fila
         $this->SetTextColor(3, 3, 3); //Color del texto: Negro
         
-          $this->SetXY($x, $y); // 77 = 70 posiciónY_anterior + 7 altura de las de cabecera
-        $this->SetFont('Arial','',10); //Fuente, normal, tamaño
+          $this->SetXY($x, $y); // 77 = 70 posiciï¿½nY_anterior + 7 altura de las de cabecera
+        $this->SetFont('Arial','',10); //Fuente, normal, tamaï¿½o
 
-        foreach($datos as $fila)
-        {
-            //Atención!! el parámetro valor 0, hace que sea horizontal
-            $this->Cell($celly,7, utf8_decode($fila),1, 0 , 'L',false );
+         for ($i=0; $i < count($datos) ; $i++) { 
+        
+            
+            $this->Cell($str[$i],7, utf8_decode($datos[$i]),1, 0 , 'L',false );
         }
     }
   

@@ -187,7 +187,7 @@ class Documentos extends CI_Controller{
 		$pdf->cabeceraVertical($miCabecera,10,50,50);
 		$pdf->datosVerticales($data,60,50,130);
 		$pdf->Ln(5);
-		$pdf->setx(0);
+		$pdf->setx(5);
 
 		$pdf->Cell(60,10,utf8_decode('DETALLES DEL DOCUMENTO'),0,1,'C');
 
@@ -200,9 +200,9 @@ class Documentos extends CI_Controller{
 		$data = array('1', date('t/n/Y'),$this->session->userdata('name'),$necesidades['descripcion_necesidad']);
 
 		$posy=$pdf->gety();
-
-		$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,36);
-		$pdf->datosHorizontal($data,10,14+$posy,36);
+		$str=$pdf->contar($miCabecera);
+		$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,$str);
+		$pdf->datosHorizontal($data,10,14+$posy,$str);
 
 		$pdf->AddPage();
 		$pdf->SetAutoPageBreak(true, 30);
@@ -234,10 +234,12 @@ class Documentos extends CI_Controller{
 		$pdf->Ln(5);
 		$pdf->SetX(30);
 
-		$pdf->Cell(0,10,utf8_decode('Nombre del servicio'),0,1,'L');
-      $pdf->MultiCell(0,5, utf8_decode($servicio['nombre']),0,'J',false);
+		$pdf->Cell(0,10,utf8_decode('Nombre del servicio: '.$servicio['nombre']),0,1,'L');
+      //	$pdf->MultiCell(0,5, utf8_decode($servicio['nombre']),0,'J',false);
 
-		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño Archivo','Retorno');
+		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño','Retorno');
+		$str=$pdf->contar($miCabecera);
+		//var_dump($str) ;
 
 		$data = array('1'.$servicio['nombre_procesamiento'], '2','3'.$servicio['nombre_procesamiento'],'4'.$servicio['nombre_frecuencia'],'5','6','7');
 /*
@@ -248,8 +250,17 @@ class Documentos extends CI_Controller{
    // $data[1] = $sentido;
 
 		$posy=$pdf->gety();
+
+/*
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
+*/
+$posy=$pdf->gety();
+
+	//	$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,27);
+	//	$pdf->datosHorizontal($data,10,14+$posy,27);
+		$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,$str);
+		$pdf->datosHorizontal($data,10,14+$posy,$str);
 		$pdf->Ln(20);
 		$pdf->SetFont('Arial','B',12);
 		$pdf->SetX(20);
@@ -281,7 +292,7 @@ class Documentos extends CI_Controller{
  	    $posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
-
+	$pdf->AliasNbPages();
 		$pdf->Ln(20);
 		$pdf->SetFont('Arial','B',12);
 		$pdf->SetX(20);

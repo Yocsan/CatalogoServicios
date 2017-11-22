@@ -4,14 +4,11 @@ class fpdf_file extends CI_Controller {
 
 	function __construct() {
 		parent::__construct();
-	
 		$this->load->library('PDF_HTML');
-				 
 	}
 
 	public function index() {
-		
-		
+
 		$pdf=new PDF_HTML();
 		$pdf->AddPage();
 		
@@ -23,7 +20,7 @@ class fpdf_file extends CI_Controller {
 		$pdf->SetFont('Arial');
 		$pdf->Image(base_url('assets/img/logo_etf.png'),60,50,-180);
 		
-		$miCabecera = array('Proceso:', 'Subproceso:','Nombre del Documento:','Proyecto,Preparado por:','Fecha diseño Funcional:', 'fecha diseño Técnico','ID Servicio','Servicio:');
+		$miCabecera = array('Proceso:', 'Subproceso:','Nombre del Documento:','Proyecto,Preparado por:','Fecha diseï¿½o Funcional:', 'fecha diseï¿½o Tï¿½cnico','ID Servicio','Servicio:');
 		$data = array('1', '2','3','4','5','6','7','8');
 		
 		
@@ -33,7 +30,7 @@ class fpdf_file extends CI_Controller {
 		$pdf->AliasNbPages();
 		$pdf->AddPage();
 		$pdf->SetAutoPageBreak(true, 20);
-		$pdf->Cell(60,10,utf8_decode('IDENTIFICACIÓN DEL PROYECTO'),0,1,'C');
+		$pdf->Cell(60,10,utf8_decode('IDENTIFICACIï¿½N DEL PROYECTO'),0,1,'C');
 		$pdf->Ln(5);
 		
 		// Carga de datos
@@ -50,7 +47,7 @@ class fpdf_file extends CI_Controller {
 		
 		$pdf->Cell(60,10,utf8_decode('HISTORIAL DE CAMBIOS'),0,1,'C');
 		
-		$miCabecera = array('Versión', 'Fecha','Elaborado Por','Revisado Por','Descripción');
+		$miCabecera = array('Versiï¿½n', 'Fecha','Elaborado Por','Revisado Por','Descripciï¿½n');
 		$data = array('1', '2','3','4','5');
 		
 		$posy=$pdf->gety();
@@ -78,13 +75,13 @@ class fpdf_file extends CI_Controller {
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
-		$pdf->Cell(0,10,utf8_decode('Característica básica de los servicios:'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('Caracterï¿½stica bï¿½sica de los servicios:'),0,1,'L');
 		$pdf->Ln(5);
 		$pdf->SetX(30);
 
 		$pdf->Cell(0,10,utf8_decode('Nombre del servicio'),0,1,'L');
 
-		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño Archivo','Retorno');
+		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaï¿½o Archivo','Retorno');
 
 
 		$data = array('1', '2','3','4','5','6','7');
@@ -101,7 +98,7 @@ class fpdf_file extends CI_Controller {
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
 
-		$pdf->Cell(0,10,utf8_decode('2.1.-	Descripción del Proceso'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('2.1.-	Descripciï¿½n del Proceso'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
 
@@ -118,7 +115,7 @@ class fpdf_file extends CI_Controller {
 		$pdf->Ln(10);
 		
 							
-		$miCabecera = array('Nombre', 'Paso','Cliente','Proveedor','Síncrono/ Asíncrono','Online/ Batch','Volumen','Tiempo de Respuesta');
+		$miCabecera = array('Nombre', 'Paso','Cliente','Proveedor','Sï¿½ncrono/ Asï¿½ncrono','Online/ Batch','Volumen','Tiempo de Respuesta');
 
 		$data = array('1', '2','3','4','5','6','7','8');
  	   $posy=$pdf->gety();
@@ -133,7 +130,7 @@ class fpdf_file extends CI_Controller {
 
 		$pdf->Cell(0,10,utf8_decode('2.2.1.-	Caso de Uso: Nombre de caso de uso'),0,1,'L');
 		$pdf->SetX(50);
-		$pdf->Cell(0,10,utf8_decode('2.2.1.1.-	Descripción Funcional'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('2.2.1.1.-	Descripciï¿½n Funcional'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(50);
 		$pdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
@@ -163,10 +160,10 @@ class fpdf_file extends CI_Controller {
 				$pdf->Ln(10);
 
 		$pdf->SetX(20);
-		$pdf->Cell(0,10,utf8_decode('3.-	Especificaciones Técnicas Generales de Interfases'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('3.-	Especificaciones Tï¿½cnicas Generales de Interfases'),0,1,'L');
 		$pdf->SetX(30);
 
-		$pdf->Cell(0,10,utf8_decode('3.1.-	Arquitectura del sistema con el que se conectará:'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('3.1.-	Arquitectura del sistema con el que se conectarï¿½:'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
 		$pdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
@@ -190,7 +187,7 @@ class fpdf_file extends CI_Controller {
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
-		$pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración:'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('3.4.-	Parï¿½metros de configuraciï¿½n:'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
 		$pdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
