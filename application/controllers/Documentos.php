@@ -374,11 +374,40 @@ class Documentos extends CI_Controller{
 
 		$pdf->MultiCell(0,5, utf8_decode('ver que va aqui'),0,'J',false);
 */
-
+      //----------------------------------------------tabla ftp--------------------------------------------------
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
-		$pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración:'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración FTP:'),0,1,'L');
+		$pdf->SetFont('Arial','',10);
+		//$pdf->SetX(30);
+		//$pdf->MultiCell(0,5, utf8_decode('colocar despues'),0,'J',false);
+      
+      $miCabecera = array('Nombre', 'Directorio','Modelo de datos','regla de transformación','Volumen','Frecuencia','Regla de transporte','Split');
+
+		$data = array($servicio_has_sistema['nombre_archivo'],$servicio_has_sistema['directorio'], $servicio_has_sistema['nombre_modelo_dato'],$servicio_has_sistema['regla_transformacion'],$servicio_has_sistema['volumen'],$servicio_has_sistema['nombre_frecuencia_ftp'],$servicio_has_sistema['nombre_regla_transporte'],$servicio_has_sistema['split']);
+      /*
+ 	  $posy=$pdf->gety();
+		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
+		$pdf->datosVerticales($data,80,10+$posy,120);
+	  */
+	  $pdf->SetX(30);	
+	  
+      $pdf->SetWidths(array(30,30,30,40));
+      $str=count($miCabecera);
+      $i=0;
+      foreach($data as $dato){
+
+         $pdf->SetX(30);	
+         $pdf->Row(array($miCabecera[$i],$dato));                        
+         $i++;
+      }
+      
+      //-------------------------------------------tabla web---------------------------------------------
+      $pdf->Ln(10);
+		$pdf->SetFont('Arial','B',10);
+		$pdf->SetX(30);
+		$pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración WEB:'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		//$pdf->SetX(30);
 		//$pdf->MultiCell(0,5, utf8_decode('colocar despues'),0,'J',false);
@@ -404,17 +433,12 @@ class Documentos extends CI_Controller{
       }
       
       
-
+      
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
 
-
-
-
-
-
-		return $pdf->Output();
+		return $pdf->Output('ETF_'.$servicio['nombre_vertical'].$servicio['nombre'].'_'. date('t/n/Y').'.pdf','i');
 
    }
 

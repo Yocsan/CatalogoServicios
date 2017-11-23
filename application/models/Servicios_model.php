@@ -168,9 +168,9 @@
 
         public function get_documento_servicio_has_sistema($id_documento){
 
-            $documento = $this->db->query("SELECT serv_sist.servicios_id_servicio,sist.nombre_sistema, sentido.nombre_sentido,conf_ftp.directorio,conf_ftp.nombre_archivo,modelo_datos.nombre_modelo_dato,frecuencias_ftp.nombre_frecuencia_ftp,reglas_transporte.nombre_regla_transporte,conf_ftp.regla_transformacion,conf_ftp.volumen,conf_ftp.split
+            $documento = $this->db->query("SELECT serv_sist.servicios_id_servicio,sist.nombre_sistema, sentido.nombre_sentido,conf_ftp.directorio,conf_ftp.nombre_archivo,modelo_datos.nombre_modelo_dato,frecuencias_ftp.nombre_frecuencia_ftp,reglas_transporte.nombre_regla_transporte,conf_ftp.regla_transformacion,conf_ftp.volumen,case conf_ftp.split when 1 then 'Si'  when 0 then 'No'  end as split
 
-			      FROM servicios_has_sistemas serv_sist
+			   FROM servicios_has_sistemas serv_sist
 
             INNER JOIN servicios serv ON serv_sist.servicios_id_servicio = serv.id_servicio
             INNER JOIN sistemas sist ON serv_sist.sistemas_id_sistema = sist.id_sistema
