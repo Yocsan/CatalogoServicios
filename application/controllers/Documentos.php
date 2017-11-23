@@ -438,7 +438,7 @@ class Documentos extends CI_Controller{
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
 
-		return $pdf->Output('ETF_'.$servicio['nombre_vertical'].$servicio['nombre'].'_'. date('t/n/Y').'.pdf','i');
+		return $pdf->Output('ETF_'.$servicio['identificador_vertical'].$servicio['nombre'].'_'. date('t/n/Y').'.pdf','i');
 
    }
 
