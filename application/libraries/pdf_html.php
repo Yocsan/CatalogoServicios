@@ -3,7 +3,6 @@
 require_once APPPATH.'third_party/fpdf/fpdf.php';
 
 	class PDF_HTML extends FPDF
-
 	{
 
 		var $widths;
@@ -87,8 +86,8 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 
 	    function datosHorizontal($datos, $x, $y,$str, $cabecera)
 	    {
-					$this->SetXY($x, $y); // 77 = 70 posici�nY_anterior + 7 altura de las de cabecera
-					$this->SetFont('Arial','',10); //Fuente, normal, tama�o
+            $this->SetXY($x, $y); // 77 = 70 posici�nY_anterior + 7 altura de las de cabecera
+            $this->SetFont('Arial','',10); //Fuente, normal, tama�o
 	        $this->SetFillColor(229, 229, 229); //Gris tenue de cada fila
 	        $this->SetTextColor(3, 3, 3); //Color del texto: Negro
 
@@ -122,17 +121,20 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 	    //Issue a page break first if needed
 	    $this->CheckPageBreak($h);
 	    //Draw the cells of the row
+
 	    for($i=0;$i<count($data);$i++)
 	    {
+
 	        $w=$this->widths[$i];
 	        $a=isset($this->aligns[$i]) ? $this->aligns[$i] : 'L';
 	        //Save the current position
 	        $x=$this->GetX();
 	        $y=$this->GetY();
-	        //Draw the border
+	        //Draw the borders
 	        $this->Rect($x,$y,$w,$h);
+
 	        //Print the text
-	        $this->MultiCell($w,5,$data[$i],0,$a);
+	        $this->MultiCell($w,5,utf8_decode($data[$i]),0,$a);
 	        //Put the position to the right of the cell
 	        $this->SetXY($x+$w,$y);
 	    }

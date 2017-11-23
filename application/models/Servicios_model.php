@@ -187,7 +187,7 @@
             AND conf_ftp.frecuencias_ftp_id_frecuencia_ftp = frecuencias_ftp.id_frecuencia_ftp
             AND conf_ftp.reglas_transporte_id_regla_transporte = reglas_transporte.id_regla_transporte");
 
-            return $documento->result();
+            return $documento->row_array();
 
         }
 
