@@ -155,11 +155,6 @@ class Documentos extends CI_Controller{
       $premisas = $this->Servicios_model->get_premisas_documento($id_documento);
       $necesidades = $this->Servicios_model->get_necesidades_documento($id_documento);
 
-/*
-      var_dump($servicio_has_sistema);
-      exit();
-*/
-
 		$pdf=new PDF_HTML();
 		$pdf->AddPage();
 
@@ -176,7 +171,7 @@ class Documentos extends CI_Controller{
 
 
 		$pdf->Ln(90);
-		$pdf->Cell(0,20,utf8_decode('Documento de Especificaciones PIC para el Caso de uso '),1,1,'C');
+		$pdf->Cell(0,20,utf8_decode('Documento de Especificaciones PIC para servicio '.$servicio['nombre']),1,1,'C');
 		$pdf->AliasNbPages();
 		$pdf->AddPage();
 		$pdf->SetAutoPageBreak(true, 20);
@@ -400,11 +395,12 @@ class Documentos extends CI_Controller{
 	  
       $pdf->SetWidths(array(30,30,30,40));
       $str=count($miCabecera);
-      for($i=0;$i<$str;$i++){
+      $i=0;
+      foreach($data as $dato){
 
-		$pdf->SetX(30);	
-		$pdf->Row(array($miCabecera[$i],$data[$i]));
-         $paso++;
+         $pdf->SetX(30);	
+         $pdf->Row(array($miCabecera[$i],$dato));                        
+         $i++;
       }
       
       
@@ -413,12 +409,6 @@ class Documentos extends CI_Controller{
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
 
-      /*
-		$pdf->Cell(0,10,utf8_decode('3.5.-	Manejo de Errores.:'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
-		$pdf->SetX(30);
-		$pdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
-      */
 
 
 
