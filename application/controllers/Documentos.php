@@ -192,6 +192,7 @@ class Documentos extends CI_Controller{
 		$pdf->setx(5);
 
 		$pdf->Cell(60,10,utf8_decode('DETALLES DEL DOCUMENTO'),0,1,'C');
+		$pdf->Ln(10);
 
 		/*----------------------------------------------------------------------NO TOCAR------------------------------------------------------------
 		$miCabecera = array('Versión', 'Fecha','Elaborado Por','Revisado Por','Descripción');

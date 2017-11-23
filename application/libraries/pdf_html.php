@@ -120,7 +120,9 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 	    $h=5*$nb;
 	    //Issue a page break first if needed
 	    $this->CheckPageBreak($h);
-	    //Draw the cells of the row
+		$this->SetX(30);
+		
+		//Draw the cells of the row
 
 	    for($i=0;$i<count($data);$i++)
 	    {
@@ -133,7 +135,8 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 	        //Draw the borders
 	        $this->Rect($x,$y,$w,$h);
 
-	        //Print the text
+			//Print the text
+			
 	        $this->MultiCell($w,5,utf8_decode($data[$i]),0,$a);
 	        //Put the position to the right of the cell
 	        $this->SetXY($x+$w,$y);
