@@ -18,7 +18,7 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 
       $this->SetFont('Arial','B',10);
 
-      $this->Cell(0,10,utf8_decode('Especificación de servicios de integración CI Proyecto                   Fecha: '.date('t/n/Y')),1,0,'C');
+      $this->Cell(0,10,utf8_decode('Especificación de servicios de integración PIC Proyecto                   Fecha: '.date('t/n/Y')),1,0,'C');
       $this->Ln(25);
 
 
@@ -32,7 +32,7 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 	    $this->SetFont('Arial','I',8);
 	    $image=$this->Image(base_url('assets/img/logo_etf.png'),180,274,-1400);
 	     //$imagen= $this->Image(base_url('assets/img/logo_etf.png'),10,8,33);
-	    $this->Cell(0,10,utf8_decode('Gerencia de Tecnología y Soluciones                 pagina '.$this->PageNo().'/{nb}'),1,1,'C');
+	    $this->Cell(0,10,utf8_decode('Gerencia de Tecnología y Operaciones               pagina '.$this->PageNo().'/{nb}'),1,1,'C');
 	    // Print current and total page numbers
 
 	}

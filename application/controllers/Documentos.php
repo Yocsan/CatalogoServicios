@@ -154,6 +154,7 @@ class Documentos extends CI_Controller{
       $servicio_has_sistema = $this->Servicios_model->get_documento_servicio_has_sistema($id_documento);
       $premisas = $this->Servicios_model->get_premisas_documento($id_documento);
       $necesidades = $this->Servicios_model->get_necesidades_documento($id_documento);
+      $conf_web = $this->Servicios_model->get_documento_conf_web($id_documento);
 
 		$pdf=new PDF_HTML();
 		$pdf->AddPage();
@@ -171,7 +172,7 @@ class Documentos extends CI_Controller{
 
 
 		$pdf->Ln(90);
-		$pdf->Cell(0,20,utf8_decode('Documento de Especificaciones PIC para servicio '.$servicio['nombre']),1,1,'C');
+		$pdf->Cell(0,20,utf8_decode('Documento de Especificaciones Tecnicas PIC para el servicio '.$servicio['nombre']),1,1,'C');
 		$pdf->AliasNbPages();
 		$pdf->AddPage();
 		$pdf->SetAutoPageBreak(true, 20);
@@ -189,11 +190,6 @@ class Documentos extends CI_Controller{
 		$pdf->Cell(60,10,utf8_decode('DETALLES DEL DOCUMENTO'),0,1,'C');
 		$pdf->Ln(10);
 
-		/*----------------------------------------------------------------------NO TOCAR------------------------------------------------------------
-		$miCabecera = array('Versión', 'Fecha','Elaborado Por','Revisado Por','Descripción');
-		$data = array('1', '2 '..,'3 '.$this->session->userdata('name').,'4','5');
-      ----------------------------------------------------------------------------------------------------------------------------------------------*/
-
     $miCabecera = array('Versión', 'Fecha','Elaborado Por','Descripción');
 		$data = array('1', date('t/n/Y'),$this->session->userdata('name'),$necesidades['descripcion_necesidad']);
 
@@ -205,17 +201,8 @@ class Documentos extends CI_Controller{
          $pdf->Row(array($miCabecera[$i],$data[$i]));
       }
 
-    /*
-    $str=$pdf->contar($miCabecera);
-    $pdf->cabeceraHorizontal($miCabecera,10,7+$posy,$str);
-		$pdf->datosHorizontal($data,10,14+$posy,$str, $miCabecera);
-    */
 		$pdf->AddPage();
-		$pdf->SetAutoPageBreak(true, 30);
-		$pdf->SetFont('Arial','B',12);
-		$pdf->Cell(50,10,utf8_decode('TABLA DE CONTENIDOS'),0,1,'L');
-
-		$pdf->AddPage();
+      $pdf->SetFont('Arial','B',12);
 		$pdf->Cell(50,10,utf8_decode('1.- Introducción'),0,1,'L');
 
 		$pdf->SetFont('Arial','',10);
@@ -242,26 +229,32 @@ class Documentos extends CI_Controller{
 
 		$pdf->Cell(0,10,utf8_decode('Nombre del servicio: '.$servicio['nombre']),0,1,'L');
       //	$pdf->MultiCell(0,5, utf8_decode($servicio['nombre']),0,'J',false);
-	  $pdf->Ln(10);
+	   $pdf->Ln(10);
 	  
-		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño','Retorno');
+		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia');
 		$str=$pdf->contar($miCabecera);
+      
+      $sentido='';
+      for($i=0; $i<count($servicio_has_sistema); $i++){
+         $sentido=$sentido.' '.$servicio_has_sistema[$i]['nombre_sistema'].' '.$servicio_has_sistema[$i]['nombre_sentido'];
+      }
 
-		$data = array('1'.$servicio['nombre_procesamiento'], '2','3'.$servicio['nombre_procesamiento'],'4'.$servicio['nombre_frecuencia'],'5','6','7');
-
-		//$posy=$pdf->gety();
-		$pdf->SetX(30);
+		$data = array($servicio['nombre_procesamiento'], $sentido,$servicio['nombre_procesamiento'],$servicio['nombre_frecuencia']);
+		
+      $pdf->SetX(30);
       $pdf->SetWidths(array(30,30,30,40));
-	  $str=count($miCabecera);
+	   $str=count($miCabecera);
 	 
       for($i=0;$i<$str;$i++){
 		$pdf->SetX(30);
          $pdf->Row(array($miCabecera[$i],$data[$i]));
       }
+      
 		$pdf->Ln(20);
 		$pdf->SetFont('Arial','B',12);
 		$pdf->SetX(20);
-
+      
+      $pdf->AddPage();
 		$pdf->Cell(0,10,utf8_decode('2.-	Especificaciones Funcionales de Interfases'),0,1,'L');
 		$pdf->Ln(5);
 		$pdf->SetFont('Arial','B',10);
@@ -276,31 +269,32 @@ class Documentos extends CI_Controller{
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
+
 		$pdf->Cell(0,10,utf8_decode('2.2.-	Casos de Uso Identificados'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
 		$pdf->MultiCell(0,5, utf8_decode(''),0,'J',false);
 		$pdf->Ln(10);
 
+      $posy=$pdf->gety();
+		$miCabecera = array('Nombre', 'Paso','Cliente','Proveedor','Síncrono/ Asíncrono','FTP/ WEB','Volumen');
 
-		$miCabecera = array('Nombre', 'Paso','Cliente','Proveedor','Síncrono/ Asíncrono','Online/ Batch','Volumen','Tiempo de Respuesta');
-      $paso=1;
-		$data = array('1'.$servicio['nombre'], $paso, '2','4','5','6','7','8');
-      /*
+      $data=array();
+      for($i=0;$i<count($servicio_has_sistema);$i++){
+         
+         if($servicio_has_sistema[$i]['sentidos_id_sentido']=='1'){
+            $data = array($servicio['nombre'], $i+1 ,$servicio_has_sistema[$i+1]['nombre_sistema'], $servicio_has_sistema[$i]['nombre_sistema'],$servicio['nombre_procesamiento'],$servicio['nombre_tipo_servicio'],$servicio_has_sistema[$i]['volumen']);     
+            
+         }
+
+      }
+
  	  $posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
-      */
-	  $pdf->SetX(30);	  
-	  $pdf->SetWidths(array(30,30,30,40));
-	  $str=count($miCabecera);
-	  $pdf->SetX(30);	  
-	  
-      for($i=0;$i<$str;$i++){
-		$pdf->SetX(30);		
-		 $pdf->Row(array($miCabecera[$i],$data[$i]));
-		 $paso++;		 
-      }
+   
+	  $pdf->SetX(30);	
+
 	   $pdf->AliasNbPages();
 		$pdf->Ln(20);
 		$pdf->SetFont('Arial','B',12);
@@ -308,15 +302,9 @@ class Documentos extends CI_Controller{
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(45);
 
-		$pdf->Cell(0,10,utf8_decode('2.2.1.-	Caso de Uso: Nombre de caso de uso'),0,1,'L');
+		$pdf->Cell(0,10,utf8_decode('2.2.1.-	Caso de Uso: '.$servicio['nombre']),0,1,'L');
 		$pdf->SetX(50);
-    /*
-		$pdf->Cell(0,10,utf8_decode('2.2.1.1.-	Descripción Funcional'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
 
-		$pdf->SetX(50);
-		$pdf->MultiCell(0,5, utf8_decode($servicio['descripcion_proceso']),0,'J',false);
-    */
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(50);
@@ -328,26 +316,15 @@ class Documentos extends CI_Controller{
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(50);
 
-      /*--------------------------------------------------------NO TOCAR--------------------------------------------------------------------------
-		$pdf->Cell(0,10,utf8_decode('2.2.1.3	Excepciones'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
-		$pdf->SetX(50);
-		$pdf->MultiCell(0,5, utf8_decode($datos[0]->),0,'J',false);
-      ---------------------------------------------------------------------------------------------------------------------------------------*/
-
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(50);
-/*
-		$pdf->Cell(0,10,utf8_decode('2.2.1.4	Servicio [respuestaDeFactibilidadyOS]'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
-		$pdf->SetX(50);
-		$pdf->MultiCell(0,5, utf8_decode('ver que va aqui'),0,'J',false);
-*/
+
 		$pdf->SetFont('Arial','B',10);
 		$pdf->Ln(10);
 
 		$pdf->SetX(20);
+      $pdf->AddPage();
 		$pdf->Cell(0,10,utf8_decode('3.-	Especificaciones Técnicas Generales de Interfases'),0,1,'L');
 		$pdf->SetX(30);
 
@@ -367,73 +344,65 @@ class Documentos extends CI_Controller{
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
-    /*
-		$pdf->Cell(0,10,utf8_decode('3.3.- Protocolo'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
-		$pdf->SetX(30);
+      $pdf->SetX(30);	
 
-		$pdf->MultiCell(0,5, utf8_decode('ver que va aqui'),0,'J',false);
-*/
-      //----------------------------------------------tabla ftp--------------------------------------------------
-		$pdf->Ln(10);
-		$pdf->SetFont('Arial','B',10);
-		$pdf->SetX(30);
-		$pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración FTP:'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
-		//$pdf->SetX(30);
-		//$pdf->MultiCell(0,5, utf8_decode('colocar despues'),0,'J',false);
-      
-      $miCabecera = array('Nombre', 'Directorio','Modelo de datos','regla de transformación','Volumen','Frecuencia','Regla de transporte','Split');
+      if($servicio['nombre_tipo_servicio'] == 'FTP'){
+            //----------------------------------------------tabla ftp--------------------------------------------------
+         $pdf->Ln(10);  
+         $pdf->SetFont('Arial','B',10);
+         $pdf->SetX(30);
+         $pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración FTP:'),0,1,'L');
+         $pdf->SetFont('Arial','',10);
+         //$pdf->SetX(30);
+         //$pdf->MultiCell(0,5, utf8_decode('colocar despues'),0,'J',false);
 
-		$data = array($servicio_has_sistema['nombre_archivo'],$servicio_has_sistema['directorio'], $servicio_has_sistema['nombre_modelo_dato'],$servicio_has_sistema['regla_transformacion'],$servicio_has_sistema['volumen'],$servicio_has_sistema['nombre_frecuencia_ftp'],$servicio_has_sistema['nombre_regla_transporte'],$servicio_has_sistema['split']);
-      /*
- 	  $posy=$pdf->gety();
-		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
-		$pdf->datosVerticales($data,80,10+$posy,120);
-	  */
-	  $pdf->SetX(30);	
-	  
-      $pdf->SetWidths(array(30,30,30,40));
-      $str=count($miCabecera);
-      $i=0;
-      foreach($data as $dato){
+         $miCabecera = array('Nombre', 'Directorio','Modelo de datos','regla de transformación','Volumen','Frecuencia','Regla de transporte','Split');
+         $data=array();
+         for($i=0;$i<count($servicio_has_sistema);$i++){
+  
+               $data [0]= $servicio_has_sistema[$i]['nombre_archivo'];
+               $data [1]= $servicio_has_sistema[$i]['directorio'];
+               $data [2]=  $servicio_has_sistema[$i]['nombre_modelo_dato'];
+               $data [3]=   $servicio_has_sistema[$i]['regla_transformacion'];
+               $data [4]= $data [$i]=    $servicio_has_sistema[$i]['volumen'];
+               $data [5]=    $servicio_has_sistema[$i]['nombre_frecuencia_ftp'];
+               $data [6]=    $servicio_has_sistema[$i]['nombre_regla_transporte'];
+               $data[7]=$servicio_has_sistema[$i]['split'];
 
-         $pdf->SetX(30);	
-         $pdf->Row(array($miCabecera[$i],$dato));                        
-         $i++;
+            $pdf->Ln(15);  
+ 
+            $pdf->SetX(30);	
+            $pdf->Cell(0,10,utf8_decode('Configuracion de '.$servicio_has_sistema[$i]['nombre_sentido'].' del archivo '.$servicio_has_sistema[$i]['nombre_archivo']),0,1,'L');
+
+
+            for($j=0;$j<count($data);$j++){
+            $pdf->SetX(30);	
+            $pdf->Row(array($miCabecera[$j],$data[$j])); 
+            }
+         }
+         
+
+
+      }elseif($servicio['nombre_tipo_servicio'] == 'WEB'){
+           //-------------------------------------------tabla web---------------------------------------------
+         $pdf->Ln(10);
+         $pdf->SetFont('Arial','B',10);
+         $pdf->SetX(30);
+         $pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración WEB:'),0,1,'L');
+         $pdf->SetFont('Arial','',10);
+
+         $miCabecera = array('WSDL desarrollo', 'WSDL calidad','WSDL producción');
+
+         $data=array($conf_web[0]['url_wsdl'], $conf_web[1]['url_wsdl'], $conf_web[2]['url_wsdl']);
+        $posy=$pdf->gety();
+         $pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
+         $pdf->datosVerticales($data,80,10+$posy,120);
+         
       }
-      
-      //-------------------------------------------tabla web---------------------------------------------
-      $pdf->Ln(10);
-		$pdf->SetFont('Arial','B',10);
-		$pdf->SetX(30);
-		$pdf->Cell(0,10,utf8_decode('3.4.-	Parámetros de configuración WEB:'),0,1,'L');
-		$pdf->SetFont('Arial','',10);
-		//$pdf->SetX(30);
-		//$pdf->MultiCell(0,5, utf8_decode('colocar despues'),0,'J',false);
-      
-      $miCabecera = array('Nombre', 'Directorio','Modelo de datos','regla de transformación','Volumen','Frecuencia','Regla de transporte','Split');
-
-		$data = array($servicio_has_sistema['nombre_archivo'],$servicio_has_sistema['directorio'], $servicio_has_sistema['nombre_modelo_dato'],$servicio_has_sistema['regla_transformacion'],$servicio_has_sistema['volumen'],$servicio_has_sistema['nombre_frecuencia_ftp'],$servicio_has_sistema['nombre_regla_transporte'],$servicio_has_sistema['split']);
-      /*
- 	  $posy=$pdf->gety();
-		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
-		$pdf->datosVerticales($data,80,10+$posy,120);
-	  */
+      //-----------------------------------------------------------------------------------------
+      	  
 	  $pdf->SetX(30);	
-	  
-      $pdf->SetWidths(array(30,30,30,40));
-      $str=count($miCabecera);
-      $i=0;
-      foreach($data as $dato){
 
-         $pdf->SetX(30);	
-         $pdf->Row(array($miCabecera[$i],$dato));                        
-         $i++;
-      }
-      
-      
-      
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
