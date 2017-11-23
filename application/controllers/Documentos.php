@@ -188,7 +188,7 @@ class Documentos extends CI_Controller{
 
 		$pdf->cabeceraVertical($miCabecera,10,50,50);
 		$pdf->datosVerticales($data,60,50,130);
-		$pdf->Ln(5);
+		$pdf->Ln(10);
 		$pdf->setx(5);
 
 		$pdf->Cell(60,10,utf8_decode('DETALLES DEL DOCUMENTO'),0,1,'C');
@@ -246,17 +246,20 @@ class Documentos extends CI_Controller{
 
 		$pdf->Cell(0,10,utf8_decode('Nombre del servicio: '.$servicio['nombre']),0,1,'L');
       //	$pdf->MultiCell(0,5, utf8_decode($servicio['nombre']),0,'J',false);
-
+	  $pdf->Ln(10);
+	  
 		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño','Retorno');
 		$str=$pdf->contar($miCabecera);
 
 		$data = array('1'.$servicio['nombre_procesamiento'], '2','3'.$servicio['nombre_procesamiento'],'4'.$servicio['nombre_frecuencia'],'5','6','7');
 
 		//$posy=$pdf->gety();
-
+		$pdf->SetX(30);
       $pdf->SetWidths(array(30,30,30,40));
-      $str=count($miCabecera);
+	  $str=count($miCabecera);
+	 
       for($i=0;$i<$str;$i++){
+		$pdf->SetX(30);
          $pdf->Row(array($miCabecera[$i],$data[$i]));
       }
 		$pdf->Ln(20);
@@ -292,11 +295,15 @@ class Documentos extends CI_Controller{
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
       */
-      $pdf->SetWidths(array(30,30,30,40));
-      $str=count($miCabecera);
+	  $pdf->SetX(30);	  
+	  $pdf->SetWidths(array(30,30,30,40));
+	  $str=count($miCabecera);
+	  $pdf->SetX(30);	  
+	  
       for($i=0;$i<$str;$i++){
-         $pdf->Row(array($miCabecera[$i],$data[$i]));
-         $paso++;
+		$pdf->SetX(30);		
+		 $pdf->Row(array($miCabecera[$i],$data[$i]));
+		 $paso++;		 
       }
 	   $pdf->AliasNbPages();
 		$pdf->Ln(20);
@@ -387,11 +394,15 @@ class Documentos extends CI_Controller{
  	  $posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
-      */
+	  */
+	  $pdf->SetX(30);	
+	  
       $pdf->SetWidths(array(30,30,30,40));
       $str=count($miCabecera);
       for($i=0;$i<$str;$i++){
-         $pdf->Row(array($miCabecera[$i],$data[$i]));
+
+		$pdf->SetX(30);	
+		$pdf->Row(array($miCabecera[$i],$data[$i]));
          $paso++;
       }
       
