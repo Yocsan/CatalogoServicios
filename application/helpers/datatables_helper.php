@@ -21,7 +21,7 @@ function get_buttons_print($id)
     $ci = & get_instance();
     $html='';
     $html .=  '<a href="'.base_url('documentos/generar_documento_etf/'.$id).'"  target="_blank"><button id="etf_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_etf">ETF</button></a>    ';
-    $html .=  '<button id="f1_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_f1" >F1</button>';
+    //$html .=  '<button id="f1_'.$id. '" class="btn btn-danger"  data-toggle="modal" data-target="#modal_f1" >F1</button>';
 
     return $html;
 }
@@ -55,11 +55,9 @@ function get_buttons_img($id)
 {
 	$ci = & get_instance();
 	$html='';
-	//$html .=  '<span id="consulta_'.$id. '" class="ui-icon  ui-icon-search"  data-toggle="modal" data-target="#modal_consulta"></span>';
+	$html .=  '<span id="consulta_'.$id. '" class="ui-icon  ui-icon-search"  data-toggle="modal" data-target="#modal_consulta"></span>';
 	//$html .=  '<span id="edit_'.$id. '" class="ui-icon ui-icon-pencil"  data-toggle="modal" data-target="#modal_edit"></span>';
-    $html .=  '<span id="agregar_'.$id. '" class="ui-icon  ui-icon-plus"  data-toggle="modal" data-target="#modal_agregar"></span>';
 	$html .=  '<span id="delete_'.$id. '" class="ui-icon ui-icon-trash" data-toggle="modal" data-target="#modal_delete" ></span>';
-  $html .=  '<span id="consulta_'.$id. '" class="ui-icon  ui-icon-search"  data-toggle="modal" data-target="#modal_consulta"></span>';
 	//$html .=  '<span id="image_'.$id. '" class="ui-icon ui-icon-image" data-toggle="modal" data-target="#modal_image" ></span>';
 
 	return $html;

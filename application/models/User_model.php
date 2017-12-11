@@ -21,7 +21,7 @@ class User_model extends CI_Model{
     	}
  
     }
-    
+    //consulta
     public function usuario_login($usuario) {
 
     	$this->db->select()
@@ -78,7 +78,7 @@ class User_model extends CI_Model{
 		
 		}          
     }
-    
+    //insertar
     public function insert_usuario($data){
     
     	return $this->db->insert('usuarios',$data);

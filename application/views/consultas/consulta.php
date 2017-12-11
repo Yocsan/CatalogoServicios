@@ -27,11 +27,11 @@ if (!defined('BASEPATH'))
        <?php echo isset($datos['introduccion']) ? $datos['introduccion'] : "N/A"?>
 
  </textarea>
-
+<!--
  <h4 align="center">Diagrama</h4>
 
   <img src="<?php echo isset($datos['url_imagen']) ? $datos['url_imagen'] : ""?>" alt="No se pudo cargar la imagen" align="center"/>
-
+-->
 
     <h4 align="center">Descripci&oacute;n de proceso</h4>
 
