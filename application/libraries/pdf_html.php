@@ -3,7 +3,10 @@
 require_once APPPATH.'third_party/fpdf/fpdf.php';
 
 	class PDF_HTML extends FPDF
+<<<<<<< HEAD
 
+=======
+>>>>>>> 451a59e8a732f4a9fde7eb7a8345a9a34acdc000
 	{
 
 		var $widths;
@@ -19,7 +22,7 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 
       $this->SetFont('Arial','B',10);
 
-      $this->Cell(0,10,utf8_decode('Especificación de servicios de integración CI Proyecto                   Fecha: '.date('t/n/Y')),1,0,'C');
+      $this->Cell(0,10,utf8_decode('Especificación de servicios de integración PIC Proyecto                   Fecha: '.date('t/n/Y')),1,0,'C');
       $this->Ln(25);
 
 
@@ -33,7 +36,11 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 	    $this->SetFont('Arial','I',8);
 	    $image=$this->Image(base_url('assets/img/logo_etf.png'),180,274,-1400);
 	     //$imagen= $this->Image(base_url('assets/img/logo_etf.png'),10,8,33);
+<<<<<<< HEAD
 	    $this->Cell(0,10,utf8_decode('Gerencia de Tecnología y Soluciones                 pagina '.$this->PageNo().'/{nb}'),1,1,'C');
+=======
+	    $this->Cell(0,10,utf8_decode('Gerencia de Tecnología y Operaciones               pagina '.$this->PageNo().'/{nb}'),1,1,'C');
+>>>>>>> 451a59e8a732f4a9fde7eb7a8345a9a34acdc000
 	    // Print current and total page numbers
 
 	}
@@ -87,8 +94,13 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 
 	    function datosHorizontal($datos, $x, $y,$str, $cabecera)
 	    {
+<<<<<<< HEAD
 					$this->SetXY($x, $y); // 77 = 70 posici�nY_anterior + 7 altura de las de cabecera
 					$this->SetFont('Arial','',10); //Fuente, normal, tama�o
+=======
+            $this->SetXY($x, $y); // 77 = 70 posici�nY_anterior + 7 altura de las de cabecera
+            $this->SetFont('Arial','',10); //Fuente, normal, tama�o
+>>>>>>> 451a59e8a732f4a9fde7eb7a8345a9a34acdc000
 	        $this->SetFillColor(229, 229, 229); //Gris tenue de cada fila
 	        $this->SetTextColor(3, 3, 3); //Color del texto: Negro
 
@@ -121,18 +133,37 @@ require_once APPPATH.'third_party/fpdf/fpdf.php';
 	    $h=5*$nb;
 	    //Issue a page break first if needed
 	    $this->CheckPageBreak($h);
+<<<<<<< HEAD
 	    //Draw the cells of the row
 	    for($i=0;$i<count($data);$i++)
 	    {
+=======
+		$this->SetX(30);
+		
+		//Draw the cells of the row
+
+	    for($i=0;$i<count($data);$i++)
+	    {
+
+>>>>>>> 451a59e8a732f4a9fde7eb7a8345a9a34acdc000
 	        $w=$this->widths[$i];
 	        $a=isset($this->aligns[$i]) ? $this->aligns[$i] : 'L';
 	        //Save the current position
 	        $x=$this->GetX();
 	        $y=$this->GetY();
+<<<<<<< HEAD
 	        //Draw the border
 	        $this->Rect($x,$y,$w,$h);
 	        //Print the text
 	        $this->MultiCell($w,5,$data[$i],0,$a);
+=======
+	        //Draw the borders
+	        $this->Rect($x,$y,$w,$h);
+
+			//Print the text
+			
+	        $this->MultiCell($w,5,utf8_decode($data[$i]),0,$a);
+>>>>>>> 451a59e8a732f4a9fde7eb7a8345a9a34acdc000
 	        //Put the position to the right of the cell
 	        $this->SetXY($x+$w,$y);
 	    }
