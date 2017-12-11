@@ -150,6 +150,17 @@
             $id_servicio = $this->db->query('SELECT MAX(id_conf_ftp) AS id FROM conf_ftp');
             return $id_servicio->result();
         }
+        
+        public function get_documento_conf_web($id_documento){
+            $documento = $this->db->query("SELECT url_wsdl, ambientes.nombre_ambiente
+			   FROM conf_web
+            INNER JOIN ambientes ON conf_web.ambientes_id_ambiente = ambientes.id_ambiente
+            INNER JOIN servicios ON conf_web.servicios_id_servicio = servicios.id_servicio
+            WHERE status_servicio = '1' AND id_servicio ='$id_documento'");
+
+            return $documento->result_array();
+
+        }
 
         public function get_documento_servicio($id_documento){
             $documento = $this->db->query("SELECT nombre, evento_disparador, introduccion, adaptador, descripcion_proceso, arquitectura_sistema_conexion, url_imagen,proc.nombre_procesamiento, esq.nombre_esquema, prior.nombre_prioridad, vert.nombre_vertical, vert.identificador_vertical, frec.nombre_frecuencia, tipos_serv.nombre_tipo_servicio
@@ -168,9 +179,9 @@
 
         public function get_documento_servicio_has_sistema($id_documento){
 
-            $documento = $this->db->query("SELECT serv_sist.servicios_id_servicio,sist.nombre_sistema, sentido.nombre_sentido,conf_ftp.directorio,conf_ftp.nombre_archivo,modelo_datos.nombre_modelo_dato,frecuencias_ftp.nombre_frecuencia_ftp,reglas_transporte.nombre_regla_transporte,conf_ftp.regla_transformacion,conf_ftp.volumen,conf_ftp.split
+            $documento = $this->db->query("SELECT serv_sist.servicios_id_servicio,sist.nombre_sistema,serv_sist.sentidos_id_sentido, sentido.nombre_sentido,conf_ftp.directorio,conf_ftp.nombre_archivo,modelo_datos.nombre_modelo_dato,frecuencias_ftp.nombre_frecuencia_ftp,reglas_transporte.nombre_regla_transporte,conf_ftp.regla_transformacion,conf_ftp.volumen,case conf_ftp.split when 1 then 'Si'  when 0 then 'No'  end as split
 
-			      FROM servicios_has_sistemas serv_sist
+			   FROM servicios_has_sistemas serv_sist
 
             INNER JOIN servicios serv ON serv_sist.servicios_id_servicio = serv.id_servicio
             INNER JOIN sistemas sist ON serv_sist.sistemas_id_sistema = sist.id_sistema
@@ -181,13 +192,13 @@
             INNER JOIN reglas_transporte ON conf_ftp.reglas_transporte_id_regla_transporte = reglas_transporte.id_regla_transporte
 
             WHERE status_servicio = '1'
-            AND serv.id_servicio ='4'
+            AND serv.id_servicio ='$id_documento'
             AND serv_sist.servicios_id_servicio='$id_documento'
             AND conf_ftp.modelo_datos_id_modelo_dato = modelo_datos.id_modelo_dato
             AND conf_ftp.frecuencias_ftp_id_frecuencia_ftp = frecuencias_ftp.id_frecuencia_ftp
             AND conf_ftp.reglas_transporte_id_regla_transporte = reglas_transporte.id_regla_transporte");
 
-            return $documento->result();
+            return $documento->result_array();
 
         }
 

@@ -5,9 +5,9 @@ if (!defined('BASEPATH'))
 
 //set table id in table open tag
     $tmpl = array ( 'table_open'  => '<table id="big_table" border="1" cellpadding="2" cellspacing="1" class="mytable">' );
-    $this->table->set_template($tmpl); 
+    $this->table->set_template($tmpl);
 
-    $this->table->set_heading('Nombre del servicio','Tipo','Requerimiento','Esquema','Vertical','Imprimir documentos');
+    $this->table->set_heading('Nombre del servicio','Tipo','Requerimiento','Esquema','Vertical','Imprimir documento');
     echo $this->table->generate();
 ?>
 
@@ -16,9 +16,9 @@ if (!defined('BASEPATH'))
 
 
 <script type="text/javascript">
-    
-  $(document).ready(function() {            
-            
+
+  $(document).ready(function() {
+
 	var oTable = $('#big_table').dataTable( {
 		"bProcessing": true,
 		"bServerSide": true,
@@ -44,7 +44,7 @@ if (!defined('BASEPATH'))
                         });
                     }
 	});
-   
+
 } );
 
 </script>

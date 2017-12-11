@@ -2,6 +2,10 @@
 
 class Utilidades extends CI_Controller {
     function __construct() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 85c9cc7b6a4352213737f6f054b2decc934642d3
         parent::__construct();  
         $this->load->library('Utilities');//cargo libreria utilities
         
@@ -27,3 +31,26 @@ class Utilidades extends CI_Controller {
     	exit;
     }
 }
+<<<<<<< HEAD
+=======
+=======
+        parent::__construct();      
+          
+    }
+    function index() { 
+        
+        $resultado = '<div class="alert alert-danger" role="alert">En Construccion</div>';
+        
+        $response = array('mensaje' => $resultado);
+        
+        $this->output
+             ->set_status_header(200)
+             ->set_content_type('application/json', 'utf-8')
+             ->set_output(json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES))
+             ->_display();
+        exit;
+      
+    }
+}
+>>>>>>> 451a59e8a732f4a9fde7eb7a8345a9a34acdc000
+>>>>>>> 85c9cc7b6a4352213737f6f054b2decc934642d3
