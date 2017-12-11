@@ -173,6 +173,8 @@ class Documentos extends CI_Controller{
 		$miCabecera = array('Proceso:','Nombre del Documento:','Proyecto,Preparado por:', 'fecha diseño Técnico','Servicio:');
 		$data = array($servicio['nombre_vertical'], $servicio['identificador_vertical'].$servicio['nombre'], $this->session->userdata('name'),date('t/n/Y'), $servicio['nombre']);
 
+
+
 		$pdf->Ln(90);
 		$pdf->Cell(0,20,utf8_decode('Documento de Especificaciones PIC para el Caso de uso '),1,1,'C');
 		$pdf->AliasNbPages();
@@ -200,10 +202,18 @@ class Documentos extends CI_Controller{
 		$data = array('1', date('t/n/Y'),$this->session->userdata('name'),$necesidades['descripcion_necesidad']);
 
 		$posy=$pdf->gety();
-		$str=$pdf->contar($miCabecera);
-		$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,$str);
-		$pdf->datosHorizontal($data,10,14+$posy,$str);
+    //$pdf->cabeceraVertical($miCabecera,10,7+$posy,50);
 
+    $pdf->SetWidths(array(30,50,30,40));
+    $str=count($miCabecera);
+    for($i=0;$i<$str;$i++){
+      $pdf->Row(array($data[$i]));
+    }
+    /*
+    $str=$pdf->contar($miCabecera);
+    $pdf->cabeceraHorizontal($miCabecera,10,7+$posy,$str);
+		$pdf->datosHorizontal($data,10,14+$posy,$str, $miCabecera);
+    */
 		$pdf->AddPage();
 		$pdf->SetAutoPageBreak(true, 30);
 		$pdf->SetFont('Arial','B',12);
@@ -239,15 +249,8 @@ class Documentos extends CI_Controller{
 
 		$miCabecera = array('Prioridad:', 'Sentido','Procesamiento','Frecuencia','Volumen','Tamaño','Retorno');
 		$str=$pdf->contar($miCabecera);
-		//var_dump($str) ;
 
 		$data = array('1'.$servicio['nombre_procesamiento'], '2','3'.$servicio['nombre_procesamiento'],'4'.$servicio['nombre_frecuencia'],'5','6','7');
-/*
-    foreach($servicio_has_sistema as $sistema){
-          $sentido += $sistema->nombre_sistema;
-    }
-*/
-   // $data[1] = $sentido;
 
 		$posy=$pdf->gety();
 
@@ -255,12 +258,12 @@ class Documentos extends CI_Controller{
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
 */
-$posy=$pdf->gety();
+    $posy=$pdf->gety();
 
 	//	$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,27);
 	//	$pdf->datosHorizontal($data,10,14+$posy,27);
 		$pdf->cabeceraHorizontal($miCabecera,10,7+$posy,$str);
-		$pdf->datosHorizontal($data,10,14+$posy,$str);
+		$pdf->datosHorizontal($data,10,24+$posy,$str,$miCabecera);
 		$pdf->Ln(20);
 		$pdf->SetFont('Arial','B',12);
 		$pdf->SetX(20);
@@ -289,10 +292,10 @@ $posy=$pdf->gety();
 		$miCabecera = array('Nombre', 'Paso','Cliente','Proveedor','Síncrono/ Asíncrono','Online/ Batch','Volumen','Tiempo de Respuesta');
 
 		$data = array('1'.$servicio['nombre'], '2'.count($servicio_has_sistema),'3','4','5','6','7','8');
- 	    $posy=$pdf->gety();
+ 	  $posy=$pdf->gety();
 		$pdf->cabeceraVertical($miCabecera,30,10+$posy,50);
 		$pdf->datosVerticales($data,80,10+$posy,120);
-	$pdf->AliasNbPages();
+	  $pdf->AliasNbPages();
 		$pdf->Ln(20);
 		$pdf->SetFont('Arial','B',12);
 		$pdf->SetX(20);
@@ -336,7 +339,7 @@ $posy=$pdf->gety();
 		$pdf->MultiCell(0,5, utf8_decode('ver que va aqui'),0,'J',false);
 */
 		$pdf->SetFont('Arial','B',10);
-				$pdf->Ln(10);
+		$pdf->Ln(10);
 
 		$pdf->SetX(20);
 		$pdf->Cell(0,10,utf8_decode('3.-	Especificaciones Técnicas Generales de Interfases'),0,1,'L');
@@ -349,7 +352,7 @@ $posy=$pdf->gety();
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->SetX(30);
-    /*
+/*
 		$pdf->Cell(0,10,utf8_decode('3.2.- Conectividad'),0,1,'L');
 		$pdf->SetFont('Arial','',10);
 		$pdf->SetX(30);
@@ -384,6 +387,10 @@ $posy=$pdf->gety();
 		$pdf->SetX(30);
 		$pdf->MultiCell(0,5, utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis odio a orci eleifend auctor. In tincidunt quam lorem, eleifend varius enim semper ut. Nam at metus accumsan ex maximus scelerisque. Ut suscipit velit non ligula consequat elementum. In eget condimentum libero, vitae mattis sapien. Donec malesuada elit sit amet nulla pretium luctus. Duis facilisis pretium enim, ac tristique turpis congue a. Etiam blandit finibus enim, eu ornare est mollis non. Pellentesque accumsan tellus volutpat, gravida elit sed, fermentum lacus. Proin pellentesque nec tortor a dapibus. Cras interdum sem luctus ex pretium venenatis. Donec euismod aliquam mi. Aenean gravida ac diam facilisis lacinia. Proin egestas, tortor nec posuere dignissim, nisl metus blandit dui, eget pulvinar nisi mauris quis lacus. Donec finibus libero in tellus gravida mattis. Etiam non tellus nunc.'),0,'J',false);
       */
+
+
+
+
 
 		return $pdf->Output();
 
